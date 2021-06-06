@@ -1,11 +1,11 @@
-;;; timu-spacegrey-theme.el --- Color theme inspired by the Spacegray theme in Sublime Text.  -*- lexical-binding:t -*-
+;;; timu-spacegrey-theme.el --- Color theme inspired by the Spacegray theme in Sublime Text  -*- lexical-binding:t -*-
 
 ;; Copyright (C) 2021 Aimé Bertrand
 
 ;; Author: Aimé Bertrand <aime.bertrand@macowners.club>
 ;; Maintainer: Aimé Bertrand <aime.bertrand@macowners.club>
 ;; Created: 06 Jun 2021
-;; Keywords: dark themes
+;; Keywords: faces themes
 ;; Version: 1.0
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://gitlab.com/aimebertrand/timu-spacegrey-theme
