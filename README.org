@@ -17,4 +17,4 @@ Add =timu-spacegrey-theme.el= to your =custom-theme-load-path=. Then:
 #+end_src
 
 * Illustration
-#+html: <p align="center"><img src="timu-spacegrey-theme.png" /></p>
+#+html: <p align="center"><img src="timu-spacegrey-theme.png" width="100%"/></p>
