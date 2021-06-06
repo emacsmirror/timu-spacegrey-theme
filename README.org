@@ -1,0 +1,22 @@
+#+TITLE: timu-spacegrey-theme
+#+AUTHOR: Aimé Bertrand
+#+DATE: [2021-06-06 Sun]
+#+LANGUAGE: en
+#+OPTIONS: d:t toc:nil num:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://macowners.club/css/gtd.css" />
+#+KEYWORDS: theme spacegrey
+#+STARTUP: indent content
+
+Emacs colorful theme inspired by Gadzhi Kharkharov's [[https://github.com/kkga/spacegray][Spacegray]] theme for Sublime Text.
+
+* Installation
+Add =timu-spacegrey-theme.el= to your =custom-theme-load-path=. Then:
+
+#+begin_src emacs-lisp
+  (load-theme 'timu-spacegrey t)
+#+end_src
+
+* Illustration
+#+attr_html: :width 800px :align center
+#+attr_org: :width 800px :align center
+file:timu-spacegrey-theme.png
