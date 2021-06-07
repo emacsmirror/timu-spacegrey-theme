@@ -7,6 +7,8 @@
 #+KEYWORDS: theme spacegrey
 #+STARTUP: indent content
 
+#+html: <p align="left"><img src="https://melpa.org/packages/timu-spacegrey-theme-badge.svg"/></p>
+
 Emacs colorful theme inspired by Gadzhi Kharkharov's [[https://github.com/kkga/spacegray][Spacegray]] theme for Sublime Text.
 
 * Installation
