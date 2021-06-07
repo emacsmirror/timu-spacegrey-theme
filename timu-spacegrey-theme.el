@@ -1477,6 +1477,12 @@ Sourced other themes to get information about font faces for packages.")
     'timu-spacegrey
     `(ansi-color-names-vector [bg, red, green, teal, cyan, blue, yellow, fg]))))
 
+;;;###autoload
+(when load-file-name
+  (add-to-list 'custom-theme-load-path
+               (file-name-as-directory
+                (file-name-directory load-file-name))))
+
 (provide-theme 'timu-spacegrey)
 
 ;;; timu-spacegrey-theme.el ends here
