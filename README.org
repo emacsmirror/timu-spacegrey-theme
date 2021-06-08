@@ -12,11 +12,32 @@
 Emacs colorful theme inspired by Gadzhi Kharkharov's [[https://github.com/kkga/spacegray][Spacegray]] theme for Sublime Text.
 
 * Installation
-Add =timu-spacegrey-theme.el= to your =custom-theme-load-path=. Then:
+** Manual installation
+1. Download the [[https://gitlab.com/aimebertrand/timu-spacegrey-theme/-/raw/main/timu-spacegrey-theme.el?inline=false][=timu-spacegrey-theme.el=]] file and add it to your =custom-load-path=.
+2. In your =~/.emacs.d/init.el= or =~/.emacs=:
 
 #+begin_src emacs-lisp
   (load-theme 'timu-spacegrey t)
 #+end_src
 
+** From [[https://melpa.org/#/timu-spacegrey-theme][Melpa]]
+1. =M-x package-instal <RET> timu-spacegrey-theme.el <RET>=.
+2. In your =~/.emacs.d/init.el= or =~/.emacs=:
+
+#+begin_src emacs-lisp
+  (load-theme 'timu-spacegrey t)
+#+end_src
+
+** With [[https://github.com/jwiegley/use-package][use-package]]
+#+begin_src emacs-lisp
+  (use-package timu-spacegrey-theme
+    :ensure t
+    :config
+    (load-theme 'timu-spacegrey t))
+#+end_src
+
 * Illustration
 #+html: <p align="center"><img src="timu-spacegrey-theme.png" width="100%"/></p>
+
+* License
+MIT License
