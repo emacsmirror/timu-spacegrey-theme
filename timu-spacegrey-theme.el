@@ -6,7 +6,7 @@
 ;; Maintainer: Aimé Bertrand <aime.bertrand@macowners.club>
 ;; Created: 06 Jun 2021
 ;; Keywords: faces themes
-;; Version: 1.1
+;; Version: 1.2
 ;; Package-Requires: ((emacs "27.1"))
 ;; Homepage: https://gitlab.com/aimebertrand/timu-spacegrey-theme
 
@@ -36,7 +36,25 @@
 ;; SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ;;; Commentary:
-;; Used Doom themes for boilerplate
+;; I. Used Doom themes for boilerplate for modes & packages.
+;;
+;; II. Installation
+;;   A. Manual installation
+;;     1. Download the `timu-spacegrey-theme.el' file and add it to your `custom-load-path'.
+;;     2. In your `~/.emacs.d/init.el' or `~/.emacs':
+;;       (load-theme 'timu-spacegrey t)
+;;
+;;   B. From Melpa
+;;     1. M-x package-instal <RET> timu-spacegrey-theme.el <RET>.
+;;     2. In your `~/.emacs.d/init.el' or `~/.emacs':
+;;       (load-theme 'timu-spacegrey t)
+;;
+;;   C. With use-package
+;;     In your `~/.emacs.d/init.el' or `~/.emacs':
+;;       (use-package timu-spacegrey-theme
+;;         :ensure t
+;;         :config
+;;         (load-theme 'timu-spacegrey t))
 
 ;;; Code:
 
