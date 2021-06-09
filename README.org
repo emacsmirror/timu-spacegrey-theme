@@ -11,6 +11,9 @@
 
 Emacs colorful theme inspired by Gadzhi Kharkharov's [[https://github.com/kkga/spacegray][Spacegray]] theme for Sublime Text.
 
+* Illustration
+#+html: <p align="center"><img src="timu-spacegrey-theme.png" width="100%"/></p>
+
 * Installation
 ** Manual installation
 1. Download the [[https://gitlab.com/aimebertrand/timu-spacegrey-theme/-/raw/main/timu-spacegrey-theme.el?inline=false][=timu-spacegrey-theme.el=]] file and add it to your =custom-load-path=.
@@ -35,9 +38,6 @@ Emacs colorful theme inspired by Gadzhi Kharkharov's [[https://github.com/kkga/s
     :config
     (load-theme 'timu-spacegrey t))
 #+end_src
-
-* Illustration
-#+html: <p align="center"><img src="timu-spacegrey-theme.png" width="100%"/></p>
 
 * License
 MIT License
