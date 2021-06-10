@@ -1231,8 +1231,8 @@ Sourced other themes to get information about font faces for packages.")
    `(powerline-active1 ((,class (:inherit mode-line :background ,bg))))
    `(powerline-active2 ((,class (:inherit mode-line :foreground ,spacegrey8 :background ,bg))))
    `(powerline-inactive0 ((,class (:inherit mode-line-inactive :background ,spacegrey2))))
-   `(powerline-inactive1 ((,class (:inherit mode-line-inactive :background spacegrey2))))
-   `(powerline-inactive2 ((,class (:inherit mode-line-inactive :background spacegrey2))))
+   `(powerline-inactive1 ((,class (:inherit mode-line-inactive :background ,spacegrey2))))
+   `(powerline-inactive2 ((,class (:inherit mode-line-inactive :background ,spacegrey2))))
 
 ;;;; rainbow-delimiters
    `(rainbow-delimiters-depth-1-face ((,class (:foreground ,blue))))
