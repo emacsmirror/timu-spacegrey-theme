@@ -9,10 +9,12 @@
 
 #+html: <p align="left"><img src="https://melpa.org/packages/timu-spacegrey-theme-badge.svg"/></p>
 
-Emacs colorful theme inspired by Gadzhi Kharkharov's [[https://github.com/kkga/spacegray][Spacegray]] theme for Sublime Text.
+Emacs colorful (dark/light) theme inspired by Gadzhi Kharkharov's [[https://github.com/kkga/spacegray][Spacegray]] theme for Sublime Text.
 
 * Illustration
-#+html: <p align="center"><img src="timu-spacegrey-theme.png" width="100%"/></p>
+#+html: <p align="center"><img src="timu-spacegrey-1.png" width="100%"/></p>
+
+#+html: <p align="center"><img src="timu-spacegrey-2.png" width="100%"/></p>
 
 * Installation
 ** Manual installation
@@ -37,6 +39,14 @@ Emacs colorful theme inspired by Gadzhi Kharkharov's [[https://github.com/kkga/s
     :ensure t
     :config
     (load-theme 'timu-spacegrey t))
+#+end_src
+
+* Configuration
+There is a light version now included as well. By default the theme is `dark'.
+To setup the `light' flavour add the following to your `~/.emacs.d/init.el' or `~/.emacs':
+
+#+begin_src emacs-lisp
+  (setq timu-spacegrey-flavour "light")
 #+end_src
 
 * License
