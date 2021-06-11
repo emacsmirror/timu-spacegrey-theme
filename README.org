@@ -12,9 +12,9 @@
 Emacs colorful (dark/light) theme inspired by Gadzhi Kharkharov's [[https://github.com/kkga/spacegray][Spacegray]] theme for Sublime Text.
 
 * Illustration
-#+html: <p align="center"><img src="timu-spacegrey-1.png" width="100%"/></p>
+#+html: <p align="center"><img src="img/timu-spacegrey-1.png" width="100%"/></p>
 
-#+html: <p align="center"><img src="timu-spacegrey-2.png" width="100%"/></p>
+#+html: <p align="center"><img src="img/timu-spacegrey-2.png" width="100%"/></p>
 
 * Installation
 ** Manual installation
