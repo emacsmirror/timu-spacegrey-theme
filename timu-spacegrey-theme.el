@@ -813,7 +813,7 @@ Possinle values: `dark' or `light'.")
 
 ;;;; ivy - dark
      `(ivy-current-match ((,class (:background ,grey :distant-foreground nil :extend t))))
-     `(ivy-minibuffer-match-face-1 ((,class (:background nil :foreground ,grey :weight light))))
+     `(ivy-minibuffer-match-face-1 ((,class (:background nil :foreground ,orange :weight bold :underline t))))
      `(ivy-minibuffer-match-face-2 ((,class (:inherit ivy-minibuffer-match-face-1 :foreground ,purple :background ,spacegrey1 :weight semi-bold))))
      `(ivy-minibuffer-match-face-3 ((,class (:inherit ivy-minibuffer-match-face-2 :foreground ,green :weight semi-bold))))
      `(ivy-minibuffer-match-face-4 ((,class (:inherit ivy-minibuffer-match-face-2 :foreground ,yellow :weight semi-bold))))
@@ -821,8 +821,8 @@ Possinle values: `dark' or `light'.")
      `(ivy-highlight-face ((,class (:foreground ,magenta))))
      `(ivy-confirm-face ((,class (:foreground ,green))))
      `(ivy-match-required-face ((,class (:foreground ,red))))
-     `(ivy-virtual ((,class (:inherit italic :foreground ,spacegrey5))))
-     `(ivy-modified-buffer ((,class (:inherit bold :foreground ,orange))))
+     `(ivy-virtual ((,class (:inherit italic :foreground ,fg))))
+     `(ivy-modified-buffer ((,class (:inherit bold :foreground ,darkcyan))))
 
 ;;;; ivy-posframe - dark
      `(ivy-posframe ((,class (:background ,bg-other))))
@@ -1486,8 +1486,9 @@ Possinle values: `dark' or `light'.")
 ;;; LIGHT FLAVOUR
 (when (equal timu-spacegrey-flavour "light")
   (let ((class '((class color) (min-colors 89)))
-        (fg "#2b303b")
-        (fg-other "#232830")
+        (bg "#ffffff")
+        (bg-org "#fafafa")
+        (bg-other "#dfdfdf")
         (spacegrey0 "#1b2229")
         (spacegrey1 "#1c1f24")
         (spacegrey2 "#202328")
@@ -1497,9 +1498,8 @@ Possinle values: `dark' or `light'.")
         (spacegrey6 "#73797e")
         (spacegrey7 "#9ca0a4")
         (spacegrey8 "#dfdfdf")
-        (bg "#ffffff")
-        (bg-org "#fafafa")
-        (bg-other "#c0c5ce")
+        (fg "#2b303b")
+        (fg-other "#232830")
 
         (grey "#4f5b66")
         (red "#bf616a")
@@ -2180,7 +2180,7 @@ Possinle values: `dark' or `light'.")
      `(hl-fill-column-face ((,class (:inherit (hl-line shadow)))))
 
 ;;;; hl-line (built-in) - light
-     `(hl-line ((,class (:background ,spacegrey8 :extend t))))
+     `(hl-line ((,class (:background ,bg-other :extend t))))
 
 ;;;; hl-todo - light
      `(hl-todo ((,class (:foreground ,red :weight bold))))
@@ -2223,8 +2223,8 @@ Possinle values: `dark' or `light'.")
      `(isearch-fail ((,class (:background ,red :foreground ,spacegrey0 :weight bold))))
 
 ;;;; ivy - light
-     `(ivy-current-match ((,class (:background ,grey :distant-foreground nil :extend t))))
-     `(ivy-minibuffer-match-face-1 ((,class (:background nil :foreground ,grey :weight light))))
+     `(ivy-current-match ((,class (:background ,bg-other :distant-foreground nil :extend t))))
+     `(ivy-minibuffer-match-face-1 ((,class (:background nil :foreground ,orange :weight bold :underline t))))
      `(ivy-minibuffer-match-face-2 ((,class (:inherit ivy-minibuffer-match-face-1 :foreground ,purple :background ,spacegrey1 :weight semi-bold))))
      `(ivy-minibuffer-match-face-3 ((,class (:inherit ivy-minibuffer-match-face-2 :foreground ,green :weight semi-bold))))
      `(ivy-minibuffer-match-face-4 ((,class (:inherit ivy-minibuffer-match-face-2 :foreground ,yellow :weight semi-bold))))
@@ -2233,7 +2233,7 @@ Possinle values: `dark' or `light'.")
      `(ivy-confirm-face ((,class (:foreground ,green))))
      `(ivy-match-required-face ((,class (:foreground ,red))))
      `(ivy-virtual ((,class (:inherit italic :foreground ,spacegrey5))))
-     `(ivy-modified-buffer ((,class (:inherit bold :foreground ,orange))))
+     `(ivy-modified-buffer ((,class (:inherit bold :foreground ,darkcyan))))
 
 ;;;; ivy-posframe - light
      `(ivy-posframe ((,class (:background ,bg-other))))
