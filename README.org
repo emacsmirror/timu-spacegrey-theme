@@ -42,8 +42,8 @@ Emacs colorful (dark/light) theme inspired by Gadzhi Kharkharov's [[https://gith
 #+end_src
 
 * Configuration
-There is a light version now included as well. By default the theme is `dark'.
-To setup the `light' flavour add the following to your `~/.emacs.d/init.el' or `~/.emacs':
+There is a light version now included as well. By default the theme is =dark=.
+To setup the =light= flavour add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
 
 #+begin_src emacs-lisp
   (setq timu-spacegrey-flavour "light")
