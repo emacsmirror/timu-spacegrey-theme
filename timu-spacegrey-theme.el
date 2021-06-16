@@ -368,6 +368,9 @@ Possinle values: `dark' or `light'.")
      `(circe-server-face ((,class (:foreground ,spacegrey5))))
      `(circe-my-message-face ((,class (:weight bold))))
 
+;;;; counsel - dark
+     `(counsel-variable-documentation ((,class (:foreground ,blue))))
+
 ;;;; cperl - dark
      `(cperl-array-face ((,class (:weight bold :inherit font-lock-variable-name-face))))
      `(cperl-hash-face ((,class (:weight bold :slant italic :inherit font-lock-variable-name-face))))
@@ -828,6 +831,12 @@ Possinle values: `dark' or `light'.")
      `(ivy-posframe ((,class (:background ,bg-other))))
      `(ivy-posframe-border ((,class (:inherit internal-border))))
 
+;;;; all-the-icons-ivy-rich - dark
+     `(all-the-icons-ivy-rich-doc-face ((,class (:foreground ,blue))))
+     `(all-the-icons-ivy-rich-path-face ((,class (:foreground ,blue))))
+     `(all-the-icons-ivy-rich-time-face ((,class (:foreground ,blue))))
+     `(all-the-icons-ivy-rich-size-face ((,class (:foreground ,blue))))
+
 ;;;; selectrum - dark
      `(selectrum-current-candidate ((,class (:background ,grey :distant-foreground nil :extend t))))
 
@@ -953,6 +962,10 @@ Possinle values: `dark' or `light'.")
      `(magit-tag ((,class (:foreground ,yellow))))
      `(magit-filename ((,class (:foreground ,magenta))))
      `(magit-section-secondary-heading ((,class (:foreground ,magenta :weight bold :extend t))))
+
+;;;; marginalia-dark
+     `(marginalia-documentation ((,class (:foreground ,blue))))
+     `(marginalia-file-name ((,class (:foreground ,blue))))
 
 ;;;; mu4e - dark
      `(mu4e-header-key-face ((,class (:foreground ,darkcyan))))
@@ -1779,6 +1792,9 @@ Possinle values: `dark' or `light'.")
      `(circe-server-face ((,class (:foreground ,spacegrey5))))
      `(circe-my-message-face ((,class (:weight bold))))
 
+;;;; counsel - light
+     `(counsel-variable-documentation ((,class (:foreground ,blue))))
+
 ;;;; cperl - light
      `(cperl-array-face ((,class (:weight bold :inherit font-lock-variable-name-face))))
      `(cperl-hash-face ((,class (:weight bold :slant italic :inherit font-lock-variable-name-face))))
@@ -2239,6 +2255,12 @@ Possinle values: `dark' or `light'.")
      `(ivy-posframe ((,class (:background ,bg-other))))
      `(ivy-posframe-border ((,class (:inherit internal-border))))
 
+;;;; all-the-icons-ivy-rich - light
+     `(all-the-icons-ivy-rich-doc-face ((,class (:foreground ,blue))))
+     `(all-the-icons-ivy-rich-path-face ((,class (:foreground ,blue))))
+     `(all-the-icons-ivy-rich-time-face ((,class (:foreground ,blue))))
+     `(all-the-icons-ivy-rich-size-face ((,class (:foreground ,blue))))
+
 ;;;; selectrum - light
      `(selectrum-current-candidate ((,class (:background ,grey :distant-foreground nil :extend t))))
 
@@ -2364,6 +2386,10 @@ Possinle values: `dark' or `light'.")
      `(magit-tag ((,class (:foreground ,yellow))))
      `(magit-filename ((,class (:foreground ,magenta))))
      `(magit-section-secondary-heading ((,class (:foreground ,magenta :weight bold :extend t))))
+
+;;;; marginalia-light
+     `(marginalia-documentation ((,class (:foreground ,blue))))
+     `(marginalia-file-name ((,class (:foreground ,blue))))
 
 ;;;; mu4e - light
      `(mu4e-header-key-face ((,class (:foreground ,darkcyan))))
