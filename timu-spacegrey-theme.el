@@ -2408,7 +2408,7 @@ Possinle values: `dark' or `light'.")
      `(mu4e-replied-face ((,class (:foreground ,darkcyan))))
      `(mu4e-forwarded-face ((,class (:foreground ,orange))))
 
-;;;; mu4e-column-faces - dark
+;;;; mu4e-column-faces - light
      `(mu4e-column-faces-to-from ((,class (:foreground ,green))))
      `(mu4e-column-faces-date ((,class (:foreground ,blue))))
 
