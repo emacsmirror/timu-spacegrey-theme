@@ -973,11 +973,11 @@ Possinle values: `dark' or `light'.")
      `(mu4e-highlight-face ((,class (:foreground ,bg :background ,orange))))
      `(mu4e-title-face ((,class (:foreground ,magenta))))
      `(mu4e-header-title-face ((,class (:foreground ,magenta))))
-     `(mu4e-replied-face ((,class (:foreground ,green))))
-     `(mu4e-forwarded-face ((,class (:foreground ,darkcyan))))
+     `(mu4e-replied-face ((,class (:foreground ,darkcyan))))
+     `(mu4e-forwarded-face ((,class (:foreground ,orange))))
 
 ;;;; mu4e-column-faces - dark
-     `(mu4e-column-faces-to-from ((,class (:foreground ,orange))))
+     `(mu4e-column-faces-to-from ((,class (:foreground ,green))))
      `(mu4e-column-faces-date ((,class (:foreground ,blue))))
 
 ;;;; make-mode - dark
@@ -2405,11 +2405,11 @@ Possinle values: `dark' or `light'.")
      `(mu4e-highlight-face ((,class (:foreground ,bg :background ,orange))))
      `(mu4e-title-face ((,class (:foreground ,magenta))))
      `(mu4e-header-title-face ((,class (:foreground ,magenta))))
-     `(mu4e-replied-face ((,class (:foreground ,green))))
-     `(mu4e-forwarded-face ((,class (:foreground ,darkcyan))))
+     `(mu4e-replied-face ((,class (:foreground ,darkcyan))))
+     `(mu4e-forwarded-face ((,class (:foreground ,orange))))
 
-;;;; mu4e-column-faces - light
-     `(mu4e-column-faces-to-from ((,class (:foreground ,orange))))
+;;;; mu4e-column-faces - dark
+     `(mu4e-column-faces-to-from ((,class (:foreground ,green))))
      `(mu4e-column-faces-date ((,class (:foreground ,blue))))
 
 ;;;; make-mode - light
