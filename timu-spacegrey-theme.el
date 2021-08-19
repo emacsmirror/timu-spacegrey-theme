@@ -876,7 +876,7 @@ Possinle values: `dark' or `light'.")
      `(lsp-ui-peek-peek ((,class (:background ,bg))))
      `(lsp-ui-peek-selection ((,class (:foreground ,bg :background ,blue :bold bold))))
      `(lsp-ui-sideline-code-action ((,class (:foreground ,orange))))
-     `(lsp-ui-sideline-current-symbol ((,class (:inherit ,orange))))
+     `(lsp-ui-sideline-current-symbol ((,class (:foreground ,orange))))
      `(lsp-ui-sideline-symbol-info ((,class (:foreground ,spacegrey5 :background ,bg-other :extend t))))
 
 ;;;; lui - dark􌞄
@@ -2302,7 +2302,7 @@ Possinle values: `dark' or `light'.")
      `(lsp-ui-peek-peek ((,class (:background ,bg))))
      `(lsp-ui-peek-selection ((,class (:foreground ,bg :background ,blue :bold bold))))
      `(lsp-ui-sideline-code-action ((,class (:foreground ,orange))))
-     `(lsp-ui-sideline-current-symbol ((,class (:inherit ,orange))))
+     `(lsp-ui-sideline-current-symbol ((,class (:foreground ,orange))))
      `(lsp-ui-sideline-symbol-info ((,class (:foreground ,spacegrey5 :background ,bg-other :extend t))))
 
 ;;;; lui - light
