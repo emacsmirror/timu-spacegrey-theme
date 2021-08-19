@@ -108,7 +108,7 @@ Possinle values: `dark' or `light'.")
 
 ;;; Custom faces - dark
 
-;;;; default faces - dark􀻔
+;;;; default faces - dark
      `(bold ((,class (:weight bold))))
      `(bold-italic ((,class (:inherit (bold italic)))))
      `(bookmark-face ((,class (:foreground ,magenta :weight bold :underline ,darkcyan))))
@@ -132,7 +132,7 @@ Possinle values: `dark' or `light'.")
      `(vertical-border ((,class (:background ,spacegrey4 :foreground ,spacegrey4))))
      `(warning ((,class (:foreground ,yellow))))
 
-;;;; font-lock - dark􁒬
+;;;; font-lock - dark
      `(font-lock-builtin-face ((,class (:foreground ,orange))))
      `(font-lock-comment-delimiter-face ((,class (:inherit font-lock-comment-face))))
      `(font-lock-comment-face ((,class (:foreground ,spacegrey5))))
@@ -150,7 +150,7 @@ Possinle values: `dark' or `light'.")
      `(font-lock-variable-name-face ((,class (:foreground ,red))))
      `(font-lock-warning-face ((,class (:inherit warning))))
 
-;;;; agda-mode - dark􁻼
+;;;; agda-mode - dark
      `(org-agenda-clocking ((,class (:background ,blue))))
      `(org-agenda-date ((,class (:foreground ,magenta :weight ultra-bold))))
      `(org-agenda-date-today ((,class (:foreground ,magenta :weight ultra-bold))))
@@ -166,14 +166,14 @@ Possinle values: `dark' or `light'.")
      `(org-upcoming-deadline ((,class (:foreground ,fg))))
      `(org-upcoming-distant-deadline ((,class (:foreground ,fg))))
 
-;;;; alert - dark􂰲
+;;;; alert - dark
      `(alert-high-face ((,class (:inherit bold :foreground ,yellow))))
      `(alert-low-face ((,class (:foreground ,grey))))
      `(alert-moderate-face ((,class (:inherit bold :foreground ,fg-other))))
      `(alert-trivial-face ((,class (:foreground ,spacegrey5))))
      `(alert-urgent-face ((,class (:inherit bold :foreground ,red))))
 
-;;;; all-the-icons - dark􂶕
+;;;; all-the-icons - dark
      `(all-the-icons-blue ((,class (:foreground ,blue))))
      `(all-the-icons-blue-alt ((,class (:foreground ,teal))))
      `(all-the-icons-cyan ((,class (:foreground ,cyan))))
@@ -209,23 +209,23 @@ Possinle values: `dark' or `light'.")
      `(all-the-icons-silver ((,class (:foreground ,grey))))
      `(all-the-icons-yellow ((,class (:foreground ,yellow))))
 
-;;;; all-the-icons-ivy-rich - dark􋥋
+;;;; all-the-icons-ivy-rich - dark
      `(all-the-icons-ivy-rich-doc-face ((,class (:foreground ,blue))))
      `(all-the-icons-ivy-rich-path-face ((,class (:foreground ,blue))))
      `(all-the-icons-ivy-rich-size-face ((,class (:foreground ,blue))))
      `(all-the-icons-ivy-rich-time-face ((,class (:foreground ,blue))))
 
-;;;; annotate - dark􃗒
+;;;; annotate - dark
      `(annotate-annotation ((,class (:background ,orange :foreground ,spacegrey5))))
      `(annotate-annotation-secondary ((,class (:background ,green :foreground ,spacegrey5))))
      `(annotate-highlight ((,class (:background ,orange :underline ,orange))))
      `(annotate-highlight-secondary ((,class (:background ,green :underline ,green))))
 
-;;;; anzu - dark􃝁
+;;;; anzu - dark
      `(anzu-replace-highlight ((,class (:background ,spacegrey0 :foreground ,red :weight bold :strike-through t))))
      `(anzu-replace-to ((,class (:background ,spacegrey0 :foreground ,green :weight bold))))
 
-;;;; auctex - dark􂜪
+;;;; auctex - dark
      `(TeX-error-description-error ((,class (:inherit error :weight bold))))
      `(TeX-error-description-tex-said ((,class (:inherit success :weight bold))))
      `(TeX-error-description-warning ((,class (:inherit warning :weight bold))))
@@ -243,14 +243,14 @@ Possinle values: `dark' or `light'.")
      `(font-latex-verbatim-face ((,class (:inherit fixed-pitch :foreground ,magenta :slant italic))))
      `(font-latex-warning-face ((,class (:inherit font-lock-warning-face))))
 
-;;;; avy - dark􃠤
+;;;; avy - dark
      `(avy-background-face ((,class (:foreground ,spacegrey5))))
      `(avy-lead-face ((,class (:background ,orange :foreground ,bg :distant-foreground ,fg :weight bold))))
      `(avy-lead-face-0 ((,class (:inherit avy-lead-face :background ,orange))))
      `(avy-lead-face-1 ((,class (:inherit avy-lead-face :background ,orange))))
      `(avy-lead-face-2 ((,class (:inherit avy-lead-face :background ,orange))))
 
-;;;; bookmark+ - dark􃧒
+;;;; bookmark+ - dark
      `(bmkp-*-mark ((,class (:foreground ,bg :background ,yellow))))
      `(bmkp->-mark ((,class (:foreground ,yellow))))
      `(bmkp-D-mark ((,class (:foreground ,bg :background ,red))))
@@ -287,7 +287,7 @@ Possinle values: `dark' or `light'.")
      `(bmkp-url ((,class (:foreground ,blue :underline t))))
      `(bmkp-variable-list ((,class (:foreground ,green))))
 
-;;;; calfw - dark􄋈
+;;;; calfw - dark
      `(cfw:face-annotation ((,class (:foreground ,magenta))))
      `(cfw:face-day-title ((,class (:foreground ,fg :weight bold))))
      `(cfw:face-default-content ((,class (:foreground ,fg))))
@@ -307,7 +307,7 @@ Possinle values: `dark' or `light'.")
      `(cfw:face-toolbar-button-off ((,class (:foreground ,spacegrey6 :weight bold :inherit variable-pitch))))
      `(cfw:face-toolbar-button-on ((,class (:foreground ,blue :weight bold :inherit variable-pitch))))
 
-;;;; centaur-tabs - dark􄠀
+;;;; centaur-tabs - dark
      `(centaur-tabs-active-bar-face ((,class (:background ,bg :foreground ,orange))))
      `(centaur-tabs-close-mouse-face ((,class (:foreground ,orange))))
      `(centaur-tabs-close-selected ((,class (:inherit centaur-tabs-selected))))
@@ -320,14 +320,14 @@ Possinle values: `dark' or `light'.")
      `(centaur-tabs-unselected ((,class (:background ,bg-other :foreground ,grey))))
      `(centaur-tabs-unselected-modified ((,class (:background ,bg-other :foreground ,red))))
 
-;;;; circe - dark􅀭
+;;;; circe - dark
      `(circe-fool ((,class (:foreground ,spacegrey5))))
      `(circe-highlight-nick-face ((,class (:weight bold :foreground ,orange))))
      `(circe-my-message-face ((,class (:weight bold))))
      `(circe-prompt-face ((,class (:weight bold :foreground ,orange))))
      `(circe-server-face ((,class (:foreground ,spacegrey5))))
 
-;;;; company - dark􄮽
+;;;; company - dark
      `(company-preview ((,class (:foreground ,spacegrey5))))
      `(company-preview-common ((,class (:background ,spacegrey3 :foreground ,orange))))
      `(company-preview-search ((,class (:inherit company-tooltip-search))))
@@ -342,10 +342,10 @@ Possinle values: `dark' or `light'.")
      `(company-tooltip-search-selection ((,class (:background ,grey))))
      `(company-tooltip-selection ((,class (:background ,grey :weight bold))))
 
-;;;; company-box - dark􄿙
+;;;; company-box - dark
      `(company-box-candidate ((,class (:foreground ,fg))))
 
-;;;; compilation - dark􅌃
+;;;; compilation - dark
      `(compilation-column-number ((,class (:inherit font-lock-comment-face))))
      `(compilation-error ((,class (:inherit error :weight bold))))
      `(compilation-info ((,class (:inherit success))))
@@ -354,15 +354,15 @@ Possinle values: `dark' or `light'.")
      `(compilation-mode-line-fail ((,class (:inherit compilation-error))))
      `(compilation-warning ((,class (:inherit warning :slant italic))))
 
-;;;; counsel - dark􅆇
+;;;; counsel - dark
      `(counsel-variable-documentation ((,class (:foreground ,blue))))
 
-;;;; cperl - dark􅇢
+;;;; cperl - dark
      `(cperl-array-face ((,class (:weight bold :inherit font-lock-variable-name-face))))
      `(cperl-hash-face ((,class (:weight bold :slant italic :inherit font-lock-variable-name-face))))
      `(cperl-nonoverridable-face ((,class (:inherit font-lock-builtin-face))))
 
-;;;; custom - dark􅔃
+;;;; custom - dark
      `(custom-button ((,class (:foreground ,blue :background ,bg :box (:line-width 1 :style none)))))
      `(custom-button-mouse ((,class (:foreground ,bg :background ,blue :box (:line-width 1 :style none)))))
      `(custom-button-pressed ((,class (:foreground ,bg :background ,blue :box (:line-width 1 :style none)))))
@@ -385,12 +385,12 @@ Possinle values: `dark' or `light'.")
      `(custom-variable-tag ((,class (:foreground ,purple))))
      `(custom-visibility ((,class (:foreground ,blue :underline nil))))
 
-;;;; diff-hl - dark􅮐
+;;;; diff-hl - dark
      `(diff-hl-change ((,class (:foreground ,orange :background ,orange))))
      `(diff-hl-delete ((,class (:foreground ,red :background ,red))))
      `(diff-hl-insert ((,class (:foreground ,green :background ,green))))
 
-;;;; dired - dark􅽗
+;;;; dired - dark
      `(dired-directory ((,class (:foreground ,darkcyan))))
      `(dired-flagged ((,class (:foreground ,red))))
      `(dired-header ((,class (:foreground ,blue :weight bold))))
@@ -401,7 +401,7 @@ Possinle values: `dark' or `light'.")
      `(dired-symlink ((,class (:foreground ,magenta :weight bold))))
      `(dired-warning ((,class (:foreground ,yellow))))
 
-;;;; dired+ - dark􆆨
+;;;; dired+ - dark
      `(diredp-compressed-file-suffix ((,class (:foreground ,spacegrey5))))
      `(diredp-date-time ((,class (:foreground ,blue))))
      `(diredp-dir-heading ((,class (:foreground ,blue :weight bold))))
@@ -418,7 +418,7 @@ Possinle values: `dark' or `light'.")
      `(diredp-symlink ((,class (:foreground ,magenta))))
      `(diredp-write-priv ((,class (:foreground ,green))))
 
-;;;; dired-k - dark􆕳
+;;;; dired-k - dark
      `(dired-k-added ((,class (:foreground ,green :weight bold))))
      `(dired-k-commited ((,class (:foreground ,green :weight bold))))
      `(dired-k-directory ((,class (:foreground ,blue :weight bold))))
@@ -426,7 +426,7 @@ Possinle values: `dark' or `light'.")
      `(dired-k-modified ((,class (:foreground ,orange :weight bold))))
      `(dired-k-untracked ((,class (:foreground ,teal :weight bold))))
 
-;;;; dired-subtree - dark􆜮
+;;;; dired-subtree - dark
      `(dired-subtree-depth-1-face ((,class (:background ,bg-other))))
      `(dired-subtree-depth-2-face ((,class (:background ,bg-other))))
      `(dired-subtree-depth-3-face ((,class (:background ,bg-other))))
@@ -434,7 +434,7 @@ Possinle values: `dark' or `light'.")
      `(dired-subtree-depth-5-face ((,class (:background ,bg-other))))
      `(dired-subtree-depth-6-face ((,class (:background ,bg-other))))
 
-;;;; diredfl - dark􆣭
+;;;; diredfl - dark
      `(diredfl-autofile-name ((,class (:foreground ,spacegrey4))))
      `(diredfl-compressed-file-name ((,class (:foreground ,orange))))
      `(diredfl-compressed-file-suffix ((,class (:foreground ,yellow))))
@@ -461,11 +461,11 @@ Possinle values: `dark' or `light'.")
      `(diredfl-tagged-autofile-name ((,class (:foreground ,spacegrey5))))
      `(diredfl-write-priv ((,class (:foreground ,red))))
 
-;;;; doom-modeline - dark􆼹
+;;;; doom-modeline - dark
      `(doom-modeline-bar-inactive ((,class (:background nil))))
      `(doom-modeline-eldoc-bar ((,class (:background ,green))))
 
-;;;; ediff - dark􆿔
+;;;; ediff - dark
      `(ediff-current-diff-A ((,class (:background ,grey :extend t))))
      `(ediff-current-diff-B ((,class (:inherit ediff-current-diff-A))))
      `(ediff-current-diff-C ((,class (:inherit ediff-current-diff-A))))
@@ -479,7 +479,7 @@ Possinle values: `dark' or `light'.")
      `(ediff-odd-diff-B ((,class (:inherit ediff-odd-diff-A))))
      `(ediff-odd-diff-C ((,class (:inherit ediff-odd-diff-A))))
 
-;;;; elfeed - dark􇌌
+;;;; elfeed - dark
      `(elfeed-log-debug-level-face ((,class (:foreground ,spacegrey5))))
      `(elfeed-log-error-level-face ((,class (:inherit error))))
      `(elfeed-log-info-level-face ((,class (:inherit success))))
@@ -492,17 +492,17 @@ Possinle values: `dark' or `light'.")
      `(elfeed-search-unread-count-face ((,class (:foreground ,yellow))))
      `(elfeed-search-unread-title-face ((,class (:foreground ,fg :weight bold))))
 
-;;;; elixir-mode - dark􇘕
+;;;; elixir-mode - dark
      `(elixir-atom-face ((,class (:foreground ,cyan))))
      `(elixir-attribute-face ((,class (:foreground ,magenta))))
 
-;;;; elscreen - dark􇚦
+;;;; elscreen - dark
      `(elscreen-tab-background-face ((,class (:background ,bg))))
      `(elscreen-tab-control-face ((,class (:background ,bg :foreground ,bg))))
      `(elscreen-tab-current-screen-face ((,class (:background ,bg-other :foreground ,fg))))
      `(elscreen-tab-other-screen-face ((,class (:background ,bg :foreground ,fg-other))))
 
-;;;; enh-ruby-mode - dark􇠃
+;;;; enh-ruby-mode - dark
      `(enh-ruby-heredoc-delimiter-face ((,class (:inherit font-lock-string-face))))
      `(enh-ruby-op-face ((,class (:foreground ,fg))))
      `(enh-ruby-regexp-delimiter-face ((,class (:inherit enh-ruby-regexp-face))))
@@ -511,7 +511,7 @@ Possinle values: `dark' or `light'.")
      `(erm-syn-errline ((,class (:underline (:style wave :color ,red)))))
      `(erm-syn-warnline ((,class (:underline (:style wave :color ,yellow)))))
 
-;;;; erc - dark􇨣
+;;;; erc - dark
      `(erc-action-face  ((,class (:weight bold))))
      `(erc-button ((,class (:weight bold :underline t))))
      `(erc-command-indicator-face ((,class (:weight bold))))
@@ -530,7 +530,7 @@ Possinle values: `dark' or `light'.")
      `(erc-prompt-face ((,class (:foreground ,orange :weight bold))))
      `(erc-timestamp-face ((,class (:foreground ,blue :weight bold))))
 
-;;;; eshell - dark􇹩
+;;;; eshell - dark
      `(eshell-ls-archive ((,class (:foreground ,purple))))
      `(eshell-ls-backup ((,class (:foreground ,yellow))))
      `(eshell-ls-clutter ((,class (:foreground ,red))))
@@ -544,30 +544,30 @@ Possinle values: `dark' or `light'.")
      `(eshell-ls-unreadable ((,class (:foreground ,spacegrey5))))
      `(eshell-prompt ((,class (:foreground ,orange :weight bold))))
 
-;;;; evil - dark􈅌
+;;;; evil - dark
      `(evil-ex-info ((,class (:foreground ,red :slant italic))))
      `(evil-ex-search ((,class (:background ,orange :foreground ,spacegrey0 :weight bold))))
      `(evil-ex-substitute-matches ((,class (:background ,spacegrey0 :foreground ,red :weight bold :strike-through t))))
      `(evil-ex-substitute-replacement ((,class (:background ,spacegrey0 :foreground ,green :weight bold))))
      `(evil-search-highlight-persist-highlight-face ((,class (:inherit lazy-highlight))))
 
-;;;; evil-googles - dark􈖀
+;;;; evil-googles - dark
      `(evil-goggles-default-face ((,class (:inherit region))))
 
-;;;; evil-mc - dark􈌺
+;;;; evil-mc - dark
      `(evil-mc-cursor-bar-face ((,class (:height 1 :background ,purple :foreground ,spacegrey0))))
      `(evil-mc-cursor-default-face ((,class (:background ,purple :foreground ,spacegrey0 :inverse-video nil))))
      `(evil-mc-cursor-hbar-face ((,class (:underline (:color ,orange)))))
      `(evil-mc-region-face ((,class (:inherit region))))
 
-;;;; evil-snipe - dark􈒥
+;;;; evil-snipe - dark
      `(evil-snipe-first-match-face ((,class (:foreground ,orange :background ,darkblue :weight bold))))
      `(evil-snipe-matches-face ((,class (:foreground ,orange :underline t :weight bold))))
 
-;;;; flx-ido - dark􈭟
+;;;; flx-ido - dark
      `(flx-highlight-face ((,class (:weight bold :foreground ,yellow :underline nil))))
 
-;;;; flycheck - dark􈗙
+;;;; flycheck - dark
      `(flycheck-error ((,class (:underline (:style wave :color ,red)))))
      `(flycheck-fringe-error ((,class (:inherit fringe :foreground ,red))))
      `(flycheck-fringe-info ((,class (:inherit fringe :foreground ,green))))
@@ -575,27 +575,27 @@ Possinle values: `dark' or `light'.")
      `(flycheck-info ((,class (:underline (:style wave :color ,green)))))
      `(flycheck-warning ((,class (:underline (:style wave :color ,yellow)))))
 
-;;;; flycheck-posframe - dark􈞺
+;;;; flycheck-posframe - dark
      `(flycheck-posframe-background-face ((,class (:background ,bg-other))))
      `(flycheck-posframe-error-face ((,class (:inherit flycheck-posframe-face :foreground ,red))))
      `(flycheck-posframe-face ((,class (:inherit default))))
      `(flycheck-posframe-info-face ((,class (:inherit flycheck-posframe-face :foreground ,fg))))
      `(flycheck-posframe-warning-face ((,class (:inherit flycheck-posframe-face :foreground ,yellow))))
 
-;;;; flymake - dark􈦏
+;;;; flymake - dark
      `(flymake-error ((,class (:underline (:style wave :color ,red)))))
      `(flymake-note ((,class (:underline (:style wave :color ,green)))))
      `(flymake-warning ((,class (:underline (:style wave :color ,orange)))))
 
-;;;; flyspell - dark􈪂
+;;;; flyspell - dark
      `(flyspell-duplicate ((,class (:underline (:style wave :color ,yellow) :inherit unspecified))))
      `(flyspell-incorrect ((,class (:underline (:style wave :color ,red) :inherit unspecified))))
 
-;;;; forge - dark􍤎
+;;;; forge - dark
      `(forge-topic-closed ((,class (:foreground ,spacegrey5 :strike-through t))))
      `(forge-topic-label ((,class (:box nil))))
 
-;;;; git-commit - dark􈯌
+;;;; git-commit - dark
      `(git-commit-comment-branch-local ((,class (:foreground ,purple))))
      `(git-commit-comment-branch-remote ((,class (:foreground ,green))))
      `(git-commit-comment-detached ((,class (:foreground ,orange))))
@@ -608,22 +608,22 @@ Possinle values: `dark' or `light'.")
      `(git-commit-pseudo-header ((,class (:foreground ,spacegrey5 :slant italic))))
      `(git-commit-summary ((,class (:foreground ,darkcyan))))
 
-;;;; git-gutter - dark􈽲
+;;;; git-gutter - dark
      `(git-gutter:added ((,class (:inherit fringe :foreground ,green))))
      `(git-gutter:deleted ((,class (:inherit fringe :foreground ,red))))
      `(git-gutter:modified ((,class (:inherit fringe :foreground ,cyan))))
 
-;;;; git-gutter+ - dark􉁧
+;;;; git-gutter+ - dark
      `(git-gutter+-added ((,class (:inherit fringe :foreground ,green :background nil))))
      `(git-gutter+-deleted ((,class (:inherit fringe :foreground ,red :background nil))))
      `(git-gutter+-modified ((,class (:inherit fringe :foreground ,cyan :background nil))))
 
-;;;; git-gutter-fringe - dark􉆐
+;;;; git-gutter-fringe - dark
      `(git-gutter-fr:added ((,class (:inherit git-gutter:added))))
      `(git-gutter-fr:deleted ((,class (:inherit git-gutter:deleted))))
      `(git-gutter-fr:modified ((,class (:inherit git-gutter:modified))))
 
-;;;; gnus - dark􉊂
+;;;; gnus - dark
      `(gnus-cite-1 ((,class (:foreground ,magenta))))
      `(gnus-cite-2 ((,class (:foreground ,magenta))))
      `(gnus-cite-3 ((,class (:foreground ,magenta))))
@@ -679,15 +679,15 @@ Possinle values: `dark' or `light'.")
      `(gnus-summary-selected ((,class (:foreground ,blue :weight bold))))
      `(gnus-x-face ((,class (:background ,spacegrey5 :foreground ,fg))))
 
-;;;; goggles - dark􊄏
+;;;; goggles - dark
      `(goggles-added ((,class (:background ,green))))
      `(goggles-changed ((,class (:inherit region))))
      `(goggles-removed ((,class (:background ,red :extend t))))
 
-;;;; header-line - dark􁥟
+;;;; header-line - dark
      `(header-line ((,class (:background ,bg :foreground ,fg :distant-foreground ,bg))))
 
-;;;; helm - dark􊇑
+;;;; helm - dark
      `(helm-ff-directory ((,class (:foreground ,red))))
      `(helm-ff-dotted-directory ((,class (:foreground ,grey))))
      `(helm-ff-executable ((,class (:foreground ,spacegrey8 :inherit italic))))
@@ -708,10 +708,10 @@ Possinle values: `dark' or `light'.")
      `(helm-swoop-target-word-face ((,class (:foreground ,green :inherit bold))))
      `(helm-visible-mark ((,class (:inherit (bold highlight)))))
 
-;;;; helpful - dark􊝎
+;;;; helpful - dark
      `(helpful-heading ((,class (:weight bold :height 1.2))))
 
-;;;; hi-lock - dark􊞡
+;;;; hi-lock - dark
      `(hi-blue ((,class (:background ,blue))))
      `(hi-blue-b ((,class (:foreground ,blue :weight bold))))
      `(hi-green ((,class (:background ,green))))
@@ -720,56 +720,56 @@ Possinle values: `dark' or `light'.")
      `(hi-red-b ((,class (:foreground ,red :weight bold))))
      `(hi-yellow ((,class (:background ,yellow))))
 
-;;;; highlight-indentation-mode - dark􊦫
+;;;; highlight-indentation-mode - dark
      `(highlight-indentation-current-column-face ((,class (:background ,spacegrey1))))
      `(highlight-indentation-face ((,class (:inherit hl-line))))
      `(highlight-indentation-guides-even-face ((,class (:inherit highlight-indentation-face))))
      `(highlight-indentation-guides-odd-face ((,class (:inherit highlight-indentation-face))))
 
-;;;; highlight-numbers-mode - dark􊤷
+;;;; highlight-numbers-mode - dark
      `(highlight-numbers-number ((,class (:inherit bold :foreground ,orange))))
 
-;;;; highlight-quoted-mode - dark􊬪
+;;;; highlight-quoted-mode - dark
      `(highlight-quoted-quote  ((,class (:foreground ,fg))))
      `(highlight-quoted-symbol ((,class (:foreground ,yellow))))
 
-;;;; highlight-symbol - dark􊯋
+;;;; highlight-symbol - dark
      `(highlight-symbol-face ((,class (:background ,grey :distant-foreground ,fg-other))))
 
-;;;; highlight-thing - dark􊱄
+;;;; highlight-thing - dark
      `(highlight-thing ((,class (:background ,grey :distant-foreground ,fg-other))))
 
-;;;; hl-fill-column-face - dark􊲶
+;;;; hl-fill-column-face - dark
      `(hl-fill-column-face ((,class (:inherit (hl-line shadow)))))
 
-;;;; hl-line (built-in) - dark􊴚
+;;;; hl-line (built-in) - dark
      `(hl-line ((,class (:background ,bg-other :extend t))))
 
-;;;; hl-todo - dark􊵷
+;;;; hl-todo - dark
      `(hl-todo ((,class (:foreground ,red :weight bold))))
 
-;;;; hlinum - dark􊷇
+;;;; hlinum - dark
      `(linum-highlight-face ((,class (:foreground ,fg :distant-foreground nil :weight normal))))
 
-;;;; hydra - dark􊸼
+;;;; hydra - dark
      `(hydra-face-amaranth ((,class (:foreground ,purple :weight bold))))
      `(hydra-face-blue ((,class (:foreground ,blue :weight bold))))
      `(hydra-face-magenta ((,class (:foreground ,magenta :weight bold))))
      `(hydra-face-red ((,class (:foreground ,red :weight bold))))
      `(hydra-face-teal ((,class (:foreground ,teal :weight bold))))
 
-;;;; ido - dark􋁘
+;;;; ido - dark
      `(ido-first-match ((,class (:foreground ,orange))))
      `(ido-indicator ((,class (:foreground ,red :background ,bg))))
      `(ido-only-match ((,class (:foreground ,green))))
      `(ido-subdir ((,class (:foreground ,magenta))))
      `(ido-virtual ((,class (:foreground ,spacegrey5))))
 
-;;;; iedit - dark􊾭
+;;;; iedit - dark
      `(iedit-occurrence ((,class (:foreground ,purple :weight bold :inverse-video t))))
      `(iedit-read-only-occurrence ((,class (:inherit region))))
 
-;;;; imenu-list - dark􋆋
+;;;; imenu-list - dark
      `(imenu-list-entry-face-0 ((,class (:foreground ,orange))))
      `(imenu-list-entry-face-1 ((,class (:foreground ,green))))
      `(imenu-list-entry-face-2 ((,class (:foreground ,yellow))))
@@ -777,14 +777,14 @@ Possinle values: `dark' or `light'.")
      `(imenu-list-entry-subalist-face-1 ((,class (:inherit imenu-list-entry-face-1 :weight bold))))
      `(imenu-list-entry-subalist-face-2 ((,class (:inherit imenu-list-entry-face-2 :weight bold))))
 
-;;;; indent-guide - dark􋎲
+;;;; indent-guide - dark
      `(indent-guide-face ((,class (:inherit highlight-indentation-face))))
 
-;;;; isearch - dark􋐗
+;;;; isearch - dark
      `(isearch ((,class (:inherit lazy-highlight :weight bold))))
      `(isearch-fail ((,class (:background ,red :foreground ,spacegrey0 :weight bold))))
 
-;;;; ivy - dark􋓆
+;;;; ivy - dark
      `(ivy-confirm-face ((,class (:foreground ,green))))
      `(ivy-current-match ((,class (:background ,grey :distant-foreground nil :extend t))))
      `(ivy-highlight-face ((,class (:foreground ,magenta))))
@@ -797,11 +797,11 @@ Possinle values: `dark' or `light'.")
      `(ivy-modified-buffer ((,class (:inherit bold :foreground ,darkcyan))))
      `(ivy-virtual ((,class (:inherit italic :foreground ,fg))))
 
-;;;; ivy-posframe - dark􋢷
+;;;; ivy-posframe - dark
      `(ivy-posframe ((,class (:background ,bg-other))))
      `(ivy-posframe-border ((,class (:inherit internal-border))))
 
-;;;; jabber - dark􋬊
+;;;; jabber - dark
      `(jabber-activity-face ((,class (:foreground ,red :weight bold))))
      `(jabber-activity-personal-face ((,class (:foreground ,blue :weight bold))))
      `(jabber-chat-error ((,class (:foreground ,red :weight bold))))
@@ -819,7 +819,7 @@ Possinle values: `dark' or `light'.")
      `(jabber-roster-user-online ((,class (:foreground ,green :weight bold))))
      `(jabber-roster-user-xa ((,class (:foreground ,cyan))))
 
-;;;; jdee - dark􋽷
+;;;; jdee - dark
      `(jdee-font-lock-bold-face ((,class (:inherit bold))))
      `(jdee-font-lock-constant-face ((,class (:inherit font-lock-constant-face))))
      `(jdee-font-lock-constructor-face ((,class (:foreground ,blue))))
@@ -833,18 +833,18 @@ Possinle values: `dark' or `light'.")
      `(jdee-font-lock-protected-face ((,class (:inherit font-lock-keyword-face))))
      `(jdee-font-lock-public-face ((,class (:inherit font-lock-keyword-face))))
 
-;;;; js2-mode - dark􌌇
+;;;; js2-mode - dark
      `(js2-external-variable ((,class (:foreground ,fg))))
      `(js2-function-call ((,class (:foreground ,blue))))
      `(js2-function-param ((,class (:foreground ,red))))
      `(js2-jsdoc-tag ((,class (:foreground ,spacegrey5))))
      `(js2-object-property ((,class (:foreground ,magenta))))
 
-;;;; keycast - dark􌑃
+;;;; keycast - dark
      `(keycast-command ((,class (:inherit mode-line-emphasis))))
      `(keycast-key ((,class (:inherit (bold mode-line-highlight)))))
 
-;;;; ledger-mode - dark􌓞
+;;;; ledger-mode - dark
      `(ledger-font-payee-cleared-face ((,class (:foreground ,magenta :weight bold))))
      `(ledger-font-payee-uncleared-face ((,class (:foreground ,spacegrey5  :weight bold))))
      `(ledger-font-posting-account-face ((,class (:foreground ,spacegrey8))))
@@ -852,17 +852,17 @@ Possinle values: `dark' or `light'.")
      `(ledger-font-posting-date-face ((,class (:foreground ,blue))))
      `(ledger-font-xact-highlight-face ((,class (:background ,spacegrey0))))
 
-;;;; line numbers - dark􁸈
+;;;; line numbers - dark
      `(line-number ((,class (:inherit default :foreground ,spacegrey5 :weight normal))))
      `(line-number-current-line ((,class (:inherit (hl-line default) :foreground ,fg :weight normal))))
 
-;;;; linum - dark􌛒
+;;;; linum - dark
      `(linum ((,class (:inherit line-number))))
 
-;;;; linum-relative - dark􌜕
+;;;; linum-relative - dark
      `(linum-relative-current-face ((,class (:inherit line-number-current-line))))
 
-;;;; lsp-mode - dark􏗙
+;;;; lsp-mode - dark
      `(lsp-face-highlight-read ((,class (:background ,darkblue :foreground ,spacegrey8 :distant-foreground ,spacegrey0 :weight bold))))
      `(lsp-face-highlight-textual ((,class (:background ,darkblue :foreground ,spacegrey8 :distant-foreground ,spacegrey0 :weight bold))))
      `(lsp-face-highlight-write ((,class (:background ,darkblue :foreground ,spacegrey8 :distant-foreground ,spacegrey0 :weight bold))))
@@ -879,12 +879,12 @@ Possinle values: `dark' or `light'.")
      `(lsp-ui-sideline-current-symbol ((,class (:foreground ,orange))))
      `(lsp-ui-sideline-symbol-info ((,class (:foreground ,spacegrey5 :background ,bg-other :extend t))))
 
-;;;; lui - dark􌞄
+;;;; lui - dark
      `(lui-button-face ((,class (:foreground ,orange :underline t))))
      `(lui-highlight-face ((,class (:foreground ,orange))))
      `(lui-time-stamp-face ((,class (:foreground ,magenta))))
 
-;;;; magit - dark􌡕
+;;;; magit - dark
      `(magit-bisect-bad ((,class (:foreground ,red))))
      `(magit-bisect-good ((,class (:foreground ,green))))
      `(magit-bisect-skip ((,class (:foreground ,orange))))
@@ -946,14 +946,14 @@ Possinle values: `dark' or `light'.")
      `(magit-signature-untrusted ((,class (:foreground ,yellow))))
      `(magit-tag ((,class (:foreground ,yellow))))
 
-;;;; make-mode - dark􍱨
+;;;; make-mode - dark
      `(makefile-targets ((,class (:foreground ,blue))))
 
-;;;; marginalia-dark􍦣
+;;;; marginalia - dark
      `(marginalia-documentation ((,class (:foreground ,blue))))
      `(marginalia-file-name ((,class (:foreground ,blue))))
 
-;;;; markdown-mode - dark􍵕
+;;;; markdown-mode - dark
      `(markdown-blockquote-face ((,class (:inherit italic :foreground ,spacegrey5))))
      `(markdown-bold-face ((,class (:inherit bold :foreground ,orange))))
      `(markdown-code-face ((,class (:background ,bg-org :extend t))))
@@ -974,7 +974,7 @@ Possinle values: `dark' or `light'.")
      `(markdown-reference-face ((,class (:foreground ,spacegrey5))))
      `(markdown-url-face ((,class (:foreground ,purple :weight normal))))
 
-;;;; message - dark􎌟
+;;;; message - dark
      `(message-cited-text ((,class (:foreground ,purple))))
      `(message-header-cc ((,class (:inherit 'message-header-to :foreground ,orange))))
      `(message-header-name ((,class (:foreground ,green))))
@@ -986,16 +986,16 @@ Possinle values: `dark' or `light'.")
      `(message-mml ((,class (:foreground ,spacegrey5 :slant italic))))
      `(message-separator ((,class (:foreground ,spacegrey5))))
 
-;;;; mic-paren - dark􎗤
+;;;; mic-paren - dark
      `(paren-face-match ((,class (:foreground ,red :background ,spacegrey0 :weight ultra-bold))))
      `(paren-face-mismatch ((,class (:foreground ,spacegrey0 :background ,red :weight ultra-bold))))
      `(paren-face-no-match ((,class (:inherit paren-face-mismatch :weight ultra-bold))))
 
-;;;; minimap - dark􎜛
+;;;; minimap - dark
      `(minimap-active-region-background ((,class (:background ,bg))))
      `(minimap-current-line-face ((,class (:background ,grey))))
 
-;;;; mmm-mode - dark􎞷
+;;;; mmm-mode - dark
      `(mmm-cleanup-submode-face ((,class (:background ,yellow))))
      `(mmm-code-submode-face ((,class (:background ,bg-other))))
      `(mmm-comment-submode-face ((,class (:background ,blue))))
@@ -1005,14 +1005,14 @@ Possinle values: `dark' or `light'.")
      `(mmm-output-submode-face ((,class (:background ,magenta))))
      `(mmm-special-submode-face ((,class (:background ,green))))
 
-;;;; mode-line - dark􁥟
+;;;; mode-line - dark
      `(mode-line ((,class (:background ,bg-other :foreground ,fg :distant-foreground ,bg))))
      `(mode-line-buffer-id ((,class (:weight bold))))
      `(mode-line-emphasis ((,class (:foreground ,orange :distant-foreground ,bg))))
      `(mode-line-highlight ((,class (:inherit highlight :distant-foreground ,bg))))
      `(mode-line-inactive ((,class (:background ,bg-other :foreground ,spacegrey5 :distant-foreground ,bg-other))))
 
-;;;; mu4e - dark􍨵
+;;;; mu4e - dark
      `(mu4e-forwarded-face ((,class (:foreground ,orange))))
      `(mu4e-header-key-face ((,class (:foreground ,darkcyan))))
      `(mu4e-header-title-face ((,class (:foreground ,magenta))))
@@ -1020,17 +1020,17 @@ Possinle values: `dark' or `light'.")
      `(mu4e-replied-face ((,class (:foreground ,darkcyan))))
      `(mu4e-title-face ((,class (:foreground ,magenta))))
 
-;;;; mu4e-column-faces - dark􍯉
+;;;; mu4e-column-faces - dark
      `(mu4e-column-faces-date ((,class (:foreground ,blue))))
      `(mu4e-column-faces-to-from ((,class (:foreground ,green))))
 
-;;;; multiple cursors - dark􎧑
+;;;; multiple cursors - dark
      `(mc/cursor-face ((,class (:inherit cursor))))
 
-;;;; nav-flash - dark􎨣
+;;;; nav-flash - dark
      `(nav-flash-face ((,class (:background ,grey :foreground ,spacegrey8 :weight bold))))
 
-;;;; neotree - dark􎪕
+;;;; neotree - dark
      `(neo-dir-link-face ((,class (:foreground ,orange))))
      `(neo-expand-btn-face ((,class (:foreground ,orange))))
      `(neo-file-link-face ((,class (:foreground ,fg))))
@@ -1041,16 +1041,16 @@ Possinle values: `dark' or `light'.")
      `(neo-vc-ignored-face ((,class (:foreground ,spacegrey5))))
      `(neo-vc-removed-face ((,class (:foreground ,red :strike-through t))))
 
-;;;; nlinum - dark􎴒
+;;;; nlinum - dark
      `(nlinum-current-line ((,class (:inherit line-number-current-line))))
 
-;;;; nlinum-hl - dark􎵱
+;;;; nlinum-hl - dark
      `(nlinum-hl-face ((,class (:inherit line-number-current-line))))
 
-;;;; nlinum-relative - dark􎷎
+;;;; nlinum-relative - dark
      `(nlinum-relative-current-face ((,class (:inherit line-number-current-line))))
 
-;;;; notmuch - dark􎸿
+;;;; notmuch - dark
      `(notmuch-message-summary-face ((,class (:foreground ,grey :background nil))))
      `(notmuch-search-count ((,class (:foreground ,spacegrey5))))
      `(notmuch-search-date ((,class (:foreground ,orange))))
@@ -1079,11 +1079,11 @@ Possinle values: `dark' or `light'.")
      `(notmuch-wash-cited-text ((,class (:foreground ,spacegrey4))))
      `(notmuch-wash-toggle-button ((,class (:foreground ,fg))))
 
-;;;; objed - dark􏬜
+;;;; objed - dark
      `(objed-hl ((,class (:inherit region :background ,grey))))
      `(objed-mode-line ((,class (:inherit warning :weight bold))))
 
-;;;; org-agenda - dark􀀁􀗓
+;;;; org-agenda - dark
      `(org-agenda-clocking ((,class (:background ,blue))))
      `(org-agenda-date ((,class (:foreground ,magenta :weight ultra-bold))))
      `(org-agenda-date-today ((,class (:foreground ,magenta :weight ultra-bold))))
@@ -1099,7 +1099,7 @@ Possinle values: `dark' or `light'.")
      `(org-upcoming-deadline ((,class (:foreground ,fg))))
      `(org-upcoming-distant-deadline ((,class (:foreground ,fg))))
 
-;;;; org-habit - dark􀀁􀦎
+;;;; org-habit - dark
      `(org-habit-alert-face ((,class (:weight bold :background ,yellow))))
      `(org-habit-alert-future-face ((,class (:weight bold :background ,yellow))))
      `(org-habit-clear-face ((,class (:weight bold :background ,spacegrey4))))
@@ -1109,12 +1109,12 @@ Possinle values: `dark' or `light'.")
      `(org-habit-ready-face ((,class (:weight bold :background ,blue))))
      `(org-habit-ready-future-face ((,class (:weight bold :background ,blue))))
 
-;;;; org-journal - dark􀀁􀰛
+;;;; org-journal - dark
      `(org-journal-calendar-entry-face ((,class (:foreground ,purple :slant italic))))
      `(org-journal-calendar-scheduled-face ((,class (:foreground ,red :slant italic))))
      `(org-journal-highlight ((,class (:foreground ,orange))))
 
-;;;; org-mode - dark􏮲
+;;;; org-mode - dark
      `(org-archived ((,class (:foreground ,spacegrey5))))
      `(org-block ((,class (:foreground ,spacegrey8 :background ,bg-org :extend t))))
      `(org-block-background ((,class (:background ,bg-org :extend t))))
@@ -1156,18 +1156,18 @@ Possinle values: `dark' or `light'.")
      `(org-verbatim ((,class (:foreground ,orange))))
      `(org-warning ((,class (:foreground ,yellow))))
 
-;;;; org-pomodoro - dark􀀁􀴢
+;;;; org-pomodoro - dark
      `(org-pomodoro-mode-line ((,class (:foreground ,red))))
      `(org-pomodoro-mode-line-overtime ((,class (:foreground ,yellow :weight bold))))
 
-;;;; org-ref - dark􀀁􀷏
+;;;; org-ref - dark
      `(org-ref-acronym-face ((,class (:foreground ,magenta))))
      `(org-ref-cite-face ((,class (:foreground ,yellow :weight light :underline t))))
      `(org-ref-glossary-face ((,class (:foreground ,purple))))
      `(org-ref-label-face ((,class (:foreground ,blue))))
      `(org-ref-ref-face ((,class (:inherit link :foreground ,teal))))
 
-;;;; outline - dark􀀁􀼸
+;;;; outline - dark
      `(outline-1 ((,class (:foreground ,blue :weight ultra-bold))))
      `(outline-2 ((,class (:foreground ,magenta :weight bold))))
      `(outline-3 ((,class (:foreground ,green :weight bold))))
@@ -1177,30 +1177,30 @@ Possinle values: `dark' or `light'.")
      `(outline-7 ((,class (:foreground ,purple))))
      `(outline-8 ((,class (:foreground ,fg))))
 
-;;;; parenface - dark􀀁􁄌
+;;;; parenface - dark
      `(paren-face ((,class (:foreground ,spacegrey5))))
 
-;;;; parinfer - dark􀀁􁅛
+;;;; parinfer - dark
      `(parinfer-pretty-parens:dim-paren-face ((,class (:foreground ,spacegrey5))))
      `(parinfer-smart-tab:indicator-face ((,class (:foreground ,spacegrey5))))
 
-;;;; persp-mode - dark􀀁􁉴
+;;;; persp-mode - dark
      `(persp-face-lighter-buffer-not-in-persp ((,class (:foreground ,spacegrey5))))
      `(persp-face-lighter-default ((,class (:foreground ,orange :weight bold))))
      `(persp-face-lighter-nil-persp ((,class (:foreground ,spacegrey5))))
 
-;;;; perspective - dark􀀁􁈓
+;;;; perspective - dark
      `(persp-selected-face ((,class (:foreground ,blue :weight bold))))
 
-;;;; pkgbuild-mode - dark􀀁􁍻
+;;;; pkgbuild-mode - dark
      `(pkgbuild-error-face ((,class (:underline (:style wave :color ,red)))))
 
-;;;; popup - dark􀀁􁏤
+;;;; popup - dark
      `(popup-face ((,class (:inherit tooltip))))
      `(popup-selection-face ((,class (:background ,grey))))
      `(popup-tip-face ((,class (:inherit popup-face :foreground ,magenta :background ,spacegrey0))))
 
-;;;; powerline - dark􀀁􁓉
+;;;; powerline - dark
      `(powerline-active0 ((,class (:inherit mode-line :background ,bg))))
      `(powerline-active1 ((,class (:inherit mode-line :background ,bg))))
      `(powerline-active2 ((,class (:inherit mode-line :foreground ,spacegrey8 :background ,bg))))
@@ -1208,7 +1208,7 @@ Possinle values: `dark' or `light'.")
      `(powerline-inactive1 ((,class (:inherit mode-line-inactive :background ,spacegrey2))))
      `(powerline-inactive2 ((,class (:inherit mode-line-inactive :background ,spacegrey2))))
 
-;;;; rainbow-delimiters - dark􀀁􁛩
+;;;; rainbow-delimiters - dark
      `(rainbow-delimiters-depth-1-face ((,class (:foreground ,blue))))
      `(rainbow-delimiters-depth-2-face ((,class (:foreground ,purple))))
      `(rainbow-delimiters-depth-3-face ((,class (:foreground ,green))))
@@ -1219,17 +1219,17 @@ Possinle values: `dark' or `light'.")
      `(rainbow-delimiters-mismatched-face ((,class (:inherit rainbow-delimiters-unmatched-face))))
      `(rainbow-delimiters-unmatched-face ((,class (:foreground ,red :weight bold :inverse-video t))))
 
-;;;; re-builder - dark􀀁􁧍
+;;;; re-builder - dark
      `(reb-match-0 ((,class (:foreground ,orange :inverse-video t))))
      `(reb-match-1 ((,class (:foreground ,purple :inverse-video t))))
      `(reb-match-2 ((,class (:foreground ,green :inverse-video t))))
      `(reb-match-3 ((,class (:foreground ,yellow :inverse-video t))))
 
-;;;; rjsx-mode - dark􀀁􁫼
+;;;; rjsx-mode - dark
      `(rjsx-attr ((,class (:foreground ,blue))))
      `(rjsx-tag ((,class (:foreground ,yellow))))
 
-;;;; rpm-spec-mode - dark􀀁􁭶
+;;;; rpm-spec-mode - dark
      `(rpm-spec-dir-face ((,class (:foreground ,green))))
      `(rpm-spec-doc-face ((,class (:foreground ,orange))))
      `(rpm-spec-ghost-face ((,class (:foreground ,spacegrey5))))
@@ -1240,7 +1240,7 @@ Possinle values: `dark' or `light'.")
      `(rpm-spec-tag-face ((,class (:foreground ,blue))))
      `(rpm-spec-var-face ((,class (:foreground ,magenta))))
 
-;;;; rst - dark􀀁􁶸
+;;;; rst - dark
      `(rst-block ((,class (:inherit font-lock-constant-face))))
      `(rst-level-1 ((,class (:inherit rst-adornment :weight bold))))
      `(rst-level-2 ((,class (:inherit rst-adornment :weight bold))))
@@ -1249,18 +1249,18 @@ Possinle values: `dark' or `light'.")
      `(rst-level-5 ((,class (:inherit rst-adornment :weight bold))))
      `(rst-level-6 ((,class (:inherit rst-adornment :weight bold))))
 
-;;;; selectrum - dark􋪎
+;;;; selectrum - dark
      `(selectrum-current-candidate ((,class (:background ,grey :distant-foreground nil :extend t))))
 
-;;;; sh-script - dark􀀁􁾧
+;;;; sh-script - dark
      `(sh-heredoc ((,class (:inherit font-lock-string-face :weight normal))))
      `(sh-quoted-exec ((,class (:inherit font-lock-preprocessor-face))))
 
-;;;; show-paren - dark􀀁􂁕
+;;;; show-paren - dark
      `(show-paren-match ((,class (:inherit paren-face-match))))
      `(show-paren-mismatch ((,class (:inherit paren-face-mismatch))))
 
-;;;; smart-mode-line - dark􀀁􂃳
+;;;; smart-mode-line - dark
      `(sml/charging ((,class (:foreground ,green))))
      `(sml/discharging ((,class (:foreground ,yellow :weight bold))))
      `(sml/filename ((,class (:foreground ,magenta :weight bold))))
@@ -1272,12 +1272,12 @@ Possinle values: `dark' or `light'.")
      `(sml/sudo ((,class (:foreground ,orange :weight bold))))
      `(sml/vc-edited ((,class (:foreground ,green))))
 
-;;;; smartparens - dark􀀁􂍆
+;;;; smartparens - dark
      `(sp-pair-overlay-face ((,class (:background ,grey))))
      `(sp-show-pair-match-face ((,class (:inherit show-paren-match))))
      `(sp-show-pair-mismatch-face ((,class (:inherit show-paren-mismatch))))
 
-;;;; smerge-tool - dark􀀁􂐯
+;;;; smerge-tool - dark
      `(smerge-base ((,class (:background ,blue))))
      `(smerge-lower ((,class (:background ,green))))
      `(smerge-markers ((,class (:background ,spacegrey5 :foreground ,bg :distant-foreground ,fg :weight bold))))
@@ -1287,14 +1287,14 @@ Possinle values: `dark' or `light'.")
      `(smerge-refined-removed ((,class (:inherit diff-removed :inverse-video t))))
      `(smerge-upper ((,class (:background ,red))))
 
-;;;; solaire-mode - dark􀀁􂙥
+;;;; solaire-mode - dark
      `(solaire-default-face ((,class (:inherit default :background ,bg-other))))
      `(solaire-hl-line-face ((,class (:inherit hl-line :background ,bg :extend t))))
      `(solaire-mode-line-face ((,class (:background ,bg :foreground ,fg :distant-foreground ,bg))))
      `(solaire-mode-line-inactive-face ((,class (:background ,bg-other :foreground ,fg-other :distant-foreground ,bg-other))))
      `(solaire-org-hide-face ((,class (:inherit org-hide))))
 
-;;;; spaceline - dark􀀁􂠈
+;;;; spaceline - dark
      `(spaceline-evil-emacs ((,class (:background ,cyan))))
      `(spaceline-evil-insert ((,class (:background ,green))))
      `(spaceline-evil-motion ((,class (:background ,purple))))
@@ -1309,17 +1309,17 @@ Possinle values: `dark' or `light'.")
      `(spaceline-python-venv ((,class (:foreground ,purple :distant-foreground ,magenta))))
      `(spaceline-unmodified ((,class (:background ,orange))))
 
-;;;; stripe-buffer - dark􀀁􂯆
+;;;; stripe-buffer - dark
      `(stripe-highlight ((,class (:background ,spacegrey3))))
 
-;;;; swiper - dark􀀁􂰟
+;;;; swiper - dark
      `(swiper-line-face ((,class (:background ,blue :foreground ,spacegrey0))))
      `(swiper-match-face-1 ((,class (:inherit unspecified :background ,spacegrey0 :foreground ,spacegrey5))))
      `(swiper-match-face-2 ((,class (:inherit unspecified :background ,orange :foreground ,spacegrey0 :weight bold))))
      `(swiper-match-face-3 ((,class (:inherit unspecified :background ,purple :foreground ,spacegrey0 :weight bold))))
      `(swiper-match-face-4 ((,class (:inherit unspecified :background ,green :foreground ,spacegrey0 :weight bold))))
 
-;;;; tabbar - dark􀀁􂹕
+;;;; tabbar - dark
      `(tabbar-button ((,class (:foreground ,fg :background ,bg))))
      `(tabbar-button-highlight ((,class (:inherit tabbar-button :inverse-video t))))
      `(tabbar-default ((,class (:foreground ,bg :background ,bg :height 1.0))))
@@ -1330,12 +1330,12 @@ Possinle values: `dark' or `light'.")
      `(tabbar-unselected ((,class (:inherit tabbar-default :foreground ,spacegrey5))))
      `(tabbar-unselected-modified ((,class (:inherit tabbar-modified))))
 
-;;;; tab-bar - dark􁮌
+;;;; tab-bar - dark
      `(tab-bar ((,class (:inherit tab-line))))
      `(tab-bar-tab ((,class (:inherit tab-line-tab))))
      `(tab-bar-tab-inactive ((,class (:inherit tab-line-tab-inactive))))
 
-;;;; tab-line - dark􁮌
+;;;; tab-line - dark
      `(tab-line ((,class (:background ,bg-other :foreground ,bg-other))))
      `(tab-line-close-highlight ((,class (:foreground ,orange))))
      `(tab-line-highlight ((,class (:inherit tab-line-tab))))
@@ -1343,7 +1343,7 @@ Possinle values: `dark' or `light'.")
      `(tab-line-tab-current ((,class (:background ,bg :foreground ,fg))))
      `(tab-line-tab-inactive ((,class (:background ,bg-other :foreground ,fg-other))))
 
-;;;; telephone-line - dark􀀁􃅶
+;;;; telephone-line - dark
      `(telephone-line-accent-active ((,class (:foreground ,fg :background ,spacegrey4))))
      `(telephone-line-accent-inactive ((,class (:foreground ,fg :background ,spacegrey2))))
      `(telephone-line-evil ((,class (:foreground ,fg :weight bold))))
@@ -1356,7 +1356,7 @@ Possinle values: `dark' or `light'.")
      `(telephone-line-evil-visual ((,class (:background ,orange :weight bold))))
      `(telephone-line-projectile ((,class (:foreground ,green))))
 
-;;;; term - dark􀀁􃔆
+;;;; term - dark
      `(term ((,class (:foreground ,fg))))
      `(term-bold ((,class (:weight bold))))
      `(term-color-black ((,class (:background ,spacegrey0 :foreground ,spacegrey0))))
@@ -1369,7 +1369,7 @@ Possinle values: `dark' or `light'.")
      `(term-color-white ((,class (:background ,spacegrey8 :foreground ,spacegrey8))))
      `(term-color-yellow ((,class (:background ,yellow :foreground ,yellow))))
 
-;;;; tldr - dark􀀁􃠮
+;;;; tldr - dark
      `(tldr-code-block ((,class (:foreground ,green :background ,grey :weight semi-bold))))
      `(tldr-command-argument ((,class (:foreground ,fg :background ,grey))))
      `(tldr-command-itself ((,class (:foreground ,bg :background ,green :weight semi-bold))))
@@ -1377,7 +1377,7 @@ Possinle values: `dark' or `light'.")
      `(tldr-introduction ((,class (:foreground ,blue :weight semi-bold))))
      `(tldr-title ((,class (:foreground ,yellow :bold t :height 1.4))))
 
-;;;; treemacs - dark􀀁􃬈
+;;;; treemacs - dark
      `(treemacs-directory-face ((,class (:foreground ,fg))))
      `(treemacs-file-face ((,class (:foreground ,fg))))
      `(treemacs-git-added-face ((,class (:foreground ,green))))
@@ -1387,26 +1387,26 @@ Possinle values: `dark' or `light'.")
      `(treemacs-root-face ((,class (:inherit font-lock-string-face :weight bold :height 1.2))))
      `(treemacs-tags-face ((,class (:foreground ,orange))))
 
-;;;; typescript-mode - dark􀀁􃨢
+;;;; typescript-mode - dark
      `(typescript-jsdoc-tag ((,class (:foreground ,spacegrey5))))
      `(typescript-jsdoc-type ((,class (:foreground ,spacegrey5))))
      `(typescript-jsdoc-value ((,class (:foreground ,spacegrey5))))
 
-;;;; undo-tree - dark􀀁􃵂
+;;;; undo-tree - dark
      `(undo-tree-visualizer-active-branch-face ((,class (:foreground ,blue))))
      `(undo-tree-visualizer-current-face ((,class (:foreground ,green :weight bold))))
      `(undo-tree-visualizer-default-face ((,class (:foreground ,spacegrey5))))
      `(undo-tree-visualizer-register-face ((,class (:foreground ,yellow))))
      `(undo-tree-visualizer-unmodified-face ((,class (:foreground ,spacegrey5))))
 
-;;;; vimish-fold - dark􀀁􃻬
+;;;; vimish-fold - dark
      `(vimish-fold-fringe ((,class (:foreground ,purple))))
      `(vimish-fold-overlay ((,class (:inherit font-lock-comment-face :background ,spacegrey0 :weight light))))
 
-;;;; volatile-highlights - dark􀀁􃾰
+;;;; volatile-highlights - dark
      `(vhl/default-face ((,class (:background ,grey))))
 
-;;;; vterm - dark􀀁􄀉
+;;;; vterm - dark
      `(vterm ((,class (:foreground ,fg))))
      `(vterm-color-black ((,class (:background ,spacegrey0 :foreground ,spacegrey0))))
      `(vterm-color-blue ((,class (:background ,blue :foreground ,blue))))
@@ -1419,7 +1419,7 @@ Possinle values: `dark' or `light'.")
      `(vterm-color-white ((,class (:background ,spacegrey8 :foreground ,spacegrey8))))
      `(vterm-color-yellow ((,class (:background ,yellow :foreground ,yellow))))
 
-;;;; web-mode - dark􀀁􄍉
+;;;; web-mode - dark
      `(web-mode-block-control-face ((,class (:foreground ,orange))))
      `(web-mode-block-control-face ((,class (:foreground ,orange))))
      `(web-mode-block-delimiter-face ((,class (:foreground ,orange))))
@@ -1437,23 +1437,23 @@ Possinle values: `dark' or `light'.")
      `(web-mode-string-face ((,class (:foreground ,green))))
      `(web-mode-type-face ((,class (:foreground ,yellow))))
 
-;;;; wgrep - dark􀀁􄞜
+;;;; wgrep - dark
      `(wgrep-delete-face ((,class (:foreground ,spacegrey3 :background ,red))))
      `(wgrep-done-face ((,class (:foreground ,blue))))
      `(wgrep-face ((,class (:weight bold :foreground ,green :background ,spacegrey5))))
      `(wgrep-file-face ((,class (:foreground ,spacegrey5))))
      `(wgrep-reject-face ((,class (:foreground ,red :weight bold))))
 
-;;;; which-func - dark􀀁􄤐
+;;;; which-func - dark
      `(which-func ((,class (:foreground ,blue))))
 
-;;;; which-key - dark􀀁􄥚
+;;;; which-key - dark
      `(which-key-command-description-face ((,class (:foreground ,blue))))
      `(which-key-group-description-face ((,class (:foreground ,magenta))))
      `(which-key-key-face ((,class (:foreground ,green))))
      `(which-key-local-map-description-face ((,class (:foreground ,purple))))
 
-;;;; whitespace - dark􀀁􄪏
+;;;; whitespace - dark
      `(whitespace-empty ((,class (:background ,spacegrey3))))
      `(whitespace-indentation ((,class (:foreground ,spacegrey4 :background ,spacegrey3))))
      `(whitespace-line ((,class (:background ,spacegrey0 :foreground ,red :weight bold))))
@@ -1462,11 +1462,11 @@ Possinle values: `dark' or `light'.")
      `(whitespace-tab ((,class (:foreground ,spacegrey4 :background ,spacegrey3))))
      `(whitespace-trailing ((,class (:inherit trailing-whitespace))))
 
-;;;; widget - dark􀀁􄲴
+;;;; widget - dark
      `(widget-button-pressed ((,class (:foreground ,red))))
      `(widget-documentation ((,class (:foreground ,green))))
 
-;;;; window-divider - dark􀀁􄵁
+;;;; window-divider - dark
      `(window-divider ((,class (:inherit vertical-border))))
      `(window-divider-first-pixel ((,class (:inherit window-divider))))
      `(window-divider-last-pixel ((,class (:inherit window-divider))))
@@ -1475,13 +1475,13 @@ Possinle values: `dark' or `light'.")
      `(woman-bold ((,class (:inherit bold :foreground ,fg))))
      `(woman-italic ((,class (:inherit underline :foreground ,magenta))))
 
-;;;; workgroups2 - dark􀀁􄺭
+;;;; workgroups2 - dark
      `(wg-brace-face ((,class (:foreground ,orange))))
      `(wg-current-workgroup-face ((,class (:foreground ,spacegrey0 :background ,orange))))
      `(wg-divider-face ((,class (:foreground ,grey))))
      `(wg-other-workgroup-face ((,class (:foreground ,spacegrey5))))
 
-;;;; yasnippet - dark􀀁􄿔
+;;;; yasnippet - dark
      `(yas-field-highlight-face ((,class (:inherit match))))
 
      (custom-theme-set-variables
@@ -1524,7 +1524,7 @@ Possinle values: `dark' or `light'.")
 
 ;;; Custom faces - light
 
-;;;; default faces - light􀻔
+;;;; default faces - light
      `(bold ((,class (:weight bold))))
      `(bold-italic ((,class (:inherit (bold italic)))))
      `(bookmark-face ((,class (:foreground ,magenta  :weight bold :underline ,darkcyan))))
@@ -1548,7 +1548,7 @@ Possinle values: `dark' or `light'.")
      `(vertical-border ((,class (:background ,spacegrey8 :foreground ,spacegrey8))))
      `(warning ((,class (:foreground ,yellow))))
 
-;;;; font-lock - light􁒬
+;;;; font-lock - light
      `(font-lock-builtin-face ((,class (:foreground ,orange))))
      `(font-lock-comment-delimiter-face ((,class (:inherit font-lock-comment-face))))
      `(font-lock-comment-face ((,class (:foreground ,spacegrey5))))
@@ -1566,7 +1566,7 @@ Possinle values: `dark' or `light'.")
      `(font-lock-variable-name-face ((,class (:foreground ,red))))
      `(font-lock-warning-face ((,class (:inherit warning))))
 
-;;;; agda-mode - light􁻼
+;;;; agda-mode - light
      `(agda2-highlight-bound-variable-face ((,class (:inherit font-lock-variable-name-face))))
      `(agda2-highlight-coinductive-constructor-face ((,class (:inherit font-lock-type-face))))
      `(agda2-highlight-datatype-face ((,class (:inherit font-lock-type-face))))
@@ -1592,14 +1592,14 @@ Possinle values: `dark' or `light'.")
      `(agda2-highlight-unsolved-constraint-face ((,class (:inherit font-lock-warning-face))))
      `(agda2-highlight-unsolved-meta-face ((,class (:inherit font-lock-warning-face))))
 
-;;;; alert - light􂰲
+;;;; alert - light
      `(alert-high-face ((,class (:inherit bold :foreground ,yellow))))
      `(alert-low-face ((,class (:foreground ,grey))))
      `(alert-moderate-face ((,class (:inherit bold :foreground ,fg-other))))
      `(alert-trivial-face ((,class (:foreground ,spacegrey5))))
      `(alert-urgent-face ((,class (:inherit bold :foreground ,red))))
 
-;;;; all-the-icons - light􂶕
+;;;; all-the-icons - light
      `(all-the-icons-blue ((,class (:foreground ,blue))))
      `(all-the-icons-blue-alt ((,class (:foreground ,teal))))
      `(all-the-icons-cyan ((,class (:foreground ,cyan))))
@@ -1635,23 +1635,23 @@ Possinle values: `dark' or `light'.")
      `(all-the-icons-silver ((,class (:foreground ,grey))))
      `(all-the-icons-yellow ((,class (:foreground ,yellow))))
 
-;;;; all-the-icons-ivy-rich - light􋥋
+;;;; all-the-icons-ivy-rich - light
      `(all-the-icons-ivy-rich-doc-face ((,class (:foreground ,blue))))
      `(all-the-icons-ivy-rich-path-face ((,class (:foreground ,blue))))
      `(all-the-icons-ivy-rich-size-face ((,class (:foreground ,blue))))
      `(all-the-icons-ivy-rich-time-face ((,class (:foreground ,blue))))
 
-;;;; annotate - light􃗒
+;;;; annotate - light
      `(annotate-annotation ((,class (:background ,orange :foreground ,spacegrey5))))
      `(annotate-annotation-secondary ((,class (:background ,green :foreground ,spacegrey5))))
      `(annotate-highlight ((,class (:background ,orange :underline ,orange))))
      `(annotate-highlight-secondary ((,class (:background ,green :underline ,green))))
 
-;;;; anzu - light􃝁
+;;;; anzu - light
      `(anzu-replace-highlight ((,class (:background ,spacegrey0 :foreground ,red :weight bold :strike-through t))))
      `(anzu-replace-to ((,class (:background ,spacegrey0 :foreground ,green :weight bold))))
 
-;;;; auctex - light􂜪
+;;;; auctex - light
      `(TeX-error-description-error ((,class (:inherit error :weight bold))))
      `(TeX-error-description-tex-said ((,class (:inherit success :weight bold))))
      `(TeX-error-description-warning ((,class (:inherit warning :weight bold))))
@@ -1669,14 +1669,14 @@ Possinle values: `dark' or `light'.")
      `(font-latex-verbatim-face ((,class (:inherit fixed-pitch :foreground ,magenta :slant italic))))
      `(font-latex-warning-face ((,class (:inherit font-lock-warning-face))))
 
-;;;; avy - light􃠤
+;;;; avy - light
      `(avy-background-face ((,class (:foreground ,spacegrey5))))
      `(avy-lead-face ((,class (:background ,orange :foreground ,bg :distant-foreground ,fg :weight bold))))
      `(avy-lead-face-0 ((,class (:inherit avy-lead-face :background ,orange))))
      `(avy-lead-face-1 ((,class (:inherit avy-lead-face :background ,orange))))
      `(avy-lead-face-2 ((,class (:inherit avy-lead-face :background ,orange))))
 
-;;;; bookmark+ - light􃧒
+;;;; bookmark+ - light
      `(bmkp-*-mark ((,class (:foreground ,bg :background ,yellow))))
      `(bmkp->-mark ((,class (:foreground ,yellow))))
      `(bmkp-D-mark ((,class (:foreground ,bg :background ,red))))
@@ -1713,7 +1713,7 @@ Possinle values: `dark' or `light'.")
      `(bmkp-url ((,class (:foreground ,blue :underline t))))
      `(bmkp-variable-list ((,class (:foreground ,green))))
 
-;;;; calfw - light􄋈
+;;;; calfw - light
      `(cfw:face-annotation ((,class (:foreground ,magenta))))
      `(cfw:face-day-title ((,class (:foreground ,fg :weight bold))))
      `(cfw:face-default-content ((,class (:foreground ,fg))))
@@ -1733,7 +1733,7 @@ Possinle values: `dark' or `light'.")
      `(cfw:face-toolbar-button-off ((,class (:foreground ,spacegrey6 :weight bold :inherit variable-pitch))))
      `(cfw:face-toolbar-button-on ((,class (:foreground ,blue :weight bold :inherit variable-pitch))))
 
-;;;; centaur-tabs - light􄠀
+;;;; centaur-tabs - light
      `(centaur-tabs-active-bar-face ((,class (:background ,bg :foreground ,orange))))
      `(centaur-tabs-close-mouse-face ((,class (:foreground ,orange))))
      `(centaur-tabs-close-selected ((,class (:inherit centaur-tabs-selected))))
@@ -1746,14 +1746,14 @@ Possinle values: `dark' or `light'.")
      `(centaur-tabs-unselected ((,class (:background ,bg-other :foreground ,grey))))
      `(centaur-tabs-unselected-modified ((,class (:background ,bg-other :foreground ,red))))
 
-;;;; circe - light􅀭
+;;;; circe - light
      `(circe-fool ((,class (:foreground ,spacegrey5))))
      `(circe-highlight-nick-face ((,class (:weight bold :foreground ,orange))))
      `(circe-my-message-face ((,class (:weight bold))))
      `(circe-prompt-face ((,class (:weight bold :foreground ,orange))))
      `(circe-server-face ((,class (:foreground ,spacegrey5))))
 
-;;;; company - light􄮽
+;;;; company - light
      `(company-preview ((,class (:foreground ,spacegrey5))))
      `(company-preview-common ((,class (:background ,spacegrey3 :foreground ,orange))))
      `(company-preview-search ((,class (:inherit company-tooltip-search))))
@@ -1768,10 +1768,10 @@ Possinle values: `dark' or `light'.")
      `(company-tooltip-search-selection ((,class (:background ,grey))))
      `(company-tooltip-selection ((,class (:background ,grey :weight bold))))
 
-;;;; company-box - light􄿙
+;;;; company-box - light
      `(company-box-candidate ((,class (:foreground ,fg))))
 
-;;;; compilation - light􅌃
+;;;; compilation - light
      `(compilation-column-number ((,class (:inherit font-lock-comment-face))))
      `(compilation-error ((,class (:inherit error :weight bold))))
      `(compilation-info ((,class (:inherit success))))
@@ -1780,15 +1780,15 @@ Possinle values: `dark' or `light'.")
      `(compilation-mode-line-fail ((,class (:inherit compilation-error))))
      `(compilation-warning ((,class (:inherit warning :slant italic))))
 
-;;;; counsel - light􅆇
+;;;; counsel - light
      `(counsel-variable-documentation ((,class (:foreground ,blue))))
 
-;;;; cperl - light􅇢
+;;;; cperl - light
      `(cperl-array-face ((,class (:weight bold :inherit font-lock-variable-name-face))))
      `(cperl-hash-face ((,class (:weight bold :slant italic :inherit font-lock-variable-name-face))))
      `(cperl-nonoverridable-face ((,class (:inherit font-lock-builtin-face))))
 
-;;;; custom - light􅔃
+;;;; custom - light
      `(custom-button ((,class (:foreground ,blue :background ,bg :box (:line-width 1 :style none)))))
      `(custom-button-mouse ((,class (:foreground ,bg :background ,blue :box (:line-width 1 :style none)))))
      `(custom-button-pressed ((,class (:foreground ,bg :background ,blue :box (:line-width 1 :style none)))))
@@ -1811,12 +1811,12 @@ Possinle values: `dark' or `light'.")
      `(custom-variable-tag ((,class (:foreground ,purple))))
      `(custom-visibility ((,class (:foreground ,blue :underline nil))))
 
-;;;; diff-hl - light􅮐
+;;;; diff-hl - light
      `(diff-hl-change ((,class (:foreground ,orange :background ,orange))))
      `(diff-hl-delete ((,class (:foreground ,red :background ,red))))
      `(diff-hl-insert ((,class (:foreground ,green :background ,green))))
 
-;;;; dired - light􅽗
+;;;; dired - light
      `(dired-directory ((,class (:foreground ,darkcyan))))
      `(dired-flagged ((,class (:foreground ,red))))
      `(dired-header ((,class (:foreground ,blue :weight bold))))
@@ -1827,7 +1827,7 @@ Possinle values: `dark' or `light'.")
      `(dired-symlink ((,class (:foreground ,magenta :weight bold))))
      `(dired-warning ((,class (:foreground ,yellow))))
 
-;;;; dired+ - light􆆨
+;;;; dired+ - light
      `(diredp-compressed-file-suffix ((,class (:foreground ,spacegrey5))))
      `(diredp-date-time ((,class (:foreground ,blue))))
      `(diredp-dir-heading ((,class (:foreground ,blue :weight bold))))
@@ -1844,7 +1844,7 @@ Possinle values: `dark' or `light'.")
      `(diredp-symlink ((,class (:foreground ,magenta))))
      `(diredp-write-priv ((,class (:foreground ,green))))
 
-;;;; dired-k - light􆕳
+;;;; dired-k - light
      `(dired-k-added ((,class (:foreground ,green :weight bold))))
      `(dired-k-commited ((,class (:foreground ,green :weight bold))))
      `(dired-k-directory ((,class (:foreground ,blue :weight bold))))
@@ -1852,7 +1852,7 @@ Possinle values: `dark' or `light'.")
      `(dired-k-modified ((,class (:foreground ,orange :weight bold))))
      `(dired-k-untracked ((,class (:foreground ,teal :weight bold))))
 
-;;;; dired-subtree - light􆜮
+;;;; dired-subtree - light
      `(dired-subtree-depth-1-face ((,class (:background ,bg-other))))
      `(dired-subtree-depth-2-face ((,class (:background ,bg-other))))
      `(dired-subtree-depth-3-face ((,class (:background ,bg-other))))
@@ -1860,7 +1860,7 @@ Possinle values: `dark' or `light'.")
      `(dired-subtree-depth-5-face ((,class (:background ,bg-other))))
      `(dired-subtree-depth-6-face ((,class (:background ,bg-other))))
 
-;;;; diredfl - light􆣭
+;;;; diredfl - light
      `(diredfl-autofile-name ((,class (:foreground ,spacegrey4))))
      `(diredfl-compressed-file-name ((,class (:foreground ,orange))))
      `(diredfl-compressed-file-suffix ((,class (:foreground ,yellow))))
@@ -1887,11 +1887,11 @@ Possinle values: `dark' or `light'.")
      `(diredfl-tagged-autofile-name ((,class (:foreground ,spacegrey5))))
      `(diredfl-write-priv ((,class (:foreground ,red))))
 
-;;;; doom-modeline - light􆼹
+;;;; doom-modeline - light
      `(doom-modeline-bar-inactive ((,class (:background nil))))
      `(doom-modeline-eldoc-bar ((,class (:background ,green))))
 
-;;;; ediff - light􆿔
+;;;; ediff - light
      `(ediff-current-diff-A ((,class (:background ,grey :extend t))))
      `(ediff-current-diff-B ((,class (:inherit ediff-current-diff-A))))
      `(ediff-current-diff-C ((,class (:inherit ediff-current-diff-A))))
@@ -1905,7 +1905,7 @@ Possinle values: `dark' or `light'.")
      `(ediff-odd-diff-B ((,class (:inherit ediff-odd-diff-A))))
      `(ediff-odd-diff-C ((,class (:inherit ediff-odd-diff-A))))
 
-;;;; elfeed - light􇌌
+;;;; elfeed - light
      `(elfeed-log-debug-level-face ((,class (:foreground ,spacegrey5))))
      `(elfeed-log-error-level-face ((,class (:inherit error))))
      `(elfeed-log-info-level-face ((,class (:inherit success))))
@@ -1918,17 +1918,17 @@ Possinle values: `dark' or `light'.")
      `(elfeed-search-unread-count-face ((,class (:foreground ,yellow))))
      `(elfeed-search-unread-title-face ((,class (:foreground ,fg :weight bold))))
 
-;;;; elixir-mode - light􇘕
+;;;; elixir-mode - light
      `(elixir-atom-face ((,class (:foreground ,cyan))))
      `(elixir-attribute-face ((,class (:foreground ,magenta))))
 
-;;;; elscreen - light􇚦
+;;;; elscreen - light
      `(elscreen-tab-background-face ((,class (:background ,bg))))
      `(elscreen-tab-control-face ((,class (:background ,bg :foreground ,bg))))
      `(elscreen-tab-current-screen-face ((,class (:background ,bg-other :foreground ,fg))))
      `(elscreen-tab-other-screen-face ((,class (:background ,bg :foreground ,fg-other))))
 
-;;;; enh-ruby-mode - light􇠃
+;;;; enh-ruby-mode - light
      `(enh-ruby-heredoc-delimiter-face ((,class (:inherit font-lock-string-face))))
      `(enh-ruby-op-face ((,class (:foreground ,fg))))
      `(enh-ruby-regexp-delimiter-face ((,class (:inherit enh-ruby-regexp-face))))
@@ -1937,7 +1937,7 @@ Possinle values: `dark' or `light'.")
      `(erm-syn-errline ((,class (:underline (:style wave :color ,red)))))
      `(erm-syn-warnline ((,class (:underline (:style wave :color ,yellow)))))
 
-;;;; erc - light􇨣
+;;;; erc - light
      `(erc-action-face  ((,class (:weight bold))))
      `(erc-button ((,class (:weight bold :underline t))))
      `(erc-command-indicator-face ((,class (:weight bold))))
@@ -1956,7 +1956,7 @@ Possinle values: `dark' or `light'.")
      `(erc-prompt-face ((,class (:foreground ,orange :weight bold))))
      `(erc-timestamp-face ((,class (:foreground ,blue :weight bold))))
 
-;;;; eshell - light􇹩
+;;;; eshell - light
      `(eshell-ls-archive ((,class (:foreground ,purple))))
      `(eshell-ls-backup ((,class (:foreground ,yellow))))
      `(eshell-ls-clutter ((,class (:foreground ,red))))
@@ -1970,30 +1970,30 @@ Possinle values: `dark' or `light'.")
      `(eshell-ls-unreadable ((,class (:foreground ,spacegrey5))))
      `(eshell-prompt ((,class (:foreground ,orange :weight bold))))
 
-;;;; evil - light􈅌
+;;;; evil - light
      `(evil-ex-info ((,class (:foreground ,red :slant italic))))
      `(evil-ex-search ((,class (:background ,orange :foreground ,spacegrey0 :weight bold))))
      `(evil-ex-substitute-matches ((,class (:background ,spacegrey0 :foreground ,red :weight bold :strike-through t))))
      `(evil-ex-substitute-replacement ((,class (:background ,spacegrey0 :foreground ,green :weight bold))))
      `(evil-search-highlight-persist-highlight-face ((,class (:inherit lazy-highlight))))
 
-;;;; evil-googles - light􈖀
+;;;; evil-googles - light
      `(evil-goggles-default-face ((,class (:inherit region))))
 
-;;;; evil-mc - light􈌺
+;;;; evil-mc - light
      `(evil-mc-cursor-bar-face ((,class (:height 1 :background ,purple :foreground ,spacegrey0))))
      `(evil-mc-cursor-default-face ((,class (:background ,purple :foreground ,spacegrey0 :inverse-video nil))))
      `(evil-mc-cursor-hbar-face ((,class (:underline (:color ,orange)))))
      `(evil-mc-region-face ((,class (:inherit region))))
 
-;;;; evil-snipe - light􈒥
+;;;; evil-snipe - light
      `(evil-snipe-first-match-face ((,class (:foreground ,orange :background ,darkblue :weight bold))))
      `(evil-snipe-matches-face ((,class (:foreground ,orange :underline t :weight bold))))
 
-;;;; flx-ido - light􈭟
+;;;; flx-ido - light
      `(flx-highlight-face ((,class (:weight bold :foreground ,yellow :underline nil))))
 
-;;;; flycheck - light􈗙
+;;;; flycheck - light
      `(flycheck-error ((,class (:underline (:style wave :color ,red)))))
      `(flycheck-fringe-error ((,class (:inherit fringe :foreground ,red))))
      `(flycheck-fringe-info ((,class (:inherit fringe :foreground ,green))))
@@ -2001,27 +2001,27 @@ Possinle values: `dark' or `light'.")
      `(flycheck-info ((,class (:underline (:style wave :color ,green)))))
      `(flycheck-warning ((,class (:underline (:style wave :color ,yellow)))))
 
-;;;; flycheck-posframe - light􈞺
+;;;; flycheck-posframe - light
      `(flycheck-posframe-background-face ((,class (:background ,bg-other))))
      `(flycheck-posframe-error-face ((,class (:inherit flycheck-posframe-face :foreground ,red))))
      `(flycheck-posframe-face ((,class (:inherit default))))
      `(flycheck-posframe-info-face ((,class (:inherit flycheck-posframe-face :foreground ,fg))))
      `(flycheck-posframe-warning-face ((,class (:inherit flycheck-posframe-face :foreground ,yellow))))
 
-;;;; flymake - light􈦏
+;;;; flymake - light
      `(flymake-error ((,class (:underline (:style wave :color ,red)))))
      `(flymake-note ((,class (:underline (:style wave :color ,green)))))
      `(flymake-warning ((,class (:underline (:style wave :color ,orange)))))
 
-;;;; flyspell - light􈪂
+;;;; flyspell - light
      `(flyspell-duplicate ((,class (:underline (:style wave :color ,yellow) :inherit unspecified))))
      `(flyspell-incorrect ((,class (:underline (:style wave :color ,red) :inherit unspecified))))
 
-;;;; forge - light􍤎
+;;;; forge - light
      `(forge-topic-closed ((,class (:foreground ,spacegrey5 :strike-through t))))
      `(forge-topic-label ((,class (:box nil))))
 
-;;;; git-commit - light􈯌
+;;;; git-commit - light
      `(git-commit-comment-branch-local ((,class (:foreground ,purple))))
      `(git-commit-comment-branch-remote ((,class (:foreground ,green))))
      `(git-commit-comment-detached ((,class (:foreground ,orange))))
@@ -2034,22 +2034,22 @@ Possinle values: `dark' or `light'.")
      `(git-commit-pseudo-header ((,class (:foreground ,spacegrey5 :slant italic))))
      `(git-commit-summary ((,class (:foreground ,darkcyan))))
 
-;;;; git-gutter - light􈽲
+;;;; git-gutter - light
      `(git-gutter:added ((,class (:inherit fringe :foreground ,green))))
      `(git-gutter:deleted ((,class (:inherit fringe :foreground ,red))))
      `(git-gutter:modified ((,class (:inherit fringe :foreground ,cyan))))
 
-;;;; git-gutter+ - light􉁧
+;;;; git-gutter+ - light
      `(git-gutter+-added ((,class (:inherit fringe :foreground ,green :background nil))))
      `(git-gutter+-deleted ((,class (:inherit fringe :foreground ,red :background nil))))
      `(git-gutter+-modified ((,class (:inherit fringe :foreground ,cyan :background nil))))
 
-;;;; git-gutter-fringe - light􉆐
+;;;; git-gutter-fringe - light
      `(git-gutter-fr:added ((,class (:inherit git-gutter:added))))
      `(git-gutter-fr:deleted ((,class (:inherit git-gutter:deleted))))
      `(git-gutter-fr:modified ((,class (:inherit git-gutter:modified))))
 
-;;;; gnus - light􉊂
+;;;; gnus - light
      `(gnus-cite-1 ((,class (:foreground ,magenta))))
      `(gnus-cite-2 ((,class (:foreground ,magenta))))
      `(gnus-cite-3 ((,class (:foreground ,magenta))))
@@ -2375,7 +2375,7 @@ Possinle values: `dark' or `light'.")
 ;;;; make-mode - light
      `(makefile-targets ((,class (:foreground ,blue))))
 
-;;;; marginalia-dark
+;;;; marginalia - light
      `(marginalia-documentation ((,class (:foreground ,blue))))
      `(marginalia-file-name ((,class (:foreground ,blue))))
 
