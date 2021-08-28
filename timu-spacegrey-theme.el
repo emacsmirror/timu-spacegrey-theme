@@ -209,6 +209,9 @@ Possinle values: `dark' or `light'.")
      `(all-the-icons-silver ((,class (:foreground ,grey))))
      `(all-the-icons-yellow ((,class (:foreground ,yellow))))
 
+;;;; all-the-icons-dired - dark􋥋
+     `(all-the-icons-dired-dir-face ((,class (:foreground ,fg-other))))
+
 ;;;; all-the-icons-ivy-rich - dark
      `(all-the-icons-ivy-rich-doc-face ((,class (:foreground ,blue))))
      `(all-the-icons-ivy-rich-path-face ((,class (:foreground ,blue))))
@@ -1634,6 +1637,9 @@ Possinle values: `dark' or `light'.")
      `(all-the-icons-red-alt ((,class (:foreground ,red))))
      `(all-the-icons-silver ((,class (:foreground ,grey))))
      `(all-the-icons-yellow ((,class (:foreground ,yellow))))
+
+;;;; all-the-icons-dired - light
+     `(all-the-icons-dired-dir-face ((,class (:foreground ,fg-other))))
 
 ;;;; all-the-icons-ivy-rich - light
      `(all-the-icons-ivy-rich-doc-face ((,class (:foreground ,blue))))
