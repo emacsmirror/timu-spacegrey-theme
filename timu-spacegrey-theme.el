@@ -1027,6 +1027,11 @@ Possinle values: `dark' or `light'.")
      `(mu4e-column-faces-date ((,class (:foreground ,blue))))
      `(mu4e-column-faces-to-from ((,class (:foreground ,green))))
 
+;;;; mu4e-thread-folding - dark
+     `(mu4e-thread-folding-child-face ((,class (:extend t :background ,bg-org :underline nil))))
+     `(mu4e-thread-folding-root-folded-face ((,class (:extend t :background ,bg-other :overline nil :underline nil))))
+     `(mu4e-thread-folding-root-unfolded-face ((,class (:extend t :background ,bg-other :overline nil :underline nil))))
+
 ;;;; multiple cursors - dark
      `(mc/cursor-face ((,class (:inherit cursor))))
 
@@ -2455,6 +2460,11 @@ Possinle values: `dark' or `light'.")
 ;;;; mu4e-column-faces - light
      `(mu4e-column-faces-date ((,class (:foreground ,blue))))
      `(mu4e-column-faces-to-from ((,class (:foreground ,green))))
+
+;;;; mu4e-thread-folding - light
+     `(mu4e-thread-folding-child-face ((,class (:extend t :background ,bg-org :underline nil))))
+     `(mu4e-thread-folding-root-folded-face ((,class (:extend t :background ,bg-other :overline nil :underline nil))))
+     `(mu4e-thread-folding-root-unfolded-face ((,class (:extend t :background ,bg-other :overline nil :underline nil))))
 
 ;;;; multiple cursors - light
      `(mc/cursor-face ((,class (:inherit cursor))))
