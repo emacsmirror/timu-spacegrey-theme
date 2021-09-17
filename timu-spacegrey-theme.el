@@ -1087,6 +1087,12 @@ Possinle values: `dark' or `light'.")
      `(notmuch-wash-cited-text ((,class (:foreground ,spacegrey4))))
      `(notmuch-wash-toggle-button ((,class (:foreground ,fg))))
 
+;;;; orderless - dark
+     `(orderless-match-face-0 ((,class (:foreground ,teal :weight bold :underline t))))
+     `(orderless-match-face-1 ((,class (:foreground ,darkcyan :weight bold :underline t))))
+     `(orderless-match-face-2 ((,class (:foreground ,cyan :weight bold :underline t))))
+     `(orderless-match-face-3 ((,class (:foreground ,green :weight bold :underline t))))
+
 ;;;; objed - dark
      `(objed-hl ((,class (:inherit region :background ,grey))))
      `(objed-mode-line ((,class (:inherit warning :weight bold))))
@@ -2520,6 +2526,12 @@ Possinle values: `dark' or `light'.")
      `(notmuch-tree-no-match-tree-face ((,class (:foreground ,yellow))))
      `(notmuch-wash-cited-text ((,class (:foreground ,spacegrey4))))
      `(notmuch-wash-toggle-button ((,class (:foreground ,fg))))
+
+;;;; orderless - light
+     `(orderless-match-face-0 ((,class (:foreground ,darkblue :weight bold :underline t))))
+     `(orderless-match-face-1 ((,class (:foreground ,teal :weight bold :underline t))))
+     `(orderless-match-face-2 ((,class (:foreground ,darkcyan :weight bold :underline t))))
+     `(orderless-match-face-3 ((,class (:foreground ,cyan :weight bold :underline t))))
 
 ;;;; objed - light
      `(objed-hl ((,class (:inherit region :background ,grey))))
