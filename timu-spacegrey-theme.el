@@ -209,7 +209,7 @@ Possinle values: `dark' or `light'.")
      `(all-the-icons-silver ((,class (:foreground ,grey))))
      `(all-the-icons-yellow ((,class (:foreground ,yellow))))
 
-;;;; all-the-icons-dired - dark􋥋
+;;;; all-the-icons-dired - dark
      `(all-the-icons-dired-dir-face ((,class (:foreground ,fg-other))))
 
 ;;;; all-the-icons-ivy-rich - dark
@@ -400,13 +400,18 @@ Possinle values: `dark' or `light'.")
 ;;;; dired - dark
      `(dired-directory ((,class (:foreground ,darkcyan))))
      `(dired-flagged ((,class (:foreground ,red))))
-     `(dired-header ((,class (:foreground ,blue :weight bold))))
+     `(dired-header ((,class (:foreground ,orange :weight bold :underline ,darkcyan))))
      `(dired-ignored ((,class (:foreground ,spacegrey5))))
      `(dired-mark ((,class (:foreground ,orange :weight bold))))
-     `(dired-marked ((,class (:foreground ,cyan :weight bold :inverse-video t))))
+     `(dired-marked ((,class (:foreground ,yellow :weight bold))))
      `(dired-perm-write ((,class (:foreground ,red :underline t))))
-     `(dired-symlink ((,class (:foreground ,magenta :weight bold))))
+     `(dired-symlink ((,class (:foreground ,magenta))))
      `(dired-warning ((,class (:foreground ,yellow))))
+
+;;;; dired-async - dark
+     `(dired-async-failures ((,class (:foreground ,red))))
+     `(dired-async-message ((,class (:foreground ,orange))))
+     `(dired-async-mode-message ((,class (:foreground ,orange))))
 
 ;;;; dired+ - dark
      `(diredp-compressed-file-suffix ((,class (:foreground ,spacegrey5))))
@@ -1848,13 +1853,18 @@ Possinle values: `dark' or `light'.")
 ;;;; dired - light
      `(dired-directory ((,class (:foreground ,darkcyan))))
      `(dired-flagged ((,class (:foreground ,red))))
-     `(dired-header ((,class (:foreground ,blue :weight bold))))
+     `(dired-header ((,class (:foreground ,orange :weight bold :underline ,darkcyan))))
      `(dired-ignored ((,class (:foreground ,spacegrey5))))
      `(dired-mark ((,class (:foreground ,orange :weight bold))))
-     `(dired-marked ((,class (:foreground ,cyan :weight bold :inverse-video t))))
+     `(dired-marked ((,class (:foreground ,yellow :weight bold))))
      `(dired-perm-write ((,class (:foreground ,red :underline t))))
-     `(dired-symlink ((,class (:foreground ,magenta :weight bold))))
+     `(dired-symlink ((,class (:foreground ,magenta))))
      `(dired-warning ((,class (:foreground ,yellow))))
+
+;;;; dired-async - light
+     `(dired-async-failures ((,class (:foreground ,red))))
+     `(dired-async-message ((,class (:foreground ,orange))))
+     `(dired-async-mode-message ((,class (:foreground ,orange))))
 
 ;;;; dired+ - light
      `(diredp-compressed-file-suffix ((,class (:foreground ,spacegrey5))))
