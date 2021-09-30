@@ -150,6 +150,10 @@ Possinle values: `dark' or `light'.")
      `(font-lock-variable-name-face ((,class (:foreground ,red))))
      `(font-lock-warning-face ((,class (:inherit warning))))
 
+;;;; ace-window - dark
+     `(aw-leading-char-face ((,class (:foreground ,orange :height 500 :weight bold))))
+     `(aw-background-face ((,class (:foreground ,spacegrey5))))
+
 ;;;; agda-mode - dark
      `(org-agenda-clocking ((,class (:background ,blue))))
      `(org-agenda-date ((,class (:foreground ,magenta :weight ultra-bold))))
@@ -1592,6 +1596,10 @@ Possinle values: `dark' or `light'.")
      `(font-lock-type-face ((,class (:foreground ,yellow))))
      `(font-lock-variable-name-face ((,class (:foreground ,red))))
      `(font-lock-warning-face ((,class (:inherit warning))))
+
+;;;; ace-window - light
+     `(aw-leading-char-face ((,class (:foreground ,orange :height 500 :weight bold))))
+     `(aw-background-face ((,class (:foreground ,spacegrey5))))
 
 ;;;; agda-mode - light
      `(agda2-highlight-bound-variable-face ((,class (:inherit font-lock-variable-name-face))))
