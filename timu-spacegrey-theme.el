@@ -1048,6 +1048,20 @@ Possinle values: `dark' or `light'.")
 ;;;; multiple cursors - dark
      `(mc/cursor-face ((,class (:inherit cursor))))
 
+;;;; nano-modeline - dark
+     `(nano-modeline-active-name ((,class (:foreground ,fg :weight bold))))
+     `(nano-modeline-inactive-name ((,class (:foreground ,spacegrey5 :weight bold))))
+     `(nano-modeline-active-primary ((,class (:foreground ,fg))))
+     `(nano-modeline-inactive-primary ((,class (:foreground ,spacegrey5))))
+     `(nano-modeline-active-secondary ((,class (:foreground ,orange :weight bold))))
+     `(nano-modeline-inactive-secondary ((,class (:foreground ,spacegrey5 :weight bold))))
+     `(nano-modeline-active-status-RO ((,class (:background ,red :foreground ,bg :weight bold))))
+     `(nano-modeline-inactive-status-RO ((,class (:background ,spacegrey5 :foreground ,bg :weight bold))))
+     `(nano-modeline-active-status-RW ((,class (:background ,orange :foreground ,bg :weight bold))))
+     `(nano-modeline-inactive-status-RW ((,class (:background ,spacegrey5 :foreground ,bg :weight bold))))
+     `(nano-modeline-active-status-** ((,class (:background ,red :foreground ,bg :weight bold))))
+     `(nano-modeline-inactive-status-** ((,class (:background ,spacegrey5 :foreground ,bg :weight bold))))
+
 ;;;; nav-flash - dark
      `(nav-flash-face ((,class (:background ,grey :foreground ,spacegrey8 :weight bold))))
 
@@ -2504,6 +2518,20 @@ Possinle values: `dark' or `light'.")
 
 ;;;; multiple cursors - light
      `(mc/cursor-face ((,class (:inherit cursor))))
+
+;;;; nano-modeline - light
+     `(nano-modeline-active-name ((,class (:foreground ,fg :weight bold))))
+     `(nano-modeline-inactive-name ((,class (:foreground ,spacegrey5 :weight bold))))
+     `(nano-modeline-active-primary ((,class (:foreground ,fg))))
+     `(nano-modeline-inactive-primary ((,class (:foreground ,spacegrey5))))
+     `(nano-modeline-active-secondary ((,class (:foreground ,darkcyan :weight bold))))
+     `(nano-modeline-inactive-secondary ((,class (:foreground ,spacegrey5 :weight bold))))
+     `(nano-modeline-active-status-RO ((,class (:background ,red :foreground ,bg :weight bold))))
+     `(nano-modeline-inactive-status-RO ((,class (:background ,spacegrey5 :foreground ,bg :weight bold))))
+     `(nano-modeline-active-status-RW ((,class (:background ,darkcyan :foreground ,bg :weight bold))))
+     `(nano-modeline-inactive-status-RW ((,class (:background ,spacegrey5 :foreground ,bg :weight bold))))
+     `(nano-modeline-active-status-** ((,class (:background ,red :foreground ,bg :weight bold))))
+     `(nano-modeline-inactive-status-** ((,class (:background ,spacegrey5 :foreground ,bg :weight bold))))
 
 ;;;; nav-flash - light
      `(nav-flash-face ((,class (:background ,grey :foreground ,spacegrey8 :weight bold))))
