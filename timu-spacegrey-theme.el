@@ -45,7 +45,7 @@
 ;;       (load-theme 'timu-spacegrey t)
 ;;
 ;;   B. From Melpa
-;;     1. M-x package-instal <RET> timu-spacegrey-theme.el <RET>.
+;;     1. M-x package-instal RET timu-spacegrey-theme.el RET.
 ;;     2. In your `~/.emacs.d/init.el' or `~/.emacs':
 ;;       (load-theme 'timu-spacegrey t)
 ;;
@@ -58,19 +58,30 @@
 ;;
 ;; II. Configuration
 ;;   There is a light version now included as well.
-;;   By default the theme is `dark', to setup the `light' flavour
-;;   add the following to your `~/.emacs.d/init.el' or `~/.emacs':
+;;   By default the theme is `dark', to setup the `light' flavour:
+;;
+;;   A. Change the variable `timu-spacegrey-flavour' in the Customization Interface.
+;;      M-x customize RET. Then Search for `timu'.
+;;
+;;   B. add the following to your `~/.emacs.d/init.el' or `~/.emacs'
 ;;     (setq timu-spacegrey-flavour "light")
 
 ;;; Code:
 
+(defgroup timu-spacegrey-theme ()
+  "Customise group for the \"Timu Spacegrey\" theme."
+  :group 'faces
+  :prefix "timu-spacegrey-")
+
+(defcustom timu-spacegrey-flavour "dark"
+  "Variable to control the variant of the theme.
+Possinle values: `dark' or `light'."
+  :type 'string
+  :group 'timu-spacegrey-theme)
+
 (deftheme timu-spacegrey
   "Custom theme inspired by the spacegray theme in Sublime Text.
 Sourced other themes to get information about font faces for packages.")
-
-(defvar timu-spacegrey-flavour "dark"
-  "Variable to control the variant of the theme.
-Possinle values: `dark' or `light'.")
 
 ;;; DARK FLAVOUR
 (when (equal timu-spacegrey-flavour "dark")
