@@ -424,7 +424,7 @@ Sourced other themes to get information about font faces for packages.")
      `(diff-hl-insert ((,class (:foreground ,green :background ,green))))
 
 ;;;; dired - dark
-     `(dired-directory ((,class (:foreground ,darkcyan))))
+     `(dired-directory ((,class (:foreground ,darkcyan :weight bold))))
      `(dired-flagged ((,class (:foreground ,red))))
      `(dired-header ((,class (:foreground ,orange :weight bold :underline ,darkcyan))))
      `(dired-ignored ((,class (:foreground ,spacegrey5))))
@@ -438,6 +438,22 @@ Sourced other themes to get information about font faces for packages.")
      `(dired-async-failures ((,class (:foreground ,red))))
      `(dired-async-message ((,class (:foreground ,orange))))
      `(dired-async-mode-message ((,class (:foreground ,orange))))
+
+;;;; dired-filetype-face - dark
+     `(dired-filetype-common ((,class (:foreground ,fg))))
+     `(dired-filetype-compress ((,class (:foreground ,yellow))))
+     `(dired-filetype-document ((,class (:foreground ,blue))))
+     `(dired-filetype-execute ((,class (:foreground ,red))))
+     `(dired-filetype-image ((,class (:foreground ,orange))))
+     `(dired-filetype-js ((,class (:foreground ,yellow))))
+     `(dired-filetype-link ((,class (:foreground ,magenta))))
+     `(dired-filetype-music ((,class (:foreground ,magenta))))
+     `(dired-filetype-omit ((,class (:foreground ,blue))))
+     `(dired-filetype-plain ((,class (:foreground ,fg))))
+     `(dired-filetype-program ((,class (:foreground ,red))))
+     `(dired-filetype-source ((,class (:foreground ,green))))
+     `(dired-filetype-video ((,class (:foreground ,magenta))))
+     `(dired-filetype-xml ((,class (:foreground ,green))))
 
 ;;;; dired+ - dark
      `(diredp-compressed-file-suffix ((,class (:foreground ,spacegrey5))))
@@ -1900,7 +1916,7 @@ Sourced other themes to get information about font faces for packages.")
      `(diff-hl-insert ((,class (:foreground ,green :background ,green))))
 
 ;;;; dired - light
-     `(dired-directory ((,class (:foreground ,darkcyan))))
+     `(dired-directory ((,class (:foreground ,darkcyan :weight bold))))
      `(dired-flagged ((,class (:foreground ,red))))
      `(dired-header ((,class (:foreground ,orange :weight bold :underline ,darkcyan))))
      `(dired-ignored ((,class (:foreground ,spacegrey5))))
@@ -1914,6 +1930,22 @@ Sourced other themes to get information about font faces for packages.")
      `(dired-async-failures ((,class (:foreground ,red))))
      `(dired-async-message ((,class (:foreground ,orange))))
      `(dired-async-mode-message ((,class (:foreground ,orange))))
+
+;;;; dired-filetype-face - light
+     `(dired-filetype-common ((,class (:foreground ,fg))))
+     `(dired-filetype-compress ((,class (:foreground ,yellow))))
+     `(dired-filetype-document ((,class (:foreground ,blue))))
+     `(dired-filetype-execute ((,class (:foreground ,red))))
+     `(dired-filetype-image ((,class (:foreground ,orange))))
+     `(dired-filetype-js ((,class (:foreground ,yellow))))
+     `(dired-filetype-link ((,class (:foreground ,magenta))))
+     `(dired-filetype-music ((,class (:foreground ,magenta))))
+     `(dired-filetype-omit ((,class (:foreground ,blue))))
+     `(dired-filetype-plain ((,class (:foreground ,fg))))
+     `(dired-filetype-program ((,class (:foreground ,red))))
+     `(dired-filetype-source ((,class (:foreground ,green))))
+     `(dired-filetype-video ((,class (:foreground ,magenta))))
+     `(dired-filetype-xml ((,class (:foreground ,green))))
 
 ;;;; dired+ - light
      `(diredp-compressed-file-suffix ((,class (:foreground ,spacegrey5))))
