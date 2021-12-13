@@ -618,6 +618,11 @@ Sourced other themes to get information about font faces for packages.")
      `(evil-snipe-first-match-face ((,class (:foreground ,orange :background ,darkblue :weight bold))))
      `(evil-snipe-matches-face ((,class (:foreground ,orange :underline t :weight bold))))
 
+;;;; expenses - dark
+     `(expenses-face-date ((,class (:foreground ,orange :weight bold))))
+     `(expenses-face-expence ((,class (:foreground ,green :weight bold))))
+     `(expenses-face-message ((,class (:foreground ,darkcyan :weight bold))))
+
 ;;;; flx-ido - dark
      `(flx-highlight-face ((,class (:weight bold :foreground ,yellow :underline nil))))
 
@@ -2109,6 +2114,11 @@ Sourced other themes to get information about font faces for packages.")
 ;;;; evil-snipe - light
      `(evil-snipe-first-match-face ((,class (:foreground ,orange :background ,darkblue :weight bold))))
      `(evil-snipe-matches-face ((,class (:foreground ,orange :underline t :weight bold))))
+
+;;;; expenses - light
+     `(expenses-face-date ((,class (:foreground ,orange :weight bold))))
+     `(expenses-face-expence ((,class (:foreground ,green :weight bold))))
+     `(expenses-face-message ((,class (:foreground ,darkcyan :weight bold))))
 
 ;;;; flx-ido - light
      `(flx-highlight-face ((,class (:weight bold :foreground ,yellow :underline nil))))
