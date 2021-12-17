@@ -1576,6 +1576,12 @@ Sourced other themes to get information about font faces for packages.")
 ;;;; yasnippet - dark
      `(yas-field-highlight-face ((,class (:foreground ,green :background ,spacegrey0 :weight bold))))
 
+;;;; ytel - dark
+     `(ytel-video-published-face ((,class (:foreground ,magenta))))
+     `(ytel-channel-name-face ((,class (:foreground ,orange))))
+     `(ytel-video-length-face ((,class (:foreground ,blue))))
+     `(ytel-video-view-face ((,class (:foreground ,darkcyan))))
+
      (custom-theme-set-variables
       'timu-spacegrey
       `(ansi-color-names-vector [bg, red, green, teal, cyan, blue, yellow, fg])))))
@@ -3072,6 +3078,12 @@ Sourced other themes to get information about font faces for packages.")
 
 ;;;; yasnippet - light
      `(yas-field-highlight-face ((,class (:foreground ,green :background ,spacegrey0 :weight bold))))
+
+;;;; ytel - light
+     `(ytel-video-published-face ((,class (:foreground ,magenta))))
+     `(ytel-channel-name-face ((,class (:foreground ,orange))))
+     `(ytel-video-length-face ((,class (:foreground ,blue))))
+     `(ytel-video-view-face ((,class (:foreground ,darkcyan))))
 
      (custom-theme-set-variables
       'timu-spacegrey
