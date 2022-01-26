@@ -113,7 +113,9 @@ Sourced other themes to get information about font faces for packages.")
         (purple     "#c678dd")
         (cyan       "#46d9ff")
         (lightcyan  "#88c0d0")
-        (darkcyan   "#5699af"))
+        (darkcyan   "#5699af")
+        (black      "#000000")
+        (white      "#ffffff"))
 
     (custom-theme-set-faces
      'timu-spacegrey
@@ -1631,7 +1633,9 @@ Sourced other themes to get information about font faces for packages.")
         (purple     "#c678dd")
         (cyan       "#46d9ff")
         (lightcyan  "#88c0d0")
-        (darkcyan   "#5699af"))
+        (darkcyan   "#5699af")
+        (black      "#000000")
+        (white      "#ffffff"))
 
     (custom-theme-set-faces
      'timu-spacegrey
