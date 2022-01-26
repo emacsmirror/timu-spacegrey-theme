@@ -73,6 +73,39 @@
   :group 'faces
   :prefix "timu-spacegrey-")
 
+(defface timu-spacegrey-default-face
+  '((t nil))
+  "Custom basic default `timu-spacegrey-theme' face."
+  :group 'timu-spacegrey-theme)
+
+(defface timu-spacegrey-bold-face
+  '((t :weight bold))
+  "Custom basic bold `timu-spacegrey-theme' face."
+  :group 'timu-spacegrey-theme)
+
+(defface timu-spacegrey-bold-face-italic
+  '((t :weight bold :slant italic))
+  "Custom basic bold-italic `timu-spacegrey-theme' face."
+  :group 'timu-spacegrey-theme)
+
+(defface timu-spacegrey-italic-face
+  '((((supports :slant italic)) :slant italic)
+    (t :slant italic))
+  "Custom basic italic `timu-spacegrey-theme' face."
+  :group 'timu-spacegrey-theme)
+
+(defface timu-spacegrey-underline-face
+  '((((supports :underline t)) :underline t)
+    (t :underline t))
+  "Custom basic underlined `timu-spacegrey-theme' face."
+  :group 'timu-spacegrey-theme)
+
+(defface timu-spacegrey-strike-through-face
+  '((((supports :strike-through t)) :strike-through t)
+    (t :strike-through t))
+  "Custom basic strike-through `timu-spacegrey-theme' face."
+  :group 'timu-spacegrey-theme)
+
 (defcustom timu-spacegrey-flavour "dark"
   "Variable to control the variant of the theme.
 Possinle values: `dark' or `light'."
@@ -121,6 +154,14 @@ Sourced other themes to get information about font faces for packages.")
      'timu-spacegrey
 
 ;;; Custom faces - dark
+
+;;;; timu-spacegrey-faces - dark
+     `(timu-spacegrey-default-face ((,class (:background ,bg :foreground ,fg))))
+     `(timu-spacegrey-bold-face ((,class (:weight bold :foreground ,spacegrey8))))
+     `(timu-spacegrey-bold-face-italic ((,class (:weight bold :slant italic :foreground ,spacegrey8))))
+     `(timu-spacegrey-italic-face ((,class (:slant italic :foreground ,white))))
+     `(timu-spacegrey-underline-face ((,class (:underline ,yellow))))
+     `(timu-spacegrey-strike-through-face ((,class (:strike-through ,yellow))))
 
 ;;;; default faces - dark
      `(bold ((,class (:weight bold))))
@@ -1641,6 +1682,14 @@ Sourced other themes to get information about font faces for packages.")
      'timu-spacegrey
 
 ;;; Custom faces - light
+
+;;;; timu-spacegrey-faces - light
+     `(timu-spacegrey-default-face ((,class (:background ,bg :foreground ,fg))))
+     `(timu-spacegrey-bold-face ((,class (:weight bold :foreground ,spacegrey0))))
+     `(timu-spacegrey-bold-face-italic ((,class (:weight bold :slant italic :foreground ,spacegrey0))))
+     `(timu-spacegrey-italic-face ((,class (:slant italic :foreground ,black))))
+     `(timu-spacegrey-underline-face ((,class (:underline ,red))))
+     `(timu-spacegrey-strike-through-face ((,class (:strike-through ,red))))
 
 ;;;; default faces - light
      `(bold ((,class (:weight bold))))
