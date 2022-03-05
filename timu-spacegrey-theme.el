@@ -427,11 +427,11 @@ Sourced other themes to get information about font faces for packages.")
      `(compilation-warning ((,class (:foreground ,yellow :slant italic))))
 
 ;;;; corfu - dark
-     `(corfu-bar ((,class (:background ,bg-other :foreground ,fg))))
+     `(corfu-bar ((,class (:background ,bg-org :foreground ,fg))))
      `(corfu-echo ((,class (:foreground ,orange))))
-     `(corfu-border ((,class (:background ,bg-other :foreground ,fg))))
+     `(corfu-border ((,class (:background ,fg))))
      `(corfu-current ((,class (:foreground ,orange :weight bold))))
-     `(corfu-default ((,class (:background ,bg-other :foreground ,fg))))
+     `(corfu-default ((,class (:background ,bg-org :foreground ,fg))))
      `(corfu-deprecated ((,class (:foreground ,red))))
      `(corfu-annotations ((,class (:foreground ,magenta))))
 
@@ -1964,11 +1964,11 @@ Sourced other themes to get information about font faces for packages.")
      `(compilation-warning ((,class (:foreground ,yellow :slant italic))))
 
 ;;;; corfu - light
-     `(corfu-bar ((,class (:background ,bg-other :foreground ,fg))))
+     `(corfu-bar ((,class (:background ,bg-org :foreground ,fg))))
      `(corfu-echo ((,class (:foreground ,orange))))
-     `(corfu-border ((,class (:background ,bg-other :foreground ,fg))))
+     `(corfu-border ((,class (:background ,fg))))
      `(corfu-current ((,class (:foreground ,orange :weight bold))))
-     `(corfu-default ((,class (:background ,bg-other :foreground ,fg))))
+     `(corfu-default ((,class (:background ,bg-org :foreground ,fg))))
      `(corfu-deprecated ((,class (:foreground ,red))))
      `(corfu-annotations ((,class (:foreground ,magenta))))
 
