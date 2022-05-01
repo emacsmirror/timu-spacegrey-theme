@@ -185,6 +185,7 @@ Sourced other themes to get information about font faces for packages.")
      `(tooltip ((,class (:background ,bg-other :foreground ,fg))))
      `(trailing-whitespace ((,class (:background ,red))))
      `(vertical-border ((,class (:background ,spacegrey4 :foreground ,spacegrey4))))
+     `(variable-pitch ((,class (:background ,bg :foreground ,fg))))
      `(warning ((,class (:foreground ,yellow))))
 
 ;;;; font-lock - dark
@@ -1790,6 +1791,7 @@ Sourced other themes to get information about font faces for packages.")
      `(tooltip ((,class (:background ,bg-other :foreground ,fg))))
      `(trailing-whitespace ((,class (:background ,red))))
      `(vertical-border ((,class (:background ,spacegrey8 :foreground ,spacegrey8))))
+     `(variable-pitch ((,class (:background ,bg :foreground ,fg))))
      `(warning ((,class (:foreground ,yellow))))
 
 ;;;; font-lock - light
