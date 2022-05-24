@@ -6,7 +6,7 @@
 ;; Maintainer: Aimé Bertrand <aime.bertrand@macowners.club>
 ;; Created: 06 Jun 2021
 ;; Keywords: faces themes
-;; Version: 2.0
+;; Version: 2.1
 ;; Package-Requires: ((emacs "25.1"))
 ;; Homepage: https://gitlab.com/aimebertrand/timu-spacegrey-theme
 
@@ -111,6 +111,20 @@
 Possinle values: `dark' or `light'."
   :type 'string
   :group 'timu-spacegrey-theme)
+
+(defcustom timu-spacegrey-scale-faces nil
+  "Variable to control the scale of select faces."
+  :type 'boolean
+  :group 'timu-spacegrey-theme)
+
+(defun timu-spacegrey-do-scale (face-height)
+  "Function for scaling the face to the FACE-HEIGHT.
+Uses `timu-spacegrey-scale-faces' for conditional."
+  (cond
+   ((eq t timu-spacegrey-scale-faces)
+    (list :height face-height))
+   ((eq nil timu-spacegrey-scale-faces)
+    (list :height 1.0))))
 
 (deftheme timu-spacegrey
   "Custom theme inspired by the spacegray theme in Sublime Text.
@@ -1308,8 +1322,8 @@ Sourced other themes to get information about font faces for packages.")
      `(org-code ((,class (:foreground ,green))))
      `(org-date ((,class (:foreground ,yellow))))
      `(org-default ((,class (:background ,bg :foreground ,fg))))
-     `(org-document-info ((,class (:foreground ,orange))))
-     `(org-document-title ((,class (:foreground ,orange :weight bold))))
+     `(org-document-info ((,class (:foreground ,orange ,@(timu-spacegrey-do-scale 1.2)))))
+     `(org-document-title ((,class (:foreground ,orange :weight bold ,@(timu-spacegrey-do-scale 1.3)))))
      `(org-done ((,class (:foreground ,spacegrey5))))
      `(org-ellipsis ((,class (:underline nil :background nil :foreground ,grey))))
      `(org-footnote ((,class (:foreground ,orange))))
@@ -1317,9 +1331,9 @@ Sourced other themes to get information about font faces for packages.")
      `(org-headline-done ((,class (:foreground ,spacegrey5))))
      `(org-hide ((,class (:foreground ,bg))))
      `(org-latex-and-related ((,class (:foreground ,spacegrey8 :weight bold))))
-     `(org-level-1 ((,class (:foreground ,blue :weight ultra-bold))))
-     `(org-level-2 ((,class (:foreground ,magenta :weight bold))))
-     `(org-level-3 ((,class (:foreground ,darkcyan :weight bold))))
+     `(org-level-1 ((,class (:foreground ,blue :weight ultra-bold ,@(timu-spacegrey-do-scale 1.3)))))
+     `(org-level-2 ((,class (:foreground ,magenta :weight bold ,@(timu-spacegrey-do-scale 1.2)))))
+     `(org-level-3 ((,class (:foreground ,darkcyan :weight bold ,@(timu-spacegrey-do-scale 1.1)))))
      `(org-level-4 ((,class (:foreground ,orange))))
      `(org-level-5 ((,class (:foreground ,green))))
      `(org-level-6 ((,class (:foreground ,teal))))
@@ -2920,8 +2934,8 @@ Sourced other themes to get information about font faces for packages.")
      `(org-code ((,class (:foreground ,green))))
      `(org-date ((,class (:foreground ,yellow))))
      `(org-default ((,class (:background ,bg :foreground ,fg))))
-     `(org-document-info ((,class (:foreground ,orange))))
-     `(org-document-title ((,class (:foreground ,orange :weight bold))))
+     `(org-document-info ((,class (:foreground ,orange ,@(timu-spacegrey-do-scale 1.2)))))
+     `(org-document-title ((,class (:foreground ,orange :weight bold ,@(timu-spacegrey-do-scale 1.3)))))
      `(org-done ((,class (:foreground ,spacegrey5))))
      `(org-ellipsis ((,class (:underline nil :background nil :foreground ,grey))))
      `(org-footnote ((,class (:foreground ,orange))))
@@ -2929,9 +2943,9 @@ Sourced other themes to get information about font faces for packages.")
      `(org-headline-done ((,class (:foreground ,spacegrey5))))
      `(org-hide ((,class (:foreground ,bg))))
      `(org-latex-and-related ((,class (:foreground ,spacegrey8 :weight bold))))
-     `(org-level-1 ((,class (:foreground ,blue :weight ultra-bold))))
-     `(org-level-2 ((,class (:foreground ,magenta :weight bold))))
-     `(org-level-3 ((,class (:foreground ,darkcyan :weight bold))))
+     `(org-level-1 ((,class (:foreground ,blue :weight ultra-bold ,@(timu-spacegrey-do-scale 1.3)))))
+     `(org-level-2 ((,class (:foreground ,magenta :weight bold ,@(timu-spacegrey-do-scale 1.2)))))
+     `(org-level-3 ((,class (:foreground ,darkcyan :weight bold ,@(timu-spacegrey-do-scale 1.1)))))
      `(org-level-4 ((,class (:foreground ,orange))))
      `(org-level-5 ((,class (:foreground ,green))))
      `(org-level-6 ((,class (:foreground ,teal))))

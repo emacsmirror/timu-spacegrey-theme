@@ -5,7 +5,7 @@
 #+OPTIONS: d:t toc:nil num:nil
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://macowners.club/css/gtd.css" />
 #+KEYWORDS: theme spacegrey
-#+STARTUP: indent content
+#+STARTUP: indent showall
 
 #+html: <p align="left"><img src="https://melpa.org/packages/timu-spacegrey-theme-badge.svg"/></p>
 
@@ -42,11 +42,28 @@ Emacs colorful (dark/light) theme inspired by Gadzhi Kharkharov's [[https://gith
 #+end_src
 
 * Configuration
-There is a light version now included as well. By default the theme is =dark=.
-To setup the =light= flavour add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+** Dark and light fravour
+By default the theme is =dark=. To setup the =light= flavour add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
 
 #+begin_src emacs-lisp
-  (setq timu-spacegrey-flavour "light")
+  (customize-set-variable 'timu-spacegrey-flavour "light")
+#+end_src
+
+** Scale selected faces
+You can now scale (up) some faces (in =org-mode= for now):
+
+- ~org-document-info~
+- ~org-document-title~
+- ~org-level-1~
+- ~org-level-2~
+- ~org-level-3~
+
+More to follow in the future.
+
+By default the scaling is turned off. To setup the scaling add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+
+#+begin_src emacs-lisp
+  (customize-set-variable 'timu-spacegrey-scale-faces t)
 #+end_src
 
 * License
