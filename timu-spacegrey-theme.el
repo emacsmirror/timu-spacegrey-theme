@@ -1470,7 +1470,7 @@ Sourced other themes to get information about font faces for packages.")
      `(sh-quoted-exec ((,class (:foreground ,fg :weight bold))))
 
 ;;;; show-paren - dark
-     `(show-paren-match ((,class (:foreground ,red :background ,spacegrey0 :weight ultra-bold))))
+     `(show-paren-match ((,class (:foreground ,red :weight ultra-bold :underline ,red))))
      `(show-paren-mismatch ((,class (:foreground ,spacegrey0 :background ,red :weight ultra-bold))))
 
 ;;;; smart-mode-line - dark
@@ -3082,7 +3082,7 @@ Sourced other themes to get information about font faces for packages.")
      `(sh-quoted-exec ((,class (:foreground ,fg :weight bold))))
 
 ;;;; show-paren - light
-     `(show-paren-match ((,class (:foreground ,red :background ,spacegrey0 :weight ultra-bold))))
+     `(show-paren-match ((,class (:foreground ,red :weight ultra-bold :underline ,red))))
      `(show-paren-mismatch ((,class (:foreground ,spacegrey0 :background ,red :weight ultra-bold))))
 
 ;;;; smart-mode-line - light
