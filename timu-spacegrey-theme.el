@@ -1201,7 +1201,7 @@ Sourced other themes to get information about font faces for packages.")
      `(mode-line-inactive ((,class (:background ,bg-other :foreground ,spacegrey5 :distant-foreground ,bg-other))))
 
 ;;;; mu4e - dark
-     `(mu4e-forwarded-face ((,class (:foreground ,orange))))
+     `(mu4e-forwarded-face ((,class (:foreground ,yellow))))
      `(mu4e-header-key-face ((,class (:foreground ,darkcyan))))
      `(mu4e-header-title-face ((,class (:foreground ,magenta))))
      `(mu4e-highlight-face ((,class (:foreground ,orange :weight bold))))
@@ -2813,7 +2813,7 @@ Sourced other themes to get information about font faces for packages.")
      `(mode-line-inactive ((,class (:background ,spacegrey8 :foreground ,spacegrey5 :distant-foreground ,bg-other))))
 
 ;;;; mu4e - light
-     `(mu4e-forwarded-face ((,class (:foreground ,orange))))
+     `(mu4e-forwarded-face ((,class (:foreground ,yellow))))
      `(mu4e-header-key-face ((,class (:foreground ,darkcyan))))
      `(mu4e-header-title-face ((,class (:foreground ,magenta))))
      `(mu4e-highlight-face ((,class (:foreground ,orange :weight bold))))
