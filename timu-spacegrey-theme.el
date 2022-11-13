@@ -560,7 +560,7 @@ Sourced other themes to get information about font faces for packages.")
 ;;;; dired-filetype-face - dark
      `(dired-filetype-common ((,class (:foreground ,fg))))
      `(dired-filetype-compress ((,class (:foreground ,yellow))))
-     `(dired-filetype-document ((,class (:foreground ,blue))))
+     `(dired-filetype-document ((,class (:foreground ,fg))))
      `(dired-filetype-execute ((,class (:foreground ,red))))
      `(dired-filetype-image ((,class (:foreground ,orange))))
      `(dired-filetype-js ((,class (:foreground ,yellow))))
@@ -1609,6 +1609,10 @@ Sourced other themes to get information about font faces for packages.")
      `(treemacs-root-face ((,class (:foreground ,green :weight bold :height 1.2))))
      `(treemacs-tags-face ((,class (:foreground ,orange))))
 
+;;;; treemacs-all-the-icons - dark
+     `(treemacs-all-the-icons-file-face ((,class (:foreground ,blue))))
+     `(treemacs-all-the-icons-root-face ((,class (:foreground ,fg))))
+
 ;;;; tree-sitter-hl - dark
      `(tree-sitter-hl-face:function ((,class (:foreground ,blue))))
      `(tree-sitter-hl-face:function.call ((,class (:foreground ,blue))))
@@ -2172,7 +2176,7 @@ Sourced other themes to get information about font faces for packages.")
 ;;;; dired-filetype-face - light
      `(dired-filetype-common ((,class (:foreground ,fg))))
      `(dired-filetype-compress ((,class (:foreground ,yellow))))
-     `(dired-filetype-document ((,class (:foreground ,blue))))
+     `(dired-filetype-document ((,class (:foreground ,fg))))
      `(dired-filetype-execute ((,class (:foreground ,red))))
      `(dired-filetype-image ((,class (:foreground ,orange))))
      `(dired-filetype-js ((,class (:foreground ,yellow))))
@@ -3220,6 +3224,10 @@ Sourced other themes to get information about font faces for packages.")
      `(treemacs-git-untracked-face ((,class (:foreground ,spacegrey5 :slant italic))))
      `(treemacs-root-face ((,class (:foreground ,green :weight bold :height 1.2))))
      `(treemacs-tags-face ((,class (:foreground ,orange))))
+
+;;;; treemacs-all-the-icons - light
+     `(treemacs-all-the-icons-file-face ((,class (:foreground ,blue))))
+     `(treemacs-all-the-icons-root-face ((,class (:foreground ,fg))))
 
 ;;;; tree-sitter-hl - light
      `(tree-sitter-hl-face:function ((,class (:foreground ,blue))))
