@@ -84,8 +84,16 @@ You can choose your own scaling values as well. The following is a somewhat exag
   (customize-set-variable 'timu-spacegrey-scale-org-level-3 1.2)
 #+end_src
 
+** "Intense" colors for org-mode
+To emphasize some elements in org-mode. You can set a variable to make some faces more "intense".
+
+#+html: <p align="center"><img src="img/timu-spacegrey-intense-dark.png" width="100%"/></p>
+#+html: <p align="center"><img src="img/timu-spacegrey-intense-light.png" width="100%"/></p>
+
+By default the intense colors are turned off. To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+
 #+begin_src emacs-lisp
-  (customize-set-variable 'timu-spacegrey-scale-faces t)
+  (customize-set-variable 'timu-spacegrey-org-insense-colors t)
 #+end_src
 
 * License

@@ -6,7 +6,7 @@
 ;; Maintainer: Aimé Bertrand <aime.bertrand@macowners.club>
 ;; Created: 06 Jun 2021
 ;; Keywords: faces themes
-;; Version: 2.2
+;; Version: 2.3
 ;; Package-Requires: ((emacs "25.1"))
 ;; Homepage: https://gitlab.com/aimebertrand/timu-spacegrey-theme
 
@@ -100,6 +100,14 @@
 ;;         (customize-set-variable 'timu-spacegrey-scale-org-level-1 1.8)
 ;;         (customize-set-variable 'timu-spacegrey-scale-org-level-2 1.4)
 ;;         (customize-set-variable 'timu-spacegrey-scale-org-level-3 1.2)
+;;
+;;   3. "Intense" colors for org-mode
+;;     To emphasize some elements in org-mode.
+;;     You can set a variable to make some faces more "intense".
+;;
+;;     By default the intense colors are turned off.
+;;     To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+;;       (customize-set-variable 'timu-spacegrey-org-insense-colors t)
 
 ;;; Code:
 
@@ -200,6 +208,17 @@ Uses `timu-spacegrey-scale-faces' for the value of CONTROL."
    ((eq t control) (list :height default-height))
    ((eq nil control) (list :height 1.0))
    (t nil)))
+
+(defcustom timu-spacegrey-org-insense-colors nil
+  "Variable to control \"intensity\" of `org-mode' colors."
+  :type 'boolean
+  :group 'timu-spacegrey-theme)
+
+(defun timu-spacegrey-set-intense-org-colors (olcolor bgcolor)
+  "Function Adding intense colors to `org-mode'.
+OLCOLOR changes the `overline' color and BGCOLOR changes the `background' color."
+  (if (eq t timu-spacegrey-org-insense-colors)
+      (list :overline olcolor :background bgcolor)))
 
 (deftheme timu-spacegrey
   "Custom theme inspired by the spacegray theme in Sublime Text.
@@ -1389,16 +1408,16 @@ Sourced other themes to get information about font faces for packages.")
      `(org-archived ((,class (:foreground ,spacegrey5))))
      `(org-block ((,class (:foreground ,spacegrey8 :background ,bg-org :extend t))))
      `(org-block-background ((,class (:background ,bg-org :extend t))))
-     `(org-block-begin-line ((,class (:foreground ,spacegrey5 :slant italic :background ,bg-org :extend t))))
-     `(org-block-end-line ((,class (:foreground ,spacegrey5 :slant italic :background ,bg-org :extend t))))
+     `(org-block-begin-line ((,class (:foreground ,spacegrey5 :slant italic :background ,bg-org :extend t ,@(timu-spacegrey-set-intense-org-colors bg bg-other)))))
+     `(org-block-end-line ((,class (:foreground ,spacegrey5 :slant italic :background ,bg-org :extend t ,@(timu-spacegrey-set-intense-org-colors bg-other bg-other)))))
      `(org-checkbox ((,class (:foreground ,green :weight bold))))
      `(org-checkbox-statistics-done ((,class (:foreground ,spacegrey5))))
      `(org-checkbox-statistics-todo ((,class (:foreground ,green :weight bold))))
-     `(org-code ((,class (:foreground ,green))))
+     `(org-code ((,class (:foreground ,green ,@(timu-spacegrey-set-intense-org-colors bg bg-other)))))
      `(org-date ((,class (:foreground ,yellow))))
      `(org-default ((,class (:background ,bg :foreground ,fg))))
-     `(org-document-info ((,class (:foreground ,orange ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2)))))
-     `(org-document-title ((,class (:foreground ,orange :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.3)))))
+     `(org-document-info ((,class (:foreground ,orange ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2) ,@(timu-spacegrey-set-intense-org-colors bg bg-other)))))
+     `(org-document-title ((,class (:foreground ,orange :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.3) ,@(timu-spacegrey-set-intense-org-colors orange bg-other)))))
      `(org-done ((,class (:foreground ,spacegrey5))))
      `(org-ellipsis ((,class (:underline nil :background nil :foreground ,grey))))
      `(org-footnote ((,class (:foreground ,orange))))
@@ -1406,9 +1425,9 @@ Sourced other themes to get information about font faces for packages.")
      `(org-headline-done ((,class (:foreground ,spacegrey5))))
      `(org-hide ((,class (:foreground ,bg))))
      `(org-latex-and-related ((,class (:foreground ,spacegrey8 :weight bold))))
-     `(org-level-1 ((,class (:foreground ,blue :weight ultra-bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.3)))))
-     `(org-level-2 ((,class (:foreground ,magenta :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2)))))
-     `(org-level-3 ((,class (:foreground ,darkcyan :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.1)))))
+     `(org-level-1 ((,class (:foreground ,blue :weight ultra-bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.3) ,@(timu-spacegrey-set-intense-org-colors blue bg-other)))))
+     `(org-level-2 ((,class (:foreground ,magenta :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2) ,@(timu-spacegrey-set-intense-org-colors magenta bg-other)))))
+     `(org-level-3 ((,class (:foreground ,darkcyan :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.1) ,@(timu-spacegrey-set-intense-org-colors darkcyan bg-other)))))
      `(org-level-4 ((,class (:foreground ,orange))))
      `(org-level-5 ((,class (:foreground ,green))))
      `(org-level-6 ((,class (:foreground ,teal))))
@@ -1424,7 +1443,7 @@ Sourced other themes to get information about font faces for packages.")
      `(org-table ((,class (:foreground ,magenta))))
      `(org-tag ((,class (:foreground ,spacegrey5 :weight normal))))
      `(org-todo ((,class (:foreground ,green :weight bold))))
-     `(org-verbatim ((,class (:foreground ,orange))))
+     `(org-verbatim ((,class (:foreground ,orange ,@(timu-spacegrey-set-intense-org-colors bg bg-other)))))
      `(org-warning ((,class (:foreground ,yellow))))
 
 ;;;; org-pomodoro - dark
@@ -3003,18 +3022,18 @@ Sourced other themes to get information about font faces for packages.")
 
 ;;;; org-mode - light
      `(org-archived ((,class (:foreground ,spacegrey5))))
-     `(org-block ((,class (:foreground ,fg :background ,bg-org :extend t))))
+     `(org-block ((,class (:foreground ,fg :background ,bg-org :extend t ,@(timu-spacegrey-set-intense-org-colors bg-org bg-org)))))
      `(org-block-background ((,class (:background ,bg-org :extend t))))
-     `(org-block-begin-line ((,class (:foreground ,spacegrey5 :slant italic :background ,bg-org :extend t))))
-     `(org-block-end-line ((,class (:foreground ,spacegrey5 :slant italic :background ,bg-org :extend t))))
+     `(org-block-begin-line ((,class (:foreground ,spacegrey5 :slant italic :background ,bg-org :extend t ,@(timu-spacegrey-set-intense-org-colors bg bg-other)))))
+     `(org-block-end-line ((,class (:foreground ,spacegrey5 :slant italic :background ,bg-org :extend t ,@(timu-spacegrey-set-intense-org-colors bg-other bg-other)))))
      `(org-checkbox ((,class (:foreground ,green :weight bold))))
      `(org-checkbox-statistics-done ((,class (:foreground ,spacegrey5))))
      `(org-checkbox-statistics-todo ((,class (:foreground ,green :weight bold))))
-     `(org-code ((,class (:foreground ,green))))
+     `(org-code ((,class (:foreground ,green ,@(timu-spacegrey-set-intense-org-colors bg bg-other)))))
      `(org-date ((,class (:foreground ,yellow))))
      `(org-default ((,class (:background ,bg :foreground ,fg))))
-     `(org-document-info ((,class (:foreground ,orange ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2)))))
-     `(org-document-title ((,class (:foreground ,orange :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.3)))))
+     `(org-document-info ((,class (:foreground ,orange ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2) ,@(timu-spacegrey-set-intense-org-colors bg bg-org)))))
+     `(org-document-title ((,class (:foreground ,orange :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.3) ,@(timu-spacegrey-set-intense-org-colors orange bg-org)))))
      `(org-done ((,class (:foreground ,spacegrey5))))
      `(org-ellipsis ((,class (:underline nil :background nil :foreground ,grey))))
      `(org-footnote ((,class (:foreground ,orange))))
@@ -3022,9 +3041,9 @@ Sourced other themes to get information about font faces for packages.")
      `(org-headline-done ((,class (:foreground ,spacegrey5))))
      `(org-hide ((,class (:foreground ,bg))))
      `(org-latex-and-related ((,class (:foreground ,spacegrey8 :weight bold))))
-     `(org-level-1 ((,class (:foreground ,blue :weight ultra-bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.3)))))
-     `(org-level-2 ((,class (:foreground ,magenta :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2)))))
-     `(org-level-3 ((,class (:foreground ,darkcyan :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.1)))))
+     `(org-level-1 ((,class (:foreground ,blue :weight ultra-bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.3) ,@(timu-spacegrey-set-intense-org-colors blue bg-org)))))
+     `(org-level-2 ((,class (:foreground ,magenta :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2) ,@(timu-spacegrey-set-intense-org-colors magenta bg-org)))))
+     `(org-level-3 ((,class (:foreground ,darkcyan :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.1) ,@(timu-spacegrey-set-intense-org-colors darkcyan bg-org)))))
      `(org-level-4 ((,class (:foreground ,orange))))
      `(org-level-5 ((,class (:foreground ,green))))
      `(org-level-6 ((,class (:foreground ,teal))))
@@ -3040,7 +3059,7 @@ Sourced other themes to get information about font faces for packages.")
      `(org-table ((,class (:foreground ,magenta))))
      `(org-tag ((,class (:foreground ,spacegrey5 :weight normal))))
      `(org-todo ((,class (:foreground ,green :weight bold))))
-     `(org-verbatim ((,class (:foreground ,orange))))
+     `(org-verbatim ((,class (:foreground ,orange ,@(timu-spacegrey-set-intense-org-colors bg bg-org)))))
      `(org-warning ((,class (:foreground ,yellow))))
 
 ;;;; org-pomodoro - light
