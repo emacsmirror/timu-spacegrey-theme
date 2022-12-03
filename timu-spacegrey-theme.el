@@ -6,7 +6,7 @@
 ;; Maintainer: Aimé Bertrand <aime.bertrand@macowners.club>
 ;; Created: 06 Jun 2021
 ;; Keywords: faces themes
-;; Version: 2.1
+;; Version: 2.2
 ;; Package-Requires: ((emacs "25.1"))
 ;; Homepage: https://gitlab.com/aimebertrand/timu-spacegrey-theme
 
@@ -57,7 +57,7 @@
 ;;         (load-theme 'timu-spacegrey t))
 ;;
 ;; II. Configuration
-;;   A. Dark and light fravour
+;;   1. Dark and light fravour
 ;;     By default the theme is `dark', to setup the `light' flavour:
 ;;
 ;;     - Change the variable `timu-spacegrey-flavour' in the Customization Interface.
@@ -68,8 +68,8 @@
 ;;     - add the following to your `~/.emacs.d/init.el' or `~/.emacs'
 ;;       (setq timu-spacegrey-flavour "light")
 ;;
-;;   B. Scale selected faces
-;;     You can now scale (up) some faces (in `org-mode' for now):
+;;   2. Scaling
+;;     You can now scale some faces (in `org-mode' for now):
 ;;
 ;;     - `org-document-info'
 ;;     - `org-document-title'
@@ -81,7 +81,25 @@
 ;;
 ;;     By default the scaling is turned off.
 ;;     To setup the scaling add the following to your `~/.emacs.d/init.el' or `~/.emacs':
-;;       (customize-set-variable 'timu-spacegrey-scale-faces t)
+;;
+;;     a. Default scaling
+;;       This will turn on default values of scaling in the theme.
+;;
+;;         (customize-set-variable 'timu-spacegrey-scale-org-document-title t)
+;;         (customize-set-variable 'timu-spacegrey-scale-org-document-info t)
+;;         (customize-set-variable 'timu-spacegrey-scale-org-level-1 t)
+;;         (customize-set-variable 'timu-spacegrey-scale-org-level-2 t)
+;;         (customize-set-variable 'timu-spacegrey-scale-org-level-3 t)
+;;
+;;     b. Custom scaling
+;;       You can choose your own scaling values as well.
+;;       The following is a somewhat exaggerated example.
+;;
+;;         (customize-set-variable 'timu-spacegrey-scale-org-document-title 1.8)
+;;         (customize-set-variable 'timu-spacegrey-scale-org-document-info 1.4)
+;;         (customize-set-variable 'timu-spacegrey-scale-org-level-1 1.8)
+;;         (customize-set-variable 'timu-spacegrey-scale-org-level-2 1.4)
+;;         (customize-set-variable 'timu-spacegrey-scale-org-level-3 1.2)
 
 ;;; Code:
 
@@ -129,19 +147,59 @@ Possinle values: `dark' or `light'."
   :type 'string
   :group 'timu-spacegrey-theme)
 
-(defcustom timu-spacegrey-scale-faces nil
-  "Variable to control the scale of select faces."
-  :type 'boolean
+(defcustom timu-spacegrey-scale-org-document-info nil
+  "Variable to control the scale of the `org-document-info' faces.
+Possible Values: t, number or nil. When t, use theme default height."
+  :type '(choice
+          (const :tag "No scaling" nil)
+          (const :tag "Theme default scaling" t)
+          (number :tag "Your custom scaling"))
   :group 'timu-spacegrey-theme)
 
-(defun timu-spacegrey-do-scale (face-height)
+(defcustom timu-spacegrey-scale-org-document-title nil
+  "Variable to control the scale of the `org-document-title' faces.
+Possible Values: t, number or nil. When t, use theme default height."
+  :type '(choice
+          (const :tag "No scaling" nil)
+          (const :tag "Theme default scaling" t)
+          (number :tag "Your custom scaling"))
+  :group 'timu-spacegrey-theme)
+
+(defcustom timu-spacegrey-scale-org-level-1 nil
+  "Variable to control the scale of the `org-level-1' faces.
+Possible Values: t, number or nil. When t, use theme default height."
+  :type '(choice
+          (const :tag "No scaling" nil)
+          (const :tag "Theme default scaling" t)
+          (number :tag "Your custom scaling"))
+  :group 'timu-spacegrey-theme)
+
+(defcustom timu-spacegrey-scale-org-level-2 nil
+  "Variable to control the scale of the `org-level-2' faces.
+Possible Values: t, number or nil. When t, use theme default height."
+  :type '(choice
+          (const :tag "No scaling" nil)
+          (const :tag "Theme default scaling" t)
+          (number :tag "Your custom scaling"))
+  :group 'timu-spacegrey-theme)
+
+(defcustom timu-spacegrey-scale-org-level-3 nil
+  "Variable to control the scale of the `org-level-3' faces.
+Possible Values: t, number or nil. When t, use theme default height."
+  :type '(choice
+          (const :tag "No scaling" nil)
+          (const :tag "Theme default scaling" t)
+          (number :tag "Your custom scaling"))
+  :group 'timu-spacegrey-theme)
+
+(defun timu-spacegrey-do-scale (control default-height)
   "Function for scaling the face to the FACE-HEIGHT.
-Uses `timu-spacegrey-scale-faces' for conditional."
+Uses `timu-spacegrey-scale-faces' for the value of CONTROL."
   (cond
-   ((eq t timu-spacegrey-scale-faces)
-    (list :height face-height))
-   ((eq nil timu-spacegrey-scale-faces)
-    (list :height 1.0))))
+   ((numberp control) (list :height control))
+   ((eq t control) (list :height default-height))
+   ((eq nil control) (list :height 1.0))
+   (t nil)))
 
 (deftheme timu-spacegrey
   "Custom theme inspired by the spacegray theme in Sublime Text.
@@ -1339,8 +1397,8 @@ Sourced other themes to get information about font faces for packages.")
      `(org-code ((,class (:foreground ,green))))
      `(org-date ((,class (:foreground ,yellow))))
      `(org-default ((,class (:background ,bg :foreground ,fg))))
-     `(org-document-info ((,class (:foreground ,orange ,@(timu-spacegrey-do-scale 1.2)))))
-     `(org-document-title ((,class (:foreground ,orange :weight bold ,@(timu-spacegrey-do-scale 1.3)))))
+     `(org-document-info ((,class (:foreground ,orange ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2)))))
+     `(org-document-title ((,class (:foreground ,orange :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.3)))))
      `(org-done ((,class (:foreground ,spacegrey5))))
      `(org-ellipsis ((,class (:underline nil :background nil :foreground ,grey))))
      `(org-footnote ((,class (:foreground ,orange))))
@@ -1348,9 +1406,9 @@ Sourced other themes to get information about font faces for packages.")
      `(org-headline-done ((,class (:foreground ,spacegrey5))))
      `(org-hide ((,class (:foreground ,bg))))
      `(org-latex-and-related ((,class (:foreground ,spacegrey8 :weight bold))))
-     `(org-level-1 ((,class (:foreground ,blue :weight ultra-bold ,@(timu-spacegrey-do-scale 1.3)))))
-     `(org-level-2 ((,class (:foreground ,magenta :weight bold ,@(timu-spacegrey-do-scale 1.2)))))
-     `(org-level-3 ((,class (:foreground ,darkcyan :weight bold ,@(timu-spacegrey-do-scale 1.1)))))
+     `(org-level-1 ((,class (:foreground ,blue :weight ultra-bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.3)))))
+     `(org-level-2 ((,class (:foreground ,magenta :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2)))))
+     `(org-level-3 ((,class (:foreground ,darkcyan :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.1)))))
      `(org-level-4 ((,class (:foreground ,orange))))
      `(org-level-5 ((,class (:foreground ,green))))
      `(org-level-6 ((,class (:foreground ,teal))))
@@ -2955,8 +3013,8 @@ Sourced other themes to get information about font faces for packages.")
      `(org-code ((,class (:foreground ,green))))
      `(org-date ((,class (:foreground ,yellow))))
      `(org-default ((,class (:background ,bg :foreground ,fg))))
-     `(org-document-info ((,class (:foreground ,orange ,@(timu-spacegrey-do-scale 1.2)))))
-     `(org-document-title ((,class (:foreground ,orange :weight bold ,@(timu-spacegrey-do-scale 1.3)))))
+     `(org-document-info ((,class (:foreground ,orange ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2)))))
+     `(org-document-title ((,class (:foreground ,orange :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.3)))))
      `(org-done ((,class (:foreground ,spacegrey5))))
      `(org-ellipsis ((,class (:underline nil :background nil :foreground ,grey))))
      `(org-footnote ((,class (:foreground ,orange))))
@@ -2964,9 +3022,9 @@ Sourced other themes to get information about font faces for packages.")
      `(org-headline-done ((,class (:foreground ,spacegrey5))))
      `(org-hide ((,class (:foreground ,bg))))
      `(org-latex-and-related ((,class (:foreground ,spacegrey8 :weight bold))))
-     `(org-level-1 ((,class (:foreground ,blue :weight ultra-bold ,@(timu-spacegrey-do-scale 1.3)))))
-     `(org-level-2 ((,class (:foreground ,magenta :weight bold ,@(timu-spacegrey-do-scale 1.2)))))
-     `(org-level-3 ((,class (:foreground ,darkcyan :weight bold ,@(timu-spacegrey-do-scale 1.1)))))
+     `(org-level-1 ((,class (:foreground ,blue :weight ultra-bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.3)))))
+     `(org-level-2 ((,class (:foreground ,magenta :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2)))))
+     `(org-level-3 ((,class (:foreground ,darkcyan :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.1)))))
      `(org-level-4 ((,class (:foreground ,orange))))
      `(org-level-5 ((,class (:foreground ,green))))
      `(org-level-6 ((,class (:foreground ,teal))))
