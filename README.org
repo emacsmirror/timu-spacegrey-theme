@@ -95,5 +95,14 @@ By default the intense colors are turned off. To turn this on add the following 
   (customize-set-variable 'timu-spacegrey-org-intense-colors t)
 #+end_src
 
+** Border for the mode-line
+You can set a variable to add a border to the mode-line.
+
+By default the border is turned off. To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+
+#+begin_src emacs-lisp
+  (customize-set-variable 'timu-spacegrey-mode-line-border t)
+#+end_src
+
 * License
 MIT License

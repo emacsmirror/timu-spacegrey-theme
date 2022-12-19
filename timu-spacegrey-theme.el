@@ -6,7 +6,7 @@
 ;; Maintainer: Aimé Bertrand <aime.bertrand@macowners.club>
 ;; Created: 06 Jun 2021
 ;; Keywords: faces themes
-;; Version: 2.3
+;; Version: 2.4
 ;; Package-Requires: ((emacs "25.1"))
 ;; Homepage: https://gitlab.com/aimebertrand/timu-spacegrey-theme
 
@@ -101,13 +101,21 @@
 ;;         (customize-set-variable 'timu-spacegrey-scale-org-level-2 1.4)
 ;;         (customize-set-variable 'timu-spacegrey-scale-org-level-3 1.2)
 ;;
-;;   3. "Intense" colors for org-mode
+;;   3. "Intense" colors for `org-mode'
 ;;     To emphasize some elements in org-mode.
 ;;     You can set a variable to make some faces more "intense".
 ;;
 ;;     By default the intense colors are turned off.
 ;;     To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
 ;;       (customize-set-variable 'timu-spacegrey-org-intense-colors t)
+;;
+;;   4. Border for the `mode-line'
+;;     You can set a variable to add a border to the mode-line.
+;;
+;;     By default the border is turned off.
+;;     To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+;;       (customize-set-variable 'timu-spacegrey-mode-line-border t)
+
 
 ;;; Code:
 
@@ -219,6 +227,30 @@ Uses `timu-spacegrey-scale-faces' for the value of CONTROL."
 OLCOLOR changes the `overline' color and BGCOLOR changes the `background' color."
   (if (eq t timu-spacegrey-org-intense-colors)
       (list :overline olcolor :background bgcolor)))
+
+(defcustom timu-spacegrey-mode-line-border nil
+  "Variable to control the border of `mode-line'.
+With a value of t the mode-line has a border."
+  :type 'boolean
+  :group 'timu-spacegrey-theme)
+
+(defun timu-spacegrey-set-mode-line-active-border (dbox lbox)
+  "Function adding a border to the `mode-line' of the active window.
+DBOX supplies the border color of the dark `timu-spacegrey-flavour'.
+LBOX supplies the border color of the light `timu-spacegrey-flavour'."
+  (if (eq t timu-spacegrey-mode-line-border)
+      (if (equal "dark" timu-spacegrey-flavour)
+          (list :box dbox)
+        (list :box lbox))))
+
+(defun timu-spacegrey-set-mode-line-inactive-border (dbox lbox)
+  "Function adding a border to the `mode-line' of the inactive window.
+DBOX supplies the border color of the dark `timu-spacegrey-flavour'.
+LBOX supplies the border color of the light `timu-spacegrey-flavour'."
+  (if (eq t timu-spacegrey-mode-line-border)
+      (if (equal "dark" timu-spacegrey-flavour)
+          (list :box dbox)
+        (list :box lbox))))
 
 (deftheme timu-spacegrey
   "Custom theme inspired by the spacegray theme in Sublime Text.
@@ -1286,11 +1318,11 @@ Sourced other themes to get information about font faces for packages.")
      `(mmm-special-submode-face ((,class (:background ,green))))
 
 ;;;; mode-line - dark
-     `(mode-line ((,class (:background ,bg-other :foreground ,fg :distant-foreground ,bg))))
+     `(mode-line ((,class (,@(timu-spacegrey-set-mode-line-active-border spacegrey5 fg) :background ,bg-other :foreground ,fg :distant-foreground ,bg))))
      `(mode-line-buffer-id ((,class (:weight bold))))
      `(mode-line-emphasis ((,class (:foreground ,orange :distant-foreground ,bg))))
      `(mode-line-highlight ((,class (:foreground ,magenta :weight bold :underline ,darkcyan))))
-     `(mode-line-inactive ((,class (:background ,bg-other :foreground ,spacegrey5 :distant-foreground ,bg-other))))
+     `(mode-line-inactive ((,class (,@(timu-spacegrey-set-mode-line-inactive-border spacegrey4 spacegrey7) :background ,bg-other :foreground ,spacegrey5 :distant-foreground ,bg-other))))
 
 ;;;; mu4e - dark
      `(mu4e-forwarded-face ((,class (:foreground ,yellow))))
@@ -2917,11 +2949,11 @@ Sourced other themes to get information about font faces for packages.")
      `(mmm-special-submode-face ((,class (:background ,green))))
 
 ;;;; mode-line - light
-     `(mode-line ((,class (:background ,spacegrey8 :foreground ,fg :distant-foreground ,bg))))
+     `(mode-line ((,class (,@(timu-spacegrey-set-mode-line-active-border spacegrey5 spacegrey4) :background ,spacegrey8 :foreground ,fg :distant-foreground ,orange))))
      `(mode-line-buffer-id ((,class (:foreground ,fg :weight bold))))
-     `(mode-line-emphasis ((,class (:foreground ,orange :distant-foreground ,bg))))
+     `(mode-line-emphasis ((,class (:foreground ,darkcyan :distant-foreground ,bg))))
      `(mode-line-highlight ((,class (:foreground ,magenta  :weight bold :underline ,darkcyan))))
-     `(mode-line-inactive ((,class (:background ,spacegrey8 :foreground ,spacegrey5 :distant-foreground ,bg-other))))
+     `(mode-line-inactive ((,class (,@(timu-spacegrey-set-mode-line-inactive-border spacegrey4 spacegrey7) :background ,bg-other :foreground ,spacegrey7 :distant-foreground ,bg-other))))
 
 ;;;; mu4e - light
      `(mu4e-forwarded-face ((,class (:foreground ,yellow))))
