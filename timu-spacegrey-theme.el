@@ -57,7 +57,7 @@
 ;;         (load-theme 'timu-spacegrey t))
 ;;
 ;; II. Configuration
-;;   1. Dark and light fravour
+;;   A. Dark and light fravour
 ;;     By default the theme is `dark', to setup the `light' flavour:
 ;;
 ;;     - Change the variable `timu-spacegrey-flavour' in the Customization Interface.
@@ -68,7 +68,7 @@
 ;;     - add the following to your `~/.emacs.d/init.el' or `~/.emacs'
 ;;       (setq timu-spacegrey-flavour "light")
 ;;
-;;   2. Scaling
+;;   B. Scaling
 ;;     You can now scale some faces (in `org-mode' for now):
 ;;
 ;;     - `org-document-info'
@@ -82,7 +82,7 @@
 ;;     By default the scaling is turned off.
 ;;     To setup the scaling add the following to your `~/.emacs.d/init.el' or `~/.emacs':
 ;;
-;;     a. Default scaling
+;;     1. Default scaling
 ;;       This will turn on default values of scaling in the theme.
 ;;
 ;;         (customize-set-variable 'timu-spacegrey-scale-org-document-title t)
@@ -91,7 +91,7 @@
 ;;         (customize-set-variable 'timu-spacegrey-scale-org-level-2 t)
 ;;         (customize-set-variable 'timu-spacegrey-scale-org-level-3 t)
 ;;
-;;     b. Custom scaling
+;;     2. Custom scaling
 ;;       You can choose your own scaling values as well.
 ;;       The following is a somewhat exaggerated example.
 ;;
@@ -101,7 +101,7 @@
 ;;         (customize-set-variable 'timu-spacegrey-scale-org-level-2 1.4)
 ;;         (customize-set-variable 'timu-spacegrey-scale-org-level-3 1.2)
 ;;
-;;   3. "Intense" colors for `org-mode'
+;;   C. "Intense" colors for `org-mode'
 ;;     To emphasize some elements in org-mode.
 ;;     You can set a variable to make some faces more "intense".
 ;;
@@ -109,7 +109,7 @@
 ;;     To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
 ;;       (customize-set-variable 'timu-spacegrey-org-intense-colors t)
 ;;
-;;   4. Border for the `mode-line'
+;;   D. Border for the `mode-line'
 ;;     You can set a variable to add a border to the mode-line.
 ;;
 ;;     By default the border is turned off.
@@ -159,13 +159,13 @@
 
 (defcustom timu-spacegrey-flavour "dark"
   "Variable to control the variant of the theme.
-Possinle values: `dark' or `light'."
+Possible values: `dark' or `light'."
   :type 'string
   :group 'timu-spacegrey-theme)
 
 (defcustom timu-spacegrey-scale-org-document-info nil
   "Variable to control the scale of the `org-document-info' faces.
-Possible Values: t, number or nil. When t, use theme default height."
+Possible values: t, number or nil. When t, use theme default height."
   :type '(choice
           (const :tag "No scaling" nil)
           (const :tag "Theme default scaling" t)
@@ -174,7 +174,7 @@ Possible Values: t, number or nil. When t, use theme default height."
 
 (defcustom timu-spacegrey-scale-org-document-title nil
   "Variable to control the scale of the `org-document-title' faces.
-Possible Values: t, number or nil. When t, use theme default height."
+Possible values: t, number or nil. When t, use theme default height."
   :type '(choice
           (const :tag "No scaling" nil)
           (const :tag "Theme default scaling" t)
@@ -183,7 +183,7 @@ Possible Values: t, number or nil. When t, use theme default height."
 
 (defcustom timu-spacegrey-scale-org-level-1 nil
   "Variable to control the scale of the `org-level-1' faces.
-Possible Values: t, number or nil. When t, use theme default height."
+Possible values: t, number or nil. When t, use theme default height."
   :type '(choice
           (const :tag "No scaling" nil)
           (const :tag "Theme default scaling" t)
@@ -192,7 +192,7 @@ Possible Values: t, number or nil. When t, use theme default height."
 
 (defcustom timu-spacegrey-scale-org-level-2 nil
   "Variable to control the scale of the `org-level-2' faces.
-Possible Values: t, number or nil. When t, use theme default height."
+Possible values: t, number or nil. When t, use theme default height."
   :type '(choice
           (const :tag "No scaling" nil)
           (const :tag "Theme default scaling" t)
@@ -201,32 +201,33 @@ Possible Values: t, number or nil. When t, use theme default height."
 
 (defcustom timu-spacegrey-scale-org-level-3 nil
   "Variable to control the scale of the `org-level-3' faces.
-Possible Values: t, number or nil. When t, use theme default height."
+Possible values: t, number or nil. When t, use theme default height."
   :type '(choice
           (const :tag "No scaling" nil)
           (const :tag "Theme default scaling" t)
           (number :tag "Your custom scaling"))
   :group 'timu-spacegrey-theme)
 
-(defun timu-spacegrey-do-scale (control default-height)
-  "Function for scaling the face to the FACE-HEIGHT.
-Uses `timu-spacegrey-scale-faces' for the value of CONTROL."
+(defun timu-spacegrey-do-scale (custom-height default-height)
+  "Function for scaling the face to the DEFAULT-HEIGHT or CUSTOM-HEIGHT.
+Uses `timu-spacegrey-scale-faces' for the value of CUSTOM-HEIGHT."
   (cond
-   ((numberp control) (list :height control))
-   ((eq t control) (list :height default-height))
-   ((eq nil control) (list :height 1.0))
+   ((numberp custom-height) (list :height custom-height))
+   ((eq t custom-height) (list :height default-height))
+   ((eq nil custom-height) (list :height 1.0))
    (t nil)))
 
 (defcustom timu-spacegrey-org-intense-colors nil
-  "Variable to control \"intensity\" of `org-mode' colors."
+  "Variable to control \"intensity\" of `org-mode' header colors."
   :type 'boolean
   :group 'timu-spacegrey-theme)
 
-(defun timu-spacegrey-set-intense-org-colors (olcolor bgcolor)
+(defun timu-spacegrey-set-intense-org-colors (overline-color background-color)
   "Function Adding intense colors to `org-mode'.
-OLCOLOR changes the `overline' color and BGCOLOR changes the `background' color."
+OVERLINE-COLOR changes the `overline' color.
+BACKGROUND-COLOR changes the `background' color."
   (if (eq t timu-spacegrey-org-intense-colors)
-      (list :overline olcolor :background bgcolor)))
+      (list :overline overline-color :background background-color)))
 
 (defcustom timu-spacegrey-mode-line-border nil
   "Variable to control the border of `mode-line'.
