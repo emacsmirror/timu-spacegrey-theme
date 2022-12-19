@@ -1,4 +1,4 @@
-#+TITLE: timu-spacegrey-theme
+#+TITLE: TIMU-SPACEGREY-THEME
 #+AUTHOR: Aimé Bertrand
 #+DATE: [2021-06-06 Sun]
 #+LANGUAGE: en
@@ -92,7 +92,7 @@ To emphasize some elements in org-mode. You can set a variable to make some face
 By default the intense colors are turned off. To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
 
 #+begin_src emacs-lisp
-  (customize-set-variable 'timu-spacegrey-org-insense-colors t)
+  (customize-set-variable 'timu-spacegrey-org-intense-colors t)
 #+end_src
 
 * License

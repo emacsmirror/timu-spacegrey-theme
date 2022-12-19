@@ -107,7 +107,7 @@
 ;;
 ;;     By default the intense colors are turned off.
 ;;     To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
-;;       (customize-set-variable 'timu-spacegrey-org-insense-colors t)
+;;       (customize-set-variable 'timu-spacegrey-org-intense-colors t)
 
 ;;; Code:
 
@@ -209,7 +209,7 @@ Uses `timu-spacegrey-scale-faces' for the value of CONTROL."
    ((eq nil control) (list :height 1.0))
    (t nil)))
 
-(defcustom timu-spacegrey-org-insense-colors nil
+(defcustom timu-spacegrey-org-intense-colors nil
   "Variable to control \"intensity\" of `org-mode' colors."
   :type 'boolean
   :group 'timu-spacegrey-theme)
@@ -217,7 +217,7 @@ Uses `timu-spacegrey-scale-faces' for the value of CONTROL."
 (defun timu-spacegrey-set-intense-org-colors (olcolor bgcolor)
   "Function Adding intense colors to `org-mode'.
 OLCOLOR changes the `overline' color and BGCOLOR changes the `background' color."
-  (if (eq t timu-spacegrey-org-insense-colors)
+  (if (eq t timu-spacegrey-org-intense-colors)
       (list :overline olcolor :background bgcolor)))
 
 (deftheme timu-spacegrey
