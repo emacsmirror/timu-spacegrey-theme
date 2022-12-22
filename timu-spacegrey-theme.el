@@ -760,6 +760,7 @@ Sourced other themes to get information about font faces for packages.")
 
 ;;;; doom-modeline - dark
      `(doom-modeline-bar-inactive ((,class (:background nil))))
+     `(doom-modeline-buffer-modified ((,class (:foreground ,red :weight bold))))
      `(doom-modeline-eldoc-bar ((,class (:background ,green))))
      `(doom-modeline-evil-emacs-state ((,class (:foreground ,cyan :weight bold))))
      `(doom-modeline-evil-insert-state ((,class (:foreground ,red :weight bold))))
@@ -2391,6 +2392,7 @@ Sourced other themes to get information about font faces for packages.")
 
 ;;;; doom-modeline - light
      `(doom-modeline-bar-inactive ((,class (:background nil))))
+     `(doom-modeline-buffer-modified ((,class (:foreground ,red :weight bold))))
      `(doom-modeline-eldoc-bar ((,class (:background ,green))))
      `(doom-modeline-evil-emacs-state ((,class (:foreground ,cyan :weight bold))))
      `(doom-modeline-evil-insert-state ((,class (:foreground ,red :weight bold))))
