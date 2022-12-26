@@ -253,6 +253,35 @@ LBOX supplies the border color of the light `timu-spacegrey-flavour'."
           (list :box dbox)
         (list :box lbox))))
 
+;;;###autoload
+(defun timu-spacegrey-toggle-dark-light ()
+  "Toggle between \"dark\" and \"light\" `timu-spacegrey-flavour'."
+  (interactive)
+  (if (equal "dark" timu-spacegrey-flavour)
+      (customize-set-variable 'timu-spacegrey-flavour "light")
+    (customize-set-variable 'timu-spacegrey-flavour "dark"))
+  (load-theme (car custom-enabled-themes) t))
+
+;;;###autoload
+(defun timu-spacegrey-toggle-org-colors-intensity ()
+  "Toggle between intense and non intense colors for `org-mode'.
+Customize `timu-spacegrey-org-intense-colors' the to achieve this. "
+  (interactive)
+  (if (eq t timu-spacegrey-org-intense-colors)
+      (customize-set-variable 'timu-spacegrey-org-intense-colors nil)
+    (customize-set-variable 'timu-spacegrey-org-intense-colors t))
+  (load-theme (car custom-enabled-themes) t))
+
+;;;###autoload
+(defun timu-spacegrey-toggle-mode-line-border ()
+  "Toggle between borders and no borders for the `mode-line'.
+Customize `timu-spacegrey-mode-line-border' the to achieve this. "
+  (interactive)
+  (if (eq t timu-spacegrey-mode-line-border)
+      (customize-set-variable 'timu-spacegrey-mode-line-border nil)
+    (customize-set-variable 'timu-spacegrey-mode-line-border t))
+  (load-theme (car custom-enabled-themes) t))
+
 (deftheme timu-spacegrey
   "Custom theme inspired by the spacegray theme in Sublime Text.
 Sourced other themes to get information about font faces for packages.")
