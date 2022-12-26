@@ -104,5 +104,18 @@ By default the border is turned off. To turn this on add the following to your =
   (customize-set-variable 'timu-spacegrey-mode-line-border t)
 #+end_src
 
+** Utility functions
+*** Toggle dark and light flavour of the theme
+
+M-x =timu-spacegrey-toggle-dark-light= RET.
+
+*** Toggle between intense and non intense colors for `org-mode'
+
+M-x =timu-spacegrey-toggle-org-colors-intensity= RET.
+
+*** Toggle between borders and no borders for the `mode-line'
+
+M-x =timu-spacegrey-toggle-mode-line-border= RET.
+
 * License
 MIT License
