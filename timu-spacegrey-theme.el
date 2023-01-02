@@ -6,8 +6,8 @@
 ;; Maintainer: Aimé Bertrand <aime.bertrand@macowners.club>
 ;; Created: 06 Jun 2021
 ;; Keywords: faces themes
-;; Version: 2.5
-;; Package-Requires: ((emacs "25.1"))
+;; Version: 2.6
+;; Package-Requires: ((emacs "26.1"))
 ;; Homepage: https://gitlab.com/aimebertrand/timu-spacegrey-theme
 
 ;; This file is not part of GNU Emacs.
@@ -109,7 +109,14 @@
 ;;     To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
 ;;       (customize-set-variable 'timu-spacegrey-org-intense-colors t)
 ;;
-;;   D. Border for the `mode-line'
+;;   D. Muted colors for the dark flavour
+;;     You can set muted colors for the dark flavour of the theme.
+;;
+;;     By default muted colors are turned off.
+;;     To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+;;       (customize-set-variable 'timu-spacegrey-muted-colors t)
+;;
+;;   E. Border for the `mode-line'
 ;;     You can set a variable to add a border to the mode-line.
 ;;
 ;;     By default the border is turned off.
@@ -239,6 +246,11 @@ BACKGROUND-COLOR changes the `background' color."
   (if (eq t timu-spacegrey-org-intense-colors)
       (list :overline overline-color :background background-color)))
 
+(defcustom timu-spacegrey-muted-colors nil
+  "Variable to set muted colors for the \"dark\" flavour of the theme."
+  :type 'boolean
+  :group 'timu-spacegrey-theme)
+
 (defcustom timu-spacegrey-mode-line-border nil
   "Variable to control the border of `mode-line'.
 With a value of t the mode-line has a border."
@@ -314,33 +326,19 @@ Sourced other themes to get information about font faces for packages.")
         (fg          "#c0c5ce")
         (fg-other    "#c0c5ce")
 
-        (grey        "#4f5b66")
-        (red         "#bf616a")
-        (orange      "#d08770")
-        (green       "#a3be8c")
-        (blue        "#8fa1b3")
-        (magenta     "#b48ead")
-        (teal        "#4db5bd")
-        (yellow      "#ecbe7b")
-        (darkblue    "#2257a0")
-        (purple      "#c678dd")
-        (cyan        "#46d9ff")
-        (lightcyan   "#88c0d0")
-        (darkcyan    "#5699af")
-
-        (l-grey      "#f3f3f3")
-        (l-red       "#ffbbc4")
-        (l-orange    "#ffe1ca")
-        (l-green     "#fdffe6")
-        (l-blue      "#e9fbff")
-        (l-magenta   "#ffe8ff")
-        (l-teal      "#a7ffff")
-        (l-yellow    "#ffffd5")
-        (l-darkblue  "#7cb1fa")
-        (l-purple    "#ffd2ff")
-        (l-cyan      "#a0ffff")
-        (l-lightcyan "#e2ffff")
-        (l-darkcyan  "#b0f3ff")
+        (grey      (if timu-spacegrey-muted-colors "#95a1ac" "#4f5b66"))
+        (red       (if timu-spacegrey-muted-colors "#ffa7b0" "#bf616a"))
+        (orange    (if timu-spacegrey-muted-colors "#ffcdb6" "#d08770"))
+        (green     (if timu-spacegrey-muted-colors "#e9ffd2" "#a3be8c"))
+        (blue      (if timu-spacegrey-muted-colors "#d5e7f9" "#8fa1b3"))
+        (magenta   (if timu-spacegrey-muted-colors "#fad4f3" "#b48ead"))
+        (teal      (if timu-spacegrey-muted-colors "#93fbff" "#4db5bd"))
+        (yellow    (if timu-spacegrey-muted-colors "#ffffc1" "#ecbe7b"))
+        (darkblue  (if timu-spacegrey-muted-colors "#689de6" "#2257a0"))
+        (purple    (if timu-spacegrey-muted-colors "#ffbeff" "#c678dd"))
+        (cyan      (if timu-spacegrey-muted-colors "#8cffff" "#46d9ff"))
+        (lightcyan (if timu-spacegrey-muted-colors "#ceffff" "#88c0d0"))
+        (darkcyan  (if timu-spacegrey-muted-colors "#9cdff5" "#5699af"))
 
         (black       "#000000")
         (white       "#ffffff"))
