@@ -98,7 +98,6 @@ By default the intense colors are turned off. To turn this on add the following 
 ** Muted colors for the dark flavour
 You can set muted colors for the dark flavour of the theme.
 
-#+html: <p align="center"><img src="img/timu-spacegrey-not-muted.png" width="100%"/></p>
 #+html: <p align="center"><img src="img/timu-spacegrey-muted.png" width="100%"/></p>
 
 By default muted colors are turned off. To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
