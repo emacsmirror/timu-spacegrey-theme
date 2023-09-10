@@ -612,6 +612,9 @@ Sourced other themes to get information about font faces for packages.")
      `(circe-prompt-face ((,class (:weight bold :foreground ,orange))))
      `(circe-server-face ((,class (:foreground ,spacegrey5))))
 
+;;;; column-enforce-mode - dark
+   `(column-enforce-face ((,class (:foreground ,purple :underline t))))
+
 ;;;; company - dark
      `(company-preview ((,class (:foreground ,spacegrey5))))
      `(company-preview-common ((,class (:background ,spacegrey3 :foreground ,orange))))
@@ -2243,6 +2246,9 @@ Sourced other themes to get information about font faces for packages.")
      `(circe-my-message-face ((,class (:weight bold))))
      `(circe-prompt-face ((,class (:weight bold :foreground ,orange))))
      `(circe-server-face ((,class (:foreground ,spacegrey5))))
+
+;;;; column-enforce-mode - light
+   `(column-enforce-face ((,class (:foreground ,cyan :underline t))))
 
 ;;;; company - light
      `(company-preview ((,class (:foreground ,spacegrey5))))
