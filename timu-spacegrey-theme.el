@@ -1652,9 +1652,9 @@ Sourced other themes to get information about font faces for packages.")
      `(sml/vc-edited ((,class (:foreground ,green))))
 
 ;;;; smartparens - dark
-     `(sp-pair-overlay-face ((,class (:background ,grey))))
-     `(sp-show-pair-match-face ((,class (:foreground ,red :background ,spacegrey0 :weight ultra-bold))))
-     `(sp-show-pair-mismatch-face ((,class (:foreground ,spacegrey0 :background ,red :weight ultra-bold))))
+     `(sp-pair-overlay-face ((,class (:underline ,magenta))))
+     `(sp-show-pair-match-face ((,class (:foreground ,magenta :weight bold))))
+     `(sp-show-pair-mismatch-face ((,class (:foreground ,magenta :weight bold))))
 
 ;;;; smerge-tool - dark
      `(smerge-base ((,class (:background ,blue))))
@@ -3287,9 +3287,9 @@ Sourced other themes to get information about font faces for packages.")
      `(sml/vc-edited ((,class (:foreground ,green))))
 
 ;;;; smartparens - light
-     `(sp-pair-overlay-face ((,class (:background ,grey))))
-     `(sp-show-pair-match-face ((,class (:foreground ,red :background ,spacegrey0 :weight ultra-bold))))
-     `(sp-show-pair-mismatch-face ((,class (:foreground ,spacegrey0 :background ,red :weight ultra-bold))))
+     `(sp-pair-overlay-face ((,class (:underline ,magenta))))
+     `(sp-show-pair-match-face ((,class (:foreground ,magenta :weight bold))))
+     `(sp-show-pair-mismatch-face ((,class (:foreground ,magenta :weight bold))))
 
 ;;;; smerge-tool - light
      `(smerge-base ((,class (:background ,darkblue))))
