@@ -115,6 +115,17 @@ By default the border is turned off. To turn this on add the following to your =
   (customize-set-variable 'timu-spacegrey-mode-line-border t)
 #+end_src
 
+** Italic faces
+You can control whether selected faces are italic or not. An example for faces that will show up italicized is the =font-lock-comment-face=.
+
+This is not applicable on explicit italic faces like (e.g =markdown-italic-face=). These are left alone and stay italicized.
+
+By default italic faces are turned on. To turn this off add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+
+#+begin_src emacs-lisp
+  (customize-set-variable 'timu-spacegrey-italic-faces nil)
+#+end_src
+
 ** Utility functions
 *** Toggle dark and light flavour of the theme
 
