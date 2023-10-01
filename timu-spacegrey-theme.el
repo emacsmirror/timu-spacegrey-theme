@@ -56,12 +56,12 @@
 ;;         :config
 ;;         (load-theme 'timu-spacegrey t))
 ;;
-;; II. Configuration
+;; II.  Configuration
 ;;   A. Dark and light flavour
 ;;     By default the theme is `dark', to setup the `light' flavour:
 ;;
 ;;     - Change the variable `timu-spacegrey-flavour' in the Customization Interface.
-;;       M-x customize RET. Then Search for `timu'.
+;;       M-x customize RET.  Then Search for `timu'.
 ;;
 ;;     or
 ;;
@@ -80,7 +80,7 @@
 ;;     More to follow in the future.
 ;;
 ;;     By default the scaling is turned off.
-;;     To setup the scaling add the following to your `~/.emacs.d/init.el' or `~/.emacs':
+;;     To setup the scaling add the following to your Emacs configuration.
 ;;
 ;;     1. Default scaling
 ;;       This will turn on default values of scaling in the theme.
@@ -106,24 +106,43 @@
 ;;     You can set a variable to make some faces more "intense".
 ;;
 ;;     By default the intense colors are turned off.
-;;     To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+;;     To turn this on add the following to your Emacs configuration.
 ;;       (customize-set-variable 'timu-spacegrey-org-intense-colors t)
 ;;
 ;;   D. Muted colors for the dark flavour
 ;;     You can set muted colors for the dark flavour of the theme.
 ;;
 ;;     By default muted colors are turned off.
-;;     To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+;;     To turn this on add the following to your Emacs configuration.
 ;;       (customize-set-variable 'timu-spacegrey-muted-colors t)
 ;;
-;;   E. Border for the `mode-line'
+;;   E. More contrast for the foreground
+;;     You can set the =default= foreground to be more contrasted.
+;;
+;;     By default the option are turned off.
+;;     To turn this on add the following to your Emacs configuration.
+;;       (customize-set-variable 'timu-spacegrey-contrasted-foreground t)
+;;
+;;   F. More contrast for comments & docs
+;;      You can set the comments & docs to be more contrasted.
+;;
+;;      - `font-lock-comment-delimiter-face'
+;;      - `font-lock-comment-face'
+;;      - `tree-sitter-hl-face:comment'
+;;      - `tree-sitter-hl-face:doc'
+;;
+;;     By default the option are turned off.
+;;     To turn this on add the following to your Emacs configuration.
+;;       (customize-set-variable 'timu-spacegrey-contrasted-comments t)
+;;
+;;   G. Border for the `mode-line'
 ;;     You can set a variable to add a border to the mode-line.
 ;;
 ;;     By default the border is turned off.
-;;     To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+;;     To turn this on add the following to your Emacs configuration.
 ;;       (customize-set-variable 'timu-spacegrey-mode-line-border t)
 ;;
-;; III. Utility functions
+;; III.  Utility functions
 ;;   A. Toggle dark and light flavour of the theme
 ;;       M-x timu-spacegrey-toggle-dark-light RET.
 ;;
@@ -182,7 +201,7 @@ Possible values: `dark' or `light'."
 
 (defcustom timu-spacegrey-scale-org-document-info nil
   "Variable to control the scale of the `org-document-info' faces.
-Possible values: t, number or nil. When t, use theme default height."
+Possible values: t, number or nil.  When t, use theme default height."
   :type '(choice
           (const :tag "No scaling" nil)
           (const :tag "Theme default scaling" t)
@@ -191,7 +210,7 @@ Possible values: t, number or nil. When t, use theme default height."
 
 (defcustom timu-spacegrey-scale-org-document-title nil
   "Variable to control the scale of the `org-document-title' faces.
-Possible values: t, number or nil. When t, use theme default height."
+Possible values: t, number or nil.  When t, use theme default height."
   :type '(choice
           (const :tag "No scaling" nil)
           (const :tag "Theme default scaling" t)
@@ -200,7 +219,7 @@ Possible values: t, number or nil. When t, use theme default height."
 
 (defcustom timu-spacegrey-scale-org-level-1 nil
   "Variable to control the scale of the `org-level-1' faces.
-Possible values: t, number or nil. When t, use theme default height."
+Possible values: t, number or nil.  When t, use theme default height."
   :type '(choice
           (const :tag "No scaling" nil)
           (const :tag "Theme default scaling" t)
@@ -209,7 +228,7 @@ Possible values: t, number or nil. When t, use theme default height."
 
 (defcustom timu-spacegrey-scale-org-level-2 nil
   "Variable to control the scale of the `org-level-2' faces.
-Possible values: t, number or nil. When t, use theme default height."
+Possible values: t, number or nil.  When t, use theme default height."
   :type '(choice
           (const :tag "No scaling" nil)
           (const :tag "Theme default scaling" t)
@@ -218,7 +237,7 @@ Possible values: t, number or nil. When t, use theme default height."
 
 (defcustom timu-spacegrey-scale-org-level-3 nil
   "Variable to control the scale of the `org-level-3' faces.
-Possible values: t, number or nil. When t, use theme default height."
+Possible values: t, number or nil.  When t, use theme default height."
   :type '(choice
           (const :tag "No scaling" nil)
           (const :tag "Theme default scaling" t)
@@ -264,7 +283,7 @@ These are:
   :group 'timu-spacegrey-theme)
 
 (defun timu-spacegrey-set-contrasted-foreground (more less)
-  "Function enabling more contrasted foreground faces."
+  "Function enabling MORE or LESS contrasted foreground faces."
   (if (eq t timu-spacegrey-contrasted-foreground)
       (list :foreground more)
     (list :foreground less)))
@@ -272,15 +291,15 @@ These are:
 (defcustom timu-spacegrey-contrasted-comments nil
   "Variable to control the contrast of comment faces.
 These are:
-- font-lock-comment-delimiter-face
-- font-lock-comment-face
-- tree-sitter-hl-face:comment
-- tree-sitter-hl-face:doc"
+- `font-lock-comment-delimiter-face'
+- `font-lock-comment-face'
+- `tree-sitter-hl-face:comment'
+- `tree-sitter-hl-face:doc'"
   :type 'boolean
   :group 'timu-spacegrey-theme)
 
 (defun timu-spacegrey-set-contrasted-comments (more less)
-  "Function enabling more contrasted comment faces."
+  "Function enabling MORE or LESS contrasted comment faces."
   (if (eq t timu-spacegrey-contrasted-comments)
       (list :foreground more)
     (list :foreground less)))
@@ -326,7 +345,7 @@ LBOX supplies the border color of the light `timu-spacegrey-flavour'."
 ;;;###autoload
 (defun timu-spacegrey-toggle-org-colors-intensity ()
   "Toggle between intense and non intense colors for `org-mode'.
-Customize `timu-spacegrey-org-intense-colors' the to achieve this. "
+Customize `timu-spacegrey-org-intense-colors' the to achieve this."
   (interactive)
   (if (eq t timu-spacegrey-org-intense-colors)
       (customize-set-variable 'timu-spacegrey-org-intense-colors nil)
@@ -336,7 +355,7 @@ Customize `timu-spacegrey-org-intense-colors' the to achieve this. "
 ;;;###autoload
 (defun timu-spacegrey-toggle-mode-line-border ()
   "Toggle between borders and no borders for the `mode-line'.
-Customize `timu-spacegrey-mode-line-border' the to achieve this. "
+Customize `timu-spacegrey-mode-line-border' the to achieve this."
   (interactive)
   (if (eq t timu-spacegrey-mode-line-border)
       (customize-set-variable 'timu-spacegrey-mode-line-border nil)

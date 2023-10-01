@@ -121,7 +121,7 @@ You can set the comments & docs to be more contrasted.
 - =font-lock-comment-delimiter-face=
 - =font-lock-comment-face=
 - =tree-sitter-hl-face:comment=
-- =tree-sitter-hl-face:doc"=
+- =tree-sitter-hl-face:doc=
 
 By default the option are turned off. To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
 
