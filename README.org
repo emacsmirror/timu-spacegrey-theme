@@ -115,6 +115,20 @@ By default the option are turned off. To turn this on add the following to your 
   (customize-set-variable 'timu-spacegrey-contrasted-foreground t)
 #+end_src
 
+** More contrast for comments & docs
+You can set the comments & docs to be more contrasted.
+
+- =font-lock-comment-delimiter-face=
+- =font-lock-comment-face=
+- =tree-sitter-hl-face:comment=
+- =tree-sitter-hl-face:doc"=
+
+By default the option are turned off. To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+
+#+begin_src emacs-lisp
+  (customize-set-variable 'timu-spacegrey-contrasted-comments t)
+#+end_src
+
 ** Border for the mode-line
 You can set a variable to add a border to the mode-line.
 

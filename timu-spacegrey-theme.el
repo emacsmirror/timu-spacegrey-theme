@@ -6,7 +6,7 @@
 ;; Maintainer: Aimé Bertrand <aime.bertrand@macowners.club>
 ;; Created: 06 Jun 2021
 ;; Keywords: faces themes
-;; Version: 2.8
+;; Version: 2.9
 ;; Package-Requires: ((emacs "26.1"))
 ;; Homepage: https://gitlab.com/aimebertrand/timu-spacegrey-theme
 
@@ -269,6 +269,22 @@ These are:
       (list :foreground more)
     (list :foreground less)))
 
+(defcustom timu-spacegrey-contrasted-comments nil
+  "Variable to control the contrast of comment faces.
+These are:
+- font-lock-comment-delimiter-face
+- font-lock-comment-face
+- tree-sitter-hl-face:comment
+- tree-sitter-hl-face:doc"
+  :type 'boolean
+  :group 'timu-spacegrey-theme)
+
+(defun timu-spacegrey-set-contrasted-comments (more less)
+  "Function enabling more contrasted comment faces."
+  (if (eq t timu-spacegrey-contrasted-comments)
+      (list :foreground more)
+    (list :foreground less)))
+
 (defcustom timu-spacegrey-muted-colors nil
   "Variable to set muted colors for the \"dark\" flavour of the theme."
   :type 'boolean
@@ -405,10 +421,10 @@ Sourced other themes to get information about font faces for packages.")
 
 ;;;; font-lock - dark
      `(font-lock-builtin-face ((,class (:foreground ,orange))))
-     `(font-lock-comment-delimiter-face ((,class (:foreground ,spacegrey5))))
-     `(font-lock-comment-face ((,class (:foreground ,spacegrey5 ,@(timu-spacegrey-set-italic-faces)))))
+     `(font-lock-comment-delimiter-face ((,class (,@(timu-spacegrey-set-contrasted-comments spacegrey7 spacegrey5)))))
+     `(font-lock-comment-face ((,class (,@(timu-spacegrey-set-contrasted-comments spacegrey7 spacegrey5) ,@(timu-spacegrey-set-italic-faces)))))
      `(font-lock-constant-face ((,class (:foreground ,magenta))))
-     `(font-lock-doc-face ((,class (:foreground ,spacegrey5 ,@(timu-spacegrey-set-italic-faces)))))
+     `(font-lock-doc-face ((,class (,@(timu-spacegrey-set-contrasted-comments spacegrey7 spacegrey5) ,@(timu-spacegrey-set-italic-faces)))))
      `(font-lock-function-name-face ((,class (:foreground ,blue))))
      `(font-lock-keyword-face ((,class (:foreground ,orange))))
      `(font-lock-negation-char-face ((,class (:foreground ,fg :weight bold))))
@@ -1822,8 +1838,8 @@ Sourced other themes to get information about font faces for packages.")
      `(tree-sitter-hl-face:variable.special ((,class (:foreground ,yellow))))
      `(tree-sitter-hl-face:property ((,class (:foreground ,magenta))))
      `(tree-sitter-hl-face:property.definition ((,class (:foreground ,darkcyan))))
-     `(tree-sitter-hl-face:comment ((,class (:foreground ,spacegrey5 ,@(timu-spacegrey-set-italic-faces)))))
-     `(tree-sitter-hl-face:doc ((,class (:foreground ,spacegrey5 ,@(timu-spacegrey-set-italic-faces)))))
+     `(tree-sitter-hl-face:comment ((,class (,@(timu-spacegrey-set-contrasted-comments spacegrey7 spacegrey5) ,@(timu-spacegrey-set-italic-faces)))))
+     `(tree-sitter-hl-face:doc ((,class (,@(timu-spacegrey-set-contrasted-comments spacegrey7 spacegrey5) ,@(timu-spacegrey-set-italic-faces)))))
      `(tree-sitter-hl-face:string ((,class (:foreground ,green))))
      `(tree-sitter-hl-face:string.special ((,class (:foreground ,green :weight bold))))
      `(tree-sitter-hl-face:escape ((,class (:foreground ,orange))))
@@ -2040,10 +2056,10 @@ Sourced other themes to get information about font faces for packages.")
 
 ;;;; font-lock - light
      `(font-lock-builtin-face ((,class (:foreground ,orange))))
-     `(font-lock-comment-delimiter-face ((,class (:foreground ,spacegrey5))))
-     `(font-lock-comment-face ((,class (:foreground ,spacegrey5 ,@(timu-spacegrey-set-italic-faces)))))
+     `(font-lock-comment-delimiter-face ((,class (,@(timu-spacegrey-set-contrasted-comments spacegrey5 spacegrey7)))))
+     `(font-lock-comment-face ((,class (,@(timu-spacegrey-set-contrasted-comments spacegrey5 spacegrey7) ,@(timu-spacegrey-set-italic-faces)))))
      `(font-lock-constant-face ((,class (:foreground ,magenta))))
-     `(font-lock-doc-face ((,class (:foreground ,spacegrey5 ,@(timu-spacegrey-set-italic-faces)))))
+     `(font-lock-doc-face ((,class (,@(timu-spacegrey-set-contrasted-comments spacegrey5 spacegrey7) ,@(timu-spacegrey-set-italic-faces)))))
      `(font-lock-function-name-face ((,class (:foreground ,darkblue))))
      `(font-lock-keyword-face ((,class (:foreground ,orange))))
      `(font-lock-negation-char-face ((,class (:foreground ,fg :weigth bold))))
@@ -3457,8 +3473,8 @@ Sourced other themes to get information about font faces for packages.")
      `(tree-sitter-hl-face:variable.special ((,class (:foreground ,yellow))))
      `(tree-sitter-hl-face:property ((,class (:foreground ,magenta))))
      `(tree-sitter-hl-face:property.definition ((,class (:foreground ,darkcyan))))
-     `(tree-sitter-hl-face:comment ((,class (:foreground ,spacegrey5 ,@(timu-spacegrey-set-italic-faces)))))
-     `(tree-sitter-hl-face:doc ((,class (:foreground ,spacegrey5 ,@(timu-spacegrey-set-italic-faces)))))
+     `(tree-sitter-hl-face:comment ((,class (,@(timu-spacegrey-set-contrasted-comments spacegrey5 spacegrey7) ,@(timu-spacegrey-set-italic-faces)))))
+     `(tree-sitter-hl-face:doc ((,class (,@(timu-spacegrey-set-contrasted-comments spacegrey5 spacegrey7) ,@(timu-spacegrey-set-italic-faces)))))
      `(tree-sitter-hl-face:string ((,class (:foreground ,green))))
      `(tree-sitter-hl-face:string.special ((,class (:foreground ,green :weight bold))))
      `(tree-sitter-hl-face:escape ((,class (:foreground ,orange))))
