@@ -671,7 +671,7 @@ Sourced other themes to get information about font faces for packages.")
      `(circe-server-face ((,class (:foreground ,spacegrey5))))
 
 ;;;; column-enforce-mode - dark
-   `(column-enforce-face ((,class (:foreground ,purple :underline t))))
+     `(column-enforce-face ((,class (:foreground ,purple :underline t))))
 
 ;;;; company - dark
      `(company-preview ((,class (:foreground ,spacegrey5))))
@@ -2306,7 +2306,7 @@ Sourced other themes to get information about font faces for packages.")
      `(circe-server-face ((,class (:foreground ,spacegrey5))))
 
 ;;;; column-enforce-mode - light
-   `(column-enforce-face ((,class (:foreground ,cyan :underline t))))
+     `(column-enforce-face ((,class (:foreground ,cyan :underline t))))
 
 ;;;; company - light
      `(company-preview ((,class (:foreground ,spacegrey5))))
