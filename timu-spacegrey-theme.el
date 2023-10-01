@@ -6,7 +6,7 @@
 ;; Maintainer: Aimé Bertrand <aime.bertrand@macowners.club>
 ;; Created: 06 Jun 2021
 ;; Keywords: faces themes
-;; Version: 2.7
+;; Version: 2.8
 ;; Package-Requires: ((emacs "26.1"))
 ;; Homepage: https://gitlab.com/aimebertrand/timu-spacegrey-theme
 
@@ -256,6 +256,19 @@ BACKGROUND-COLOR changes the `background' color."
   (if (eq t timu-spacegrey-italic-faces)
       (list :italic t)))
 
+(defcustom timu-spacegrey-contrasted-foreground nil
+  "Variable to control the contrast of foreground faces.
+These are:
+- default"
+  :type 'boolean
+  :group 'timu-spacegrey-theme)
+
+(defun timu-spacegrey-set-contrasted-foreground (more less)
+  "Function enabling more contrasted foreground faces."
+  (if (eq t timu-spacegrey-contrasted-foreground)
+      (list :foreground more)
+    (list :foreground less)))
+
 (defcustom timu-spacegrey-muted-colors nil
   "Variable to set muted colors for the \"dark\" flavour of the theme."
   :type 'boolean
@@ -371,7 +384,7 @@ Sourced other themes to get information about font faces for packages.")
      `(bold-italic ((,class (:weight bold :slant italic))))
      `(bookmark-face ((,class (:foreground ,magenta :weight bold :underline ,darkcyan))))
      `(cursor ((,class (:background ,orange))))
-     `(default ((,class (:background ,bg :foreground ,fg))))
+     `(default ((,class (:background ,bg ,@(timu-spacegrey-set-contrasted-foreground spacegrey8 fg)))))
      `(error ((,class (:foreground ,red))))
      `(fringe ((,class (:background ,bg :foreground ,spacegrey4))))
      `(highlight ((,class (:foreground ,magenta :weight bold :underline ,darkcyan))))
@@ -2006,7 +2019,7 @@ Sourced other themes to get information about font faces for packages.")
      `(bold-italic ((,class (:weight bold :slant italic))))
      `(bookmark-face ((,class (:foreground ,magenta  :weight bold :underline ,darkcyan))))
      `(cursor ((,class (:background ,orange))))
-     `(default ((,class (:background ,bg :foreground ,fg))))
+     `(default ((,class (:background ,bg ,@(timu-spacegrey-set-contrasted-foreground black fg)))))
      `(error ((,class (:foreground ,red))))
      `(fringe ((,class (:background ,bg :foreground ,spacegrey4))))
      `(highlight ((,class (:foreground ,magenta  :weight bold :underline ,darkcyan))))

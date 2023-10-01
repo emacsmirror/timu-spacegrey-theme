@@ -106,6 +106,15 @@ By default muted colors are turned off. To turn this on add the following to you
   (customize-set-variable 'timu-spacegrey-muted-colors t)
 #+end_src
 
+** More contrast for the foreground
+You can set the =default= foreground to be more contrasted.
+
+By default the option are turned off. To turn this on add the following to your =~/.emacs.d/init.el= or =~/.emacs=:
+
+#+begin_src emacs-lisp
+  (customize-set-variable 'timu-spacegrey-contrasted-foreground t)
+#+end_src
+
 ** Border for the mode-line
 You can set a variable to add a border to the mode-line.
 
