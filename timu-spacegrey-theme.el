@@ -144,13 +144,22 @@
 ;;
 ;; III.  Utility functions
 ;;   A. Toggle dark and light flavour of the theme
-;;       M-x timu-spacegrey-toggle-dark-light RET.
+;;       M-x `timu-spacegrey-toggle-dark-light' RET.
 ;;
 ;;   B. Toggle between intense and non intense colors for `org-mode'
-;;       M-x timu-spacegrey-toggle-org-colors-intensity RET.
+;;       M-x `timu-spacegrey-toggle-org-colors-intensity' RET.
 ;;
 ;;   C. Toggle between borders and no borders for the `mode-line'
-;;       M-x timu-spacegrey-toggle-mode-line-border RET.
+;;       M-x `timu-spacegrey-toggle-mode-line-border' RET.
+;;
+;;   D. Toggle italic faces on or off
+;;       M-x `timu-spacegrey-toggle-italic-faces' RET.
+;;
+;;   E. Toggle toggle more contrast for the foreground on or off
+;;       M-x `timu-spacegrey-toggle-contrasted-foreground' RET.
+;;
+;;   F. Toggle toggle more contrast for comments and docs on or off
+;;       M-x `timu-spacegrey-toggle-contrasted-comments' RET.
 
 
 ;;; Code:
@@ -361,6 +370,37 @@ Customize `timu-spacegrey-mode-line-border' the to achieve this."
       (customize-set-variable 'timu-spacegrey-mode-line-border nil)
     (customize-set-variable 'timu-spacegrey-mode-line-border t))
   (load-theme (car custom-enabled-themes) t))
+
+;;;###autoload
+(defun timu-spacegrey-toggle-italic-faces ()
+  "Toggle italic faces on or off.
+Customize `timu-spacegrey-italic-faces' to make your preferences permanent."
+  (interactive)
+  (if (eq t timu-spacegrey-italic-faces)
+      (customize-set-variable 'timu-spacegrey-italic-faces nil)
+    (customize-set-variable 'timu-spacegrey-italic-faces t))
+  (load-theme (car custom-enabled-themes) t))
+
+;;;###autoload
+(defun timu-spacegrey-toggle-contrasted-foreground ()
+  "Toggle toggle more contrast for the foreground on or off.
+Customize `timu-spacegrey-contrasted-foreground' to make your preferences permanent."
+  (interactive)
+  (if (eq t timu-spacegrey-contrasted-foreground)
+      (customize-set-variable 'timu-spacegrey-contrasted-foreground nil)
+    (customize-set-variable 'timu-spacegrey-contrasted-foreground t))
+  (load-theme (car custom-enabled-themes) t))
+
+;;;###autoload
+(defun timu-spacegrey-toggle-contrasted-comments ()
+  "Toggle toggle more contrast for comments and docs on or off.
+Customize `timu-spacegrey-contrasted-comments' to make your preferences permanent."
+  (interactive)
+  (if (eq t timu-spacegrey-contrasted-comments)
+      (customize-set-variable 'timu-spacegrey-contrasted-comments nil)
+    (customize-set-variable 'timu-spacegrey-contrasted-comments t))
+  (load-theme (car custom-enabled-themes) t))
+
 
 (deftheme timu-spacegrey
   "Custom theme inspired by the spacegray theme in Sublime Text.
