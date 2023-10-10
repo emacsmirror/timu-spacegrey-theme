@@ -784,7 +784,7 @@ Sourced other themes to get information about font faces for packages.")
      `(custom-variable-tag ((,class (:foreground ,darkcyan :underline t :extend nil))))
      `(custom-visibility ((,class (:foreground ,yellow :height 0.8 :underline t))))
 
-;;; diff - dark
+;;;; diff - dark
      `(diff-added ((,class (:foreground ,bg :background ,green :extend t))))
      `(diff-indicator-added ((,class (:foreground ,bg :weight bold :background ,green :extend t))))
      `(diff-refine-added ((,class (:foreground ,bg :weight bold :background ,green :extend t))))
@@ -2419,7 +2419,7 @@ Sourced other themes to get information about font faces for packages.")
      `(custom-variable-tag ((,class (:foreground ,darkcyan :weight bold))))
      `(custom-visibility ((,class (:foreground ,orange :height 0.8 :weight bold :underline t))))
 
-;;; diff - light
+;;;; diff - light
      `(diff-added ((,class (:foreground ,bg :background ,green :extend t))))
      `(diff-indicator-added ((,class (:foreground ,bg :weight bold :background ,green :extend t))))
      `(diff-refine-added ((,class (:foreground ,bg :weight bold :background ,green :extend t))))
