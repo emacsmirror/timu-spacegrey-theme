@@ -1658,6 +1658,16 @@ Sourced other themes to get information about font faces for packages.")
      `(outline-7 ((,class (:foreground ,purple))))
      `(outline-8 ((,class (:foreground ,fg))))
 
+;;;; outline-minor-faces - dark
+     `(outline-minor-1 ((,class (:foreground ,blue :weight ultra-bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2)))))
+     `(outline-minor-2 ((,class (:foreground ,magenta :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2)))))
+     `(outline-minor-3 ((,class (:foreground ,darkcyan :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.1)))))
+     `(outline-minor-4 ((,class (:foreground ,orange))))
+     `(outline-minor-5 ((,class (:foreground ,green))))
+     `(outline-minor-6 ((,class (:foreground ,teal))))
+     `(outline-minor-7 ((,class (:foreground ,purple))))
+     `(outline-minor-8 ((,class (:foreground ,fg))))
+
 ;;;; parenface - dark
      `(paren-face ((,class (:foreground ,spacegrey5))))
 
@@ -3296,6 +3306,16 @@ Sourced other themes to get information about font faces for packages.")
      `(outline-6 ((,class (:foreground ,purple))))
      `(outline-7 ((,class (:foreground ,purple))))
      `(outline-8 ((,class (:foreground ,fg))))
+
+;;;; outline-minor-faces - light
+     `(outline-minor-1 ((,class (:foreground ,darkblue :weight ultra-bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2)))))
+     `(outline-minor-2 ((,class (:foreground ,magenta :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.2)))))
+     `(outline-minor-3 ((,class (:foreground ,darkcyan :weight bold ,@(timu-spacegrey-do-scale timu-spacegrey-scale-org-document-info 1.1)))))
+     `(outline-minor-4 ((,class (:foreground ,orange))))
+     `(outline-minor-5 ((,class (:foreground ,green))))
+     `(outline-minor-6 ((,class (:foreground ,teal))))
+     `(outline-minor-7 ((,class (:foreground ,purple))))
+     `(outline-minor-8 ((,class (:foreground ,fg))))
 
 ;;;; parenface - light
      `(paren-face ((,class (:foreground ,spacegrey5))))
