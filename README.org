@@ -149,28 +149,28 @@ By default italic faces are turned on. To turn this off add the following to you
   (customize-set-variable 'timu-spacegrey-italic-faces nil)
 #+end_src
 
-** Utility functions
-*** Toggle dark and light flavour of the theme
+* Utility functions
+** Toggle dark and light flavour of the theme
 
 M-x =timu-spacegrey-toggle-dark-light= RET.
 
-*** Toggle between intense and non intense colors for `org-mode'
+** Toggle between intense and non intense colors for `org-mode'
 
 M-x =timu-spacegrey-toggle-org-colors-intensity= RET.
 
-*** Toggle between borders and no borders for the `mode-line'
+** Toggle between borders and no borders for the `mode-line'
 
 M-x =timu-spacegrey-toggle-mode-line-border= RET.
 
-*** Toggle italic faces on or off
+** Toggle italic faces on or off
 
 M-x =timu-spacegrey-toggle-italic-faces= RET.
 
-*** Toggle toggle more contrast for the foreground on or off
+** Toggle toggle more contrast for the foreground on or off
 
 M-x =timu-spacegrey-toggle-contrasted-foreground= RET.
 
-*** Toggle toggle more contrast for comments and docs on or off
+** Toggle toggle more contrast for comments and docs on or off
 
 M-x =timu-spacegrey-toggle-contrasted-comments= RET.
 
