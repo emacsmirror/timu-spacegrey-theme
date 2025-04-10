@@ -6,7 +6,7 @@
 ;; Maintainer: Aimé Bertrand <aime.bertrand@macowners.club>
 ;; Created: 06 Jun 2021
 ;; Keywords: faces themes
-;; Version: 2.9
+;; Version: 3.0
 ;; Package-Requires: ((emacs "26.1"))
 ;; Homepage: https://gitlab.com/aimebertrand/timu-spacegrey-theme
 

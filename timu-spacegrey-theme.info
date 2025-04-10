@@ -1,0 +1,279 @@
+This is timu-spacegrey-theme.info, produced by makeinfo version 7.2 from
+timu-spacegrey-theme.texi.
+
+INFO-DIR-SECTION Emacs
+START-INFO-DIR-ENTRY
+* Timu Spacegrey Theme: (timu-spacegrey-theme).     Emacs colorful (dark/light) theme.
+END-INFO-DIR-ENTRY
+
+
+File: timu-spacegrey-theme.info,  Node: Top,  Next: Installation,  Up: (dir)
+
+Timu Spacegrey Theme
+********************
+
+Emacs colorful (dark/light) theme inspired by Gadzhi Kharkharov's
+Spacegray theme for Sublime Text.
+
+
+Copyright (C) 2022 Aimé Bertrand <aime.bertrand@macowners.club>
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the "Software"),
+    to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense,
+    and/or sell copies of the Software, and to permit persons to whom the
+    Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+    THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+    DEALINGS IN THE SOFTWARE.
+
+   • Homepage: <https://macowners.club/posts/custom-emacs-themes>.
+   • Git repo: <https://gitlab.com/aimebertrand/timu-spacegrey-theme>.
+
+* Menu:
+
+* Installation::
+* Configuration::
+* Utility functions::
+* Supported major modes::
+
+
+File: timu-spacegrey-theme.info,  Node: Installation,  Next: Configuration,  Prev: Top,  Up: Top
+
+1 Installation
+**************
+
+Manual installation
+-------------------
+
+1. Download the ‘timu-spacegrey-theme.el’ file and add it to your
+   ‘custom-load-path’.
+2. In your ‘~/.emacs.d/init.el’ or ‘~/.emacs’:
+
+    (load-theme 'timu-spacegrey t)
+
+From Melpa
+----------
+
+1. ‘M-x package-install RET timu-spacegrey-theme RET’.
+2. In your ‘~/.emacs.d/init.el’ or ‘~/.emacs’:
+
+    (load-theme 'timu-spacegrey t)
+
+With ‘use-package’
+------------------
+
+    (use-package timu-spacegrey-theme
+      :ensure t
+      :config
+      (load-theme 'timu-spacegrey t))
+
+
+File: timu-spacegrey-theme.info,  Node: Configuration,  Next: Utility functions,  Prev: Installation,  Up: Top
+
+2 Configuration
+***************
+
+Dark and light fravour
+----------------------
+
+By default the theme is ‘dark’.  To setup the ‘light’ flavour add the following
+to your ‘~/.emacs.d/init.el’ or ‘~/.emacs’:
+
+(customize-set-variable 'timu-spacegrey-flavour "light")
+
+Scaling
+-------
+
+You can now scale some faces (in ‘org-mode’ for now):
+
+   • ‘org-document-info’
+   • ‘org-document-title’
+   • ‘org-level-1’
+   • ‘org-level-2’
+   • ‘org-level-3’
+
+More to follow in the future.
+
+By default the scaling is turned off.  To setup the scaling add the following
+to your ‘~/.emacs.d/init.el’ or ‘~/.emacs’:
+
+Default scaling
+   This will turn on default values of scaling in the theme.
+
+    (customize-set-variable 'timu-spacegrey-scale-org-document-title t)
+    (customize-set-variable 'timu-spacegrey-scale-org-document-info t)
+    (customize-set-variable 'timu-spacegrey-scale-org-level-1 t)
+    (customize-set-variable 'timu-spacegrey-scale-org-level-2 t)
+    (customize-set-variable 'timu-spacegrey-scale-org-level-3 t)
+
+Custom scaling
+   You can choose your own scaling values as well.  The following is a somewhat
+   exaggerated example.
+
+    (customize-set-variable 'timu-spacegrey-scale-org-document-title 1.8)
+    (customize-set-variable 'timu-spacegrey-scale-org-document-info 1.4)
+    (customize-set-variable 'timu-spacegrey-scale-org-level-1 1.8)
+    (customize-set-variable 'timu-spacegrey-scale-org-level-2 1.4)
+    (customize-set-variable 'timu-spacegrey-scale-org-level-3 1.2)
+
+"Intense" colors for org-mode
+-----------------------------
+
+To emphasize some elements in org-mode.  You can set a variable to make some
+faces more "intense".
+
+By default the intense colors are turned off.  To turn this on add the
+following to your ‘~/.emacs.d/init.el’ or ‘~/.emacs’:
+
+    (customize-set-variable 'timu-spacegrey-org-intense-colors t)
+
+Muted colors for the dark flavour
+---------------------------------
+
+You can set muted colors for the dark flavour of the theme.
+
+By default muted colors are turned off.  To turn this on add the following to
+your ‘~/.emacs.d/init.el’ or ‘~/.emacs’:
+
+    (customize-set-variable 'timu-spacegrey-muted-colors t)
+
+More contrast for the foreground
+--------------------------------
+
+You can set the ‘default’ foreground to be more contrasted.
+
+By default the option are turned off.  To turn this on add the following to
+your ‘~/.emacs.d/init.el’ or ‘~/.emacs’:
+
+    (customize-set-variable 'timu-spacegrey-contrasted-foreground t)
+
+More contrast for comments & docs
+---------------------------------
+
+You can set the comments & docs to be more contrasted.
+
+   • ‘font-lock-comment-delimiter-face’
+   • ‘font-lock-comment-face’
+   • ‘tree-sitter-hl-face:comment’
+   • ‘tree-sitter-hl-face:doc’
+
+By default the option are turned off.  To turn this on add the following to
+your ‘~/.emacs.d/init.el’ or ‘~/.emacs’:
+
+   (customize-set-variable 'timu-spacegrey-contrasted-comments t)
+
+Border for the mode-line
+------------------------
+
+You can set a variable to add a border to the mode-line.
+
+By default the border is turned off.  To turn this on add the following to your
+‘~/.emacs.d/init.el’ or ‘~/.emacs’:
+
+    (customize-set-variable 'timu-spacegrey-mode-line-border t)
+
+Italic faces
+------------
+
+You can control whether selected faces are italic or not.  An example for faces
+that will show up italicized is the ‘font-lock-comment-face’.
+
+This is not applicable on explicit italic faces like (e.g
+‘markdown-italic-face’).  These are left alone and stay italicized.
+
+By default italic faces are turned on.  To turn this off add the following to
+your ‘~/.emacs.d/init.el’ or ‘~/.emacs’:
+
+    (customize-set-variable 'timu-spacegrey-italic-faces nil)
+
+
+File: timu-spacegrey-theme.info,  Node: Utility functions,  Next: Supported major modes,  Prev: Configuration,  Up: Top
+
+3 Utility functions
+*******************
+
+Toggle dark and light flavour of the theme
+
+    M-x ‘timu-spacegrey-toggle-dark-light’ RET.
+
+Toggle between intense and non intense colors for 'org-mode'
+
+    M-x ‘timu-spacegrey-toggle-org-colors-intensity’ RET.
+
+Toggle between borders and no borders for the 'mode-line'
+
+    M-x ‘timu-spacegrey-toggle-mode-line-border’ RET.
+
+Toggle italic faces on or off
+
+    M-x ‘timu-spacegrey-toggle-italic-faces’ RET.
+
+Toggle toggle more contrast for the foreground on or off
+
+    M-x ‘timu-spacegrey-toggle-contrasted-foreground’ RET.
+
+Toggle toggle more contrast for comments and docs on or off
+
+    M-x ‘timu-spacegrey-toggle-contrasted-comments’ RET.
+
+
+File: timu-spacegrey-theme.info,  Node: Supported major modes,  Prev: Utility functions,  Up: Top
+
+4 Supported major modes
+***********************
+
+ace-window, alert, all-the-icons, all-the-icons-dired,
+all-the-icons-ivy-rich, annotate, ansi, anzu, auctex, avy, bookmark+,
+calfw, centaur-tabs, circe, column-enforce-mode, company, company-box,
+compilation, consult, corfu, counsel, cperl, custom, diff, diff-hl,
+dired, dired-async, dired-filetype-face, dired+, dired-k,
+dired-subtree, diredfl, doom-modeline, ediff, eldoc, elfeed,
+elixir-mode, elscreen, enh-ruby-mode, erc, eshell, evil, evil-googles,
+evil-mc, evil-snipe, expenses, flx-ido, flycheck, flycheck-posframe,
+flymake, flyspell, forge, git-commit, git-gutter, git-gutter+,
+git-gutter-fringe, gnus, goggles, header-line, helm, helpful, hi-lock,
+highlight-indentation-mode, highlight-numbers-mode,
+highlight-quoted-mode, highlight-symbol, highlight-thing,
+hl-fill-column-face, hl-line (built-in), hl-todo, hlinum, hydra, ido,
+iedit, imenu-list, indent-guide, isearch, ivy, ivy-posframe, jabber,
+jdee, js2-mode, keycast, ledger-mode, line numbers, linum,
+linum-relative, lsp-mode, lui, magit, make-mode, marginalia,
+markdown-mode, message, mic-paren, minimap, mmm-mode, mode-line, mu4e,
+mu4e-column-faces, mu4e-thread-folding, multiple cursors,
+nano-modeline, nav-flash, neotree, nlinum, nlinum-hl, nlinum-relative,
+notmuch, orderless, objed, org-agenda, org-habit, org-journal,
+org-mode, org-pomodoro, org-ref, outline, outline-minor-faces,
+parenface, parinfer, persp-mode, perspective, pkgbuild-mode, popup,
+powerline, rainbow-delimiters, re-builder, rjsx-mode, rpm-spec-mode,
+rst, selectrum, sh-script, show-paren, smart-mode-line, smartparens,
+smerge-tool, solaire-mode, spaceline, stripe-buffer, swiper, tabbar,
+tab-bar, tab-line, telephone-line, term, tldr, transient, treemacs,
+treemacs-all-the-icons, tree-sitter-hl, typescript-mode, undo-tree,
+vimish-fold, volatile-highlights, vterm, web-mode, wgrep, which-func,
+which-key, whitespace, widget, window-divider, woman, workgroups2,
+yasnippet, ytel
+
+
+Tag table:
+Node: Top255
+Node: Installation1862
+Node: Configuration2515
+Node: Utility functions6312
+Node: Supported major modes7123
+
+End tag table
+
+
+Local Variables:
+coding: utf-8
+End:
